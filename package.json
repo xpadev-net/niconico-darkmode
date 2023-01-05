@@ -1,0 +1,43 @@
+{
+  "name": "niconico-darkmode",
+  "version": "2.5.0",
+  "description": "ニコニコをダークモード化する拡張機能",
+  "main": "dist/bundle.js",
+  "repository": "https://github.com/xpadev-net/niconico-darkmode.git",
+  "author": "AyumuNekozuki",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.mjs",
+    "watch": "rollup -c rollup.config.mjs -w",
+    "check-types": "npx tsc --noEmit --jsx react",
+    "eslint": "eslint src/**/*.{ts,tsx,js} --no-error-on-unmatched-pattern",
+    "eslint:fix": "eslint src/**/*.{ts,tsx,js} --fix --no-error-on-unmatched-pattern",
+    "format": "prettier --write \"src/**/*.{tsx,ts,js,json,css,scss}\"",
+    "lint": "npm run eslint&&npm run check-types",
+    "lint:fix": "npm run format&&npm run eslint:fix&&npm run check-types",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "8.5.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.3.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  }
+}
