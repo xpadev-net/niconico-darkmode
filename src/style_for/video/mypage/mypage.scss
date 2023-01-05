@@ -8,15 +8,14 @@
 @import "../../parts/_footer";
 @import "_mypage-card";
 
-@import './NC-module/_NC-MediaObject.scss';
-@import './NC-module/_NC-ThreePointMenu.scss';
-@import './NC-module/_NC-Modal.scss';
+@import "./NC-module/_NC-MediaObject.scss";
+@import "./NC-module/_NC-ThreePointMenu.scss";
+@import "./NC-module/_NC-Modal.scss";
 
 .niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
 
   .BaseLayout-main {
-
     .UserPageHeader {
       background-color: $nico-black;
       .HeaderContainer-main {
@@ -28,7 +27,6 @@
 
     // 自分の名前以下
     #UserPage-app {
-
       // 自分の名前のエリア
       .UserPage-header {
         background-color: $nico-black;
@@ -75,7 +73,11 @@
         }
         .UserDetailsHeader-description {
           .ExpandBoxButton-overlay {
-            background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, $nico-black);
+            background: linear-gradient(
+              180deg,
+              hsla(0, 0%, 100%, 0) 0,
+              $nico-black
+            );
           }
           .ExpandBox-expanded {
             div span {
@@ -84,20 +86,21 @@
           }
         }
 
-        .UserDetailsHeader-buttons{  //フォローボタン 放送リクエストボタン
-          .LiveRequestButton:active{
+        .UserDetailsHeader-buttons {
+          //フォローボタン 放送リクエストボタン
+          .LiveRequestButton:active {
             background-color: $hover-background-color;
           }
-          .LiveRequestThanksDialog{
+          .LiveRequestThanksDialog {
             background-color: $nico-black;
             color: $main-text-color;
 
-            .LiveRequestThanksDialog-title{
+            .LiveRequestThanksDialog-title {
               color: $sub-1-text-color;
             }
-            .LiveRequestThanksDialog-thanksMessage{
+            .LiveRequestThanksDialog-thanksMessage {
               background-color: $sub2-background-color;
-              &::after{
+              &::after {
                 border-color: $sub2-background-color transparent transparent;
               }
             }
@@ -113,9 +116,9 @@
         .MainMenuContainer-menu {
           background-color: $nico-black;
           .MainMenuContainer-menuList {
-						.NC-Tabs{
-							background: none;
-						}
+            .NC-Tabs {
+              background: none;
+            }
             a {
               color: $main-text-color;
             }
@@ -326,7 +329,11 @@
               color: $sub-1-text-color;
             }
             .ExpandBoxButton-overlay {
-              background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, $main-background-color);
+              background: linear-gradient(
+                180deg,
+                hsla(0, 0%, 100%, 0) 0,
+                $main-background-color
+              );
             }
           }
           .MylistHeaderAction {

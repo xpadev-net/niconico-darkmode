@@ -1,88 +1,99 @@
-@import '../../parts/_default';
+@import "../../parts/_default";
 
-.niconico-darkmode-setting-true{
-
-  [class*="___program-card-list___"]{ // カード
-    [class*="___item___"]{
-      [class*="___program-card___"]{
+.niconico-darkmode-setting-true {
+  [class*="___program-card-list___"] {
+    // カード
+    [class*="___item___"] {
+      [class*="___program-card___"] {
         background-color: $nico-black;
-        [class*=".___program-preview___"]{ //サムネ
+        [class*=".___program-preview___"] {
+          //サムネ
           background: none;
         }
-        [class*="___content-area___"]{
-          [class*="___program-summary___"]{ //タイトルエリア
-            [class*="___program-label-view___"]{ //ラベル
-              [class*="___pay-program-label___"]{
+        [class*="___content-area___"] {
+          [class*="___program-summary___"] {
+            //タイトルエリア
+            [class*="___program-label-view___"] {
+              //ラベル
+              [class*="___pay-program-label___"] {
                 color: $nico-point;
                 border-color: $nico-point;
               }
             }
 
-            [class*="___program-title___"]{ //枠タイトル
+            [class*="___program-title___"] {
+              //枠タイトル
               color: $main-text-color;
             }
 
-            &:hover{
-              [class*="___program-title___"]{ //枠タイトル
+            &:hover {
+              [class*="___program-title___"] {
+                //枠タイトル
                 color: $main-url-color;
               }
             }
           }
-          [class*="___program-provider-card___"]{ 
-            [class*="___information___"]{//コミュタイトル
-              [class*="___name-label___"]{
+          [class*="___program-provider-card___"] {
+            [class*="___information___"] {
+              //コミュタイトル
+              [class*="___name-label___"] {
                 color: $sub-1-text-color;
               }
             }
-            [class*="___information___"]:hover{//コミュタイトル
-              [class*="___name-label___"]{
+            [class*="___information___"]:hover {
+              //コミュタイトル
+              [class*="___name-label___"] {
                 color: $main-url-color;
               }
             }
-            [class*="___konomi-tag-list___"]{ //好みタグ
-              [class*="___item___"]{
-                [class*="___tag___"]{
+            [class*="___konomi-tag-list___"] {
+              //好みタグ
+              [class*="___item___"] {
+                [class*="___tag___"] {
                   background-color: $sub2-background-color;
-                  [class*="___name-anchor___"]{
+                  [class*="___name-anchor___"] {
                     color: $sub-1-text-color;
                   }
                 }
-                [class*="___tag___"]:hover{
+                [class*="___tag___"]:hover {
                   text-decoration: underline;
                 }
               }
             }
           }
-          [class*="___menu-area___"]{ //メニュー
+          [class*="___menu-area___"] {
+            //メニュー
             box-shadow: 0 1px 0 $border-background-color;
-            [class*="___status-bar___"]{
-              [class*="___duration___"],[class*="__start-at___"]{ //経過時間
+            [class*="___status-bar___"] {
+              [class*="___duration___"],
+              [class*="__start-at___"] {
+                //経過時間
                 color: $sub-1-text-color;
               }
-              [class*="___program-statistics___"]{ //コメント数
-                [class*="___content___"]{
+              [class*="___program-statistics___"] {
+                //コメント数
+                [class*="___content___"] {
                   color: $sub-2-text-color;
                 }
               }
-
             }
-            [class*="___menu-popup-control___"]{
-              [class*="___toggle-button___"]{
+            [class*="___menu-popup-control___"] {
+              [class*="___toggle-button___"] {
                 background-color: $nico-black;
-                [class*="___symbol-mark___"]>path{
+                [class*="___symbol-mark___"] > path {
                   fill: $main-text-color;
                 }
               }
-              [class*="___toggle-button___"]:hover{
+              [class*="___toggle-button___"]:hover {
                 background-color: $hover-background-color;
               }
-              [class*="___program-menu___"]{
+              [class*="___program-menu___"] {
                 background-color: $nico-black;
-                [class*="___timeshift-reservation-button___"]{
+                [class*="___timeshift-reservation-button___"] {
                   background: none;
                   color: $main-text-color;
                 }
-                [class*="___timeshift-reservation-button___"]:hover{
+                [class*="___timeshift-reservation-button___"]:hover {
                   background: $hover-background-color;
                 }
               }
@@ -93,8 +104,9 @@
     }
   }
 
-  [class*="___navigation___"]{ //前後
-    [class*="___page-selector___"]{
+  [class*="___navigation___"] {
+    //前後
+    [class*="___page-selector___"] {
       background-color: $nico-black;
     }
   }

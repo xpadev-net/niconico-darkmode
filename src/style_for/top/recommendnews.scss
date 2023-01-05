@@ -1,27 +1,27 @@
-@import '../parts/_default';
-@import '../parts/_footer';
-@import '../parts/_page-next.scss';
+@import "../parts/_default";
+@import "../parts/_footer";
+@import "../parts/_page-next.scss";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
   color: $main-text-color;
-  a{
+  a {
     color: $main-text-color !important;
   }
-  a:hover{
+  a:hover {
     color: $main-url-color !important;
   }
 
-  #logo_zero{
+  #logo_zero {
     filter: $invert;
   }
-  .cmnHeading{
+  .cmnHeading {
     background: none !important;
   }
-  .contentsInner li{
+  .contentsInner li {
     background: none !important;
     border-bottom: 1px solid $border-background-color !important;
-    p{
+    p {
       color: $sub-2-text-color !important;
     }
   }

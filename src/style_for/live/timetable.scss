@@ -1,81 +1,82 @@
-@import '../parts/_default';
-@import 'parts/_card';
-@import 'parts/_parts';
+@import "../parts/_default";
+@import "parts/_card";
+@import "parts/_parts";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color;
 
-  #page_cover{
-    .search_box{
-      #calendar_area{
-        #calendar{
-          .ui-datepicker-calendar{
-            thead{
+  #page_cover {
+    .search_box {
+      #calendar_area {
+        #calendar {
+          .ui-datepicker-calendar {
+            thead {
               background: $nico-black;
               color: $main-text-color;
-              span[title="土"]{
-                color: #379CFF;
+              span[title="土"] {
+                color: #379cff;
               }
-              span[title="日"]{
-                color: #FF3333;
+              span[title="日"] {
+                color: #ff3333;
               }
             }
           }
         }
-        #SideNavigation{
-          .timetablePage-SideNavigation_Link{
+        #SideNavigation {
+          .timetablePage-SideNavigation_Link {
             background: $nico-black;
             color: $main-text-color;
           }
-          .timetablePage-SideNavigation_Link:hover{
+          .timetablePage-SideNavigation_Link:hover {
             background: $hover-background-color;
           }
         }
       }
     }
-    .main{
-      .timetable_day{
-        .timetable_content{
+    .main {
+      .timetable_day {
+        .timetable_content {
           background: none;
-          #timeline{
-            .item{
+          #timeline {
+            .item {
               background: $nico-black;
               border-color: $border-background-color;
-              .item_status{
+              .item_status {
                 border-color: $border-background-color;
-                .time{
+                .time {
                   text-shadow: none;
-                  .start_date,.start_time{
+                  .start_date,
+                  .start_time {
                     color: $sub-1-text-color;
                   }
-                  .schedule_time{
+                  .schedule_time {
                     color: $sub-2-text-color;
                   }
                 }
               }
-              .item_image{
+              .item_image {
                 background: $nico-black;
               }
-              .item_text{
+              .item_text {
                 background: $nico-black;
-                .item_title{
-                  a{
+                .item_title {
+                  a {
                     color: $main-text-color;
                   }
-                  a:hover{
+                  a:hover {
                     color: $main-url-color;
                   }
                 }
-                .item_description{
+                .item_description {
                   color: $sub-1-text-color;
                 }
               }
-              .item_score{
+              .item_score {
                 background-color: $nico-black;
               }
             }
-            .item.ts_end{
-              *{
+            .item.ts_end {
+              * {
                 background-color: $main-background-color;
               }
             }

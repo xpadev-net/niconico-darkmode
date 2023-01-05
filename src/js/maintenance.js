@@ -25,7 +25,6 @@
 //   }
 // });
 
-
 // //現在URL取得
 // var host = location.hostname;
 // var path = location.pathname;
@@ -41,7 +40,6 @@
 // //     nicodark_change_true();
 // //   }
 // // });
-
 
 // // 設定変更を受け取り
 // chrome.runtime.onMessage.addListener(
@@ -71,13 +69,12 @@
 //       if (now_location == "www.nicovideo.jp/") {
 //         nicodark_change_false();
 //       }
-      
+
 //     }
 
 //     return true;
 //   }
 // );
-
 
 // //ダークモード適用処理　定義
 // function nicodark_change_true() {

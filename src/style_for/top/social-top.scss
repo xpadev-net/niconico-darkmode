@@ -1,403 +1,407 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_textarea';
-@import '../parts/_footer';
-@import '_social-top-card';
- 
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "_social-top-card";
+
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
   color: $main-text-color !important;
 
-  .BaseLayout-main{
-    background-color:$main-background-color !important;
+  .BaseLayout-main {
+    background-color: $main-background-color !important;
 
     //Reリニューアル
-    .TopPage{
-      .TopPage-section{
-        .TopPage-header{
-          .NiconicoLogo{
+    .TopPage {
+      .TopPage-section {
+        .TopPage-header {
+          .NiconicoLogo {
             filter: $invert;
           }
-          .HeaderContainer-mainLower{
-            .OneLineLinkContainer-item{
-              a{
+          .HeaderContainer-mainLower {
+            .OneLineLinkContainer-item {
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $main-url-color;
               }
             }
           }
         }
       }
-      .TopPage-wideSection{
-        .PersonalFrameContainer{ //おすすめ情報
+      .TopPage-wideSection {
+        .PersonalFrameContainer {
+          //おすすめ情報
           background: $main-background-color;
           border: none;
-          .PersonalFrameContainer-body{
+          .PersonalFrameContainer-body {
             background: $nico-black;
-            .PersonalFrameContainer-link{
+            .PersonalFrameContainer-link {
               color: $main-text-color;
             }
-            .PersonalFrameContainer-link:hover{
+            .PersonalFrameContainer-link:hover {
               color: $nico-personal-topics;
             }
-            .PersonalFrameContainer-close{
-              svg{
+            .PersonalFrameContainer-close {
+              svg {
                 fill: $main-text-color;
               }
             }
-            .PersonalFrameContainer-close:hover{
-              svg{
+            .PersonalFrameContainer-close:hover {
+              svg {
                 fill: $nico-personal-topics;
               }
             }
           }
         }
-        .TopPage-stageArea{ //ステージエリア
+        .TopPage-stageArea {
+          //ステージエリア
           filter: $invert;
-          section{
+          section {
             filter: $invert;
-            .AuroraVisionCard-metaContentTitle{
+            .AuroraVisionCard-metaContentTitle {
               color: $sub-1-text-color;
             }
           }
-          .LEDMessageBoard::after{
-            background-image: linear-gradient($main-background-color,transparent),linear-gradient(0deg,$main-background-color,transparent);
+          .LEDMessageBoard::after {
+            background-image: linear-gradient(
+                $main-background-color,
+                transparent
+              ),
+              linear-gradient(0deg, $main-background-color, transparent);
           }
         }
-        .LiveWindowContainer{
+        .LiveWindowContainer {
           border: none;
           background: $sub2-background-color;
-          .LiveWindowContainer-meta{
-            .LiveWindowContainer-metaLink{
-              .LiveWindowContainer-metaTitle{
+          .LiveWindowContainer-meta {
+            .LiveWindowContainer-metaLink {
+              .LiveWindowContainer-metaTitle {
                 color: $main-text-color;
               }
-              .LiveWindowContainer-metaDescription{
+              .LiveWindowContainer-metaDescription {
                 color: $sub-1-text-color;
               }
             }
-            .LiveWindowContainer-metaLink:hover{
-              .LiveWindowContainer-metaTitle{
+            .LiveWindowContainer-metaLink:hover {
+              .LiveWindowContainer-metaTitle {
                 color: $main-url-color;
               }
             }
           }
         }
       }
-      .TopPage-section{
-        .ThemeContainer{
-          .FrameTitleLink{
-            .FrameTitleLink-titleText{
+      .TopPage-section {
+        .ThemeContainer {
+          .FrameTitleLink {
+            .FrameTitleLink-titleText {
               color: $main-text-color;
             }
           }
-          .FrameTitleLink:hover{
-            .FrameTitleLink-titleText{
+          .FrameTitleLink:hover {
+            .FrameTitleLink-titleText {
               color: $main-url-color;
             }
           }
-          .ContentsDigestFrame-description{
+          .ContentsDigestFrame-description {
             color: $sub-1-text-color;
           }
-          .SeeMoreLink{
-            .SeeMoreLink-text{
+          .SeeMoreLink {
+            .SeeMoreLink-text {
               background-color: $sub2-background-color;
               color: $main-text-color;
               border-color: $border-background-color;
-              svg{
+              svg {
                 fill: $main-text-color;
               }
             }
           }
-          .SeeMoreLink:hover{
-            .SeeMoreLink-text{
+          .SeeMoreLink:hover {
+            .SeeMoreLink-text {
               background-color: $main-url-color;
               border-color: $main-url-color;
             }
           }
-          .ContentsDigestFrame{
-            .ContentsDigestFrame-cards{
-              .ContentsDigestFrame-card{
-                .ContentsDigestFrame-cardMetaTitle{
+          .ContentsDigestFrame {
+            .ContentsDigestFrame-cards {
+              .ContentsDigestFrame-card {
+                .ContentsDigestFrame-cardMetaTitle {
                   color: $main-text-color;
                 }
               }
-              .ContentsDigestFrame-card:hover{
-                .ContentsDigestFrame-cardMetaTitle{
+              .ContentsDigestFrame-card:hover {
+                .ContentsDigestFrame-cardMetaTitle {
                   color: $main-url-color;
                 }
               }
             }
           }
-
         }
-        .ThemeContainer>.ContentsDigestFrame+.ContentsDigestFrame::before,
-        .RankingContainer+.ThemeContainer:before{
+        .ThemeContainer > .ContentsDigestFrame + .ContentsDigestFrame::before,
+        .RankingContainer + .ThemeContainer:before {
           border-color: $border-background-color;
         }
-        .NicoAdContainer{
-          .NicoAdContainer-header{
-            .FrameTitleLink{
-              .FrameTitleLink-titleText{
+        .NicoAdContainer {
+          .NicoAdContainer-header {
+            .FrameTitleLink {
+              .FrameTitleLink-titleText {
                 color: $main-text-color;
               }
             }
-            .FrameTitleLink:hover{
-              .FrameTitleLink-titleText{
+            .FrameTitleLink:hover {
+              .FrameTitleLink-titleText {
                 color: $main-url-color;
               }
             }
-            .SeeMoreLink{
-              .SeeMoreLink-text{
+            .SeeMoreLink {
+              .SeeMoreLink-text {
                 background-color: $sub2-background-color;
                 color: $main-text-color;
                 border-color: $border-background-color;
-                svg{
+                svg {
                   fill: $main-text-color;
                 }
               }
             }
-            .SeeMoreLink:hover{
-              .SeeMoreLink-text{
+            .SeeMoreLink:hover {
+              .SeeMoreLink-text {
                 background-color: $main-url-color;
                 border-color: $main-url-color;
               }
             }
           }
-
         }
-        .NicoNewsContainer{
-          .NicoNewsContainer-header{
-            .FrameTitleLink{
-              .FrameTitleLink-titleText{
+        .NicoNewsContainer {
+          .NicoNewsContainer-header {
+            .FrameTitleLink {
+              .FrameTitleLink-titleText {
                 color: $main-text-color;
               }
             }
-            .FrameTitleLink:hover{
-              .FrameTitleLink-titleText{
+            .FrameTitleLink:hover {
+              .FrameTitleLink-titleText {
                 color: $main-url-color;
               }
             }
-            .SeeMoreLink{
-              .SeeMoreLink-text{
+            .SeeMoreLink {
+              .SeeMoreLink-text {
                 background-color: $sub2-background-color;
                 color: $main-text-color;
                 border-color: $border-background-color;
-                svg{
+                svg {
                   fill: $main-text-color;
                 }
               }
             }
-            .SeeMoreLink:hover{
-              .SeeMoreLink-text{
+            .SeeMoreLink:hover {
+              .SeeMoreLink-text {
                 background-color: $main-url-color;
                 border-color: $main-url-color;
               }
             }
           }
-          .NicoNewsContainer-main{
-            #NicoNewsContainer-tabs{
-              .Tabs-tab{
+          .NicoNewsContainer-main {
+            #NicoNewsContainer-tabs {
+              .Tabs-tab {
                 background-color: $sub-background-color;
                 color: $sub-1-text-color;
               }
-              .Tabs-tab:hover{
+              .Tabs-tab:hover {
                 color: $nico-news;
               }
-              .Tabs-tab.is-active{
+              .Tabs-tab.is-active {
                 background-color: $nico-news;
                 color: $main-text-color;
               }
             }
-            .NicoNewsContainer-articles{
-              .NicoNewsContainer-textNews{
-                li+li{
+            .NicoNewsContainer-articles {
+              .NicoNewsContainer-textNews {
+                li + li {
                   border-color: $border-background-color;
                 }
               }
-              .NicoNewsContainer-photoNews{
+              .NicoNewsContainer-photoNews {
                 background: $sub2-background-color;
               }
-              a{
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $main-url-color;
               }
-              .NicoNewsContainer-commentCount{
+              .NicoNewsContainer-commentCount {
                 background-color: $sub2-background-color;
                 border-color: $sub2-background-color;
               }
             }
           }
         }
-        .ContentsInformationAreaContainer{
-          .ContentsDigestFrame{
-            .ContentsDigestFrame-header{
-              .FrameTitleLink{
-                .FrameTitleLink-titleText{
+        .ContentsInformationAreaContainer {
+          .ContentsDigestFrame {
+            .ContentsDigestFrame-header {
+              .FrameTitleLink {
+                .FrameTitleLink-titleText {
                   color: $main-text-color;
                 }
               }
-              .FrameTitleLink:hover{
-                .FrameTitleLink-titleText{
+              .FrameTitleLink:hover {
+                .FrameTitleLink-titleText {
                   color: $main-url-color;
                 }
               }
-              .SeeMoreLink{
-                .SeeMoreLink-text{
+              .SeeMoreLink {
+                .SeeMoreLink-text {
                   background-color: $sub2-background-color;
                   color: $main-text-color;
                   border-color: $border-background-color;
-                  svg{
+                  svg {
                     fill: $main-text-color;
                   }
                 }
               }
-              .SeeMoreLink:hover{
-                .SeeMoreLink-text{
+              .SeeMoreLink:hover {
+                .SeeMoreLink-text {
                   background-color: $main-url-color;
                   border-color: $main-url-color;
                 }
               }
             }
-            .ContentsDigestFrame-cards{
-              .ContentsDigestFrame-card{
-                .ContentsDigestFrame-cardMetaTitle{
+            .ContentsDigestFrame-cards {
+              .ContentsDigestFrame-card {
+                .ContentsDigestFrame-cardMetaTitle {
                   color: $main-text-color;
                 }
               }
-              .ContentsDigestFrame-card:hover{
-                .ContentsDigestFrame-cardMetaTitle{
+              .ContentsDigestFrame-card:hover {
+                .ContentsDigestFrame-cardMetaTitle {
                   color: $main-url-color;
                 }
               }
             }
           }
         }
-        .ContentsInformationAreaContainer>*+:before{
+        .ContentsInformationAreaContainer > * + :before {
           border-color: $border-background-color;
         }
-        .RealEventInformationAreaContainer{
-          section{
+        .RealEventInformationAreaContainer {
+          section {
             border-color: $border-background-color;
-            h1{
+            h1 {
               color: $main-text-color;
             }
-            .RealEventInformationAreaContainer-contents{
-              .TicketNoticeContainer-title{
+            .RealEventInformationAreaContainer-contents {
+              .TicketNoticeContainer-title {
                 color: inherit;
-                .TicketNoticeContainer-titleLink{
+                .TicketNoticeContainer-titleLink {
                   color: $main-text-color;
                 }
-                .TicketNoticeContainer-titleLink:hover{
+                .TicketNoticeContainer-titleLink:hover {
                   color: $main-url-color;
                 }
               }
-              .TicketNoticeContainer-title+:before{
+              .TicketNoticeContainer-title + :before {
                 border-color: $border-background-color;
               }
             }
           }
         }
       }
-      .TopPage-middleBillboardAdSection{
+      .TopPage-middleBillboardAdSection {
         border: none;
         background: $sub2-background-color;
       }
-      .TopPage-footer{
+      .TopPage-footer {
         border: none;
         background: $sub2-background-color;
-        .FooterAreaContainer{
-          .FooterAreaContainer-upper{
-            .NicoNoticeContainer{
-              .TextListFrame-header{
-                .FrameTitleLink{
-                  .FrameTitleLink-titleText{
+        .FooterAreaContainer {
+          .FooterAreaContainer-upper {
+            .NicoNoticeContainer {
+              .TextListFrame-header {
+                .FrameTitleLink {
+                  .FrameTitleLink-titleText {
                     color: $main-text-color;
                   }
                 }
-                .FrameTitleLink:hover{
-                  .FrameTitleLink-titleText{
+                .FrameTitleLink:hover {
+                  .FrameTitleLink-titleText {
                     color: $main-url-color;
                   }
                 }
-                .SeeMoreLink{
-                  .SeeMoreLink-text{
+                .SeeMoreLink {
+                  .SeeMoreLink-text {
                     background-color: $sub2-background-color;
                     color: $main-text-color;
                     border-color: $border-background-color;
-                    svg{
+                    svg {
                       fill: $main-text-color;
                     }
                   }
                 }
-                .SeeMoreLink:hover{
-                  .SeeMoreLink-text{
+                .SeeMoreLink:hover {
+                  .SeeMoreLink-text {
                     background-color: $main-url-color;
                     border-color: $main-url-color;
                   }
                 }
               }
-              .TextListFrame-contents{
-                .TextListFrame-item{
-                  a{
+              .TextListFrame-contents {
+                .TextListFrame-item {
+                  a {
                     color: $main-text-color;
                   }
-                  a:hover{
+                  a:hover {
                     color: $main-url-color;
                   }
                 }
-                .TextListFrame-item+:before{
+                .TextListFrame-item + :before {
                   border-color: $border-background-color;
                 }
               }
             }
           }
-          .FooterAreaContainer-lower{
-            .FooterAreaContainer-contents:before{
+          .FooterAreaContainer-lower {
+            .FooterAreaContainer-contents:before {
               border-color: $border-background-color;
             }
-            .TextListFrame{
-              .TextListFrame-header{
-                .FrameTitleLink{
-                  .FrameTitleLink-titleText{
+            .TextListFrame {
+              .TextListFrame-header {
+                .FrameTitleLink {
+                  .FrameTitleLink-titleText {
                     color: $main-text-color;
                   }
                 }
-                .FrameTitleLink:hover{
-                  .FrameTitleLink-titleText{
+                .FrameTitleLink:hover {
+                  .FrameTitleLink-titleText {
                     color: $main-url-color;
                   }
                 }
-                .SeeMoreLink{
-                  .SeeMoreLink-text{
+                .SeeMoreLink {
+                  .SeeMoreLink-text {
                     background-color: $sub2-background-color;
                     color: $main-text-color;
                     border-color: $border-background-color;
-                    svg{
+                    svg {
                       fill: $main-text-color;
                     }
                   }
                 }
-                .SeeMoreLink:hover{
-                  .SeeMoreLink-text{
+                .SeeMoreLink:hover {
+                  .SeeMoreLink-text {
                     background-color: $main-url-color;
                     border-color: $main-url-color;
                   }
                 }
               }
-              .TextListFrame-contents{
-                .TextListFrame-item+:before{
-                  border-color: $border-background-color
+              .TextListFrame-contents {
+                .TextListFrame-item + :before {
+                  border-color: $border-background-color;
                 }
-                .TextListFrame-item{
-                  a{
+                .TextListFrame-item {
+                  a {
                     color: $main-text-color;
                   }
-                  a:hover{
+                  a:hover {
                     color: $main-url-color;
                   }
                 }
@@ -411,224 +415,223 @@
 }
 
 // 超会議・ボカコレ対応
-.niconico-darkmode-setting-true{
-  .TopPage-section{
-
+.niconico-darkmode-setting-true {
+  .TopPage-section {
     // １ライントピック
-    .OneLineNewsContainer{
+    .OneLineNewsContainer {
       background: $nico-black;
     }
-    .OneLineNewsContainer:hover{
+    .OneLineNewsContainer:hover {
       background: $main-url-color;
     }
 
     // 超速報
-    .BreakingNewsContainer{
-      .BreakingNewsContainer-inner{
+    .BreakingNewsContainer {
+      .BreakingNewsContainer-inner {
         background: $nico-black;
 
-        .BreakingNewsContainer-header{
+        .BreakingNewsContainer-header {
           background: $nico-black;
         }
         .BreakingNewsCard,
-        .BreakingNewsCardNicoAd-cardInner{
-          .BreakingNewsCard-name,.BreakingNewsCardNicoAd-title{
+        .BreakingNewsCardNicoAd-cardInner {
+          .BreakingNewsCard-name,
+          .BreakingNewsCardNicoAd-title {
             color: $main-text-color;
           }
-          .BreakingNewsCard-updateDate{
+          .BreakingNewsCard-updateDate {
             color: $sub-1-text-color;
           }
-          .ContentThumbnailOnlySmarty{
+          .ContentThumbnailOnlySmarty {
             border-radius: 5px;
           }
         }
         .BreakingNewsCard:hover,
-        .BreakingNewsCardNicoAd-cardInner:hover{
-          .BreakingNewsCard-name,.BreakingNewsCardNicoAd-title{
+        .BreakingNewsCardNicoAd-cardInner:hover {
+          .BreakingNewsCard-name,
+          .BreakingNewsCardNicoAd-title {
             color: $main-url-color;
           }
         }
       }
     }
   }
-  .ThemeContainer-content>.ContentsDigestFrame+.ContentsDigestFrame:before{
+  .ThemeContainer-content > .ContentsDigestFrame + .ContentsDigestFrame:before {
     border-color: $border-background-color;
   }
 
   // ボカコレ
-  .VocaloidCollectionContainer{
+  .VocaloidCollectionContainer {
     background-image: none;
   }
 
   // ランキング
-  .RankingContainer{
-    .ContentsDigestFrame{
-      .FrameTitleLink{
-        .FrameTitleLink-titleText{
+  .RankingContainer {
+    .ContentsDigestFrame {
+      .FrameTitleLink {
+        .FrameTitleLink-titleText {
           color: $main-text-color;
         }
       }
-      .FrameTitleLink:hover{
-        .FrameTitleLink-titleText{
+      .FrameTitleLink:hover {
+        .FrameTitleLink-titleText {
           color: $main-url-color;
         }
       }
-      .ContentsDigestFrame-description{
+      .ContentsDigestFrame-description {
         color: $sub-1-text-color;
       }
-      .SeeMoreLink{
-        .SeeMoreLink-text{
+      .SeeMoreLink {
+        .SeeMoreLink-text {
           background-color: $sub2-background-color;
           color: $main-text-color;
           border-color: $border-background-color;
-          svg{
+          svg {
             fill: $main-text-color;
           }
         }
       }
-      .SeeMoreLink:hover{
-        .SeeMoreLink-text{
+      .SeeMoreLink:hover {
+        .SeeMoreLink-text {
           background-color: $main-url-color;
           border-color: $main-url-color;
         }
       }
-      .ContentsDigestFrame-cards{
-        .ContentsDigestFrame-card{
-          .ContentsDigestFrame-cardMetaTitle{
+      .ContentsDigestFrame-cards {
+        .ContentsDigestFrame-card {
+          .ContentsDigestFrame-cardMetaTitle {
             color: $main-text-color;
           }
         }
-        .ContentsDigestFrame-card:hover{
-          .ContentsDigestFrame-cardMetaTitle{
+        .ContentsDigestFrame-card:hover {
+          .ContentsDigestFrame-cardMetaTitle {
             color: $main-url-color;
           }
         }
       }
     }
   }
-  .CreatorSupportContainer{
-    .CreatorSupportContainer-header{
-      .FrameTitleLink{
-        .FrameTitleLink-titleText{
+  .CreatorSupportContainer {
+    .CreatorSupportContainer-header {
+      .FrameTitleLink {
+        .FrameTitleLink-titleText {
           color: $main-text-color;
         }
       }
-      .FrameTitleLink:hover{
-        .FrameTitleLink-titleText{
+      .FrameTitleLink:hover {
+        .FrameTitleLink-titleText {
           color: $main-url-color;
         }
       }
-      .CreatorSupportContainer-description{
+      .CreatorSupportContainer-description {
         color: $sub-1-text-color;
       }
-      .SeeMoreLink{
-        .SeeMoreLink-text{
+      .SeeMoreLink {
+        .SeeMoreLink-text {
           background-color: $sub2-background-color;
           color: $main-text-color;
           border-color: $border-background-color;
-          svg{
+          svg {
             fill: $main-text-color;
           }
         }
       }
-      .SeeMoreLink:hover{
-        .SeeMoreLink-text{
+      .SeeMoreLink:hover {
+        .SeeMoreLink-text {
           background-color: $main-url-color;
           border-color: $main-url-color;
         }
       }
-      .ContentsDigestFrame-body{
-        .ContentsDigestFrame-card{
-          .ContentsDigestFrame-cardMetaTitle{
+      .ContentsDigestFrame-body {
+        .ContentsDigestFrame-card {
+          .ContentsDigestFrame-cardMetaTitle {
             color: $main-text-color;
           }
         }
-        .ContentsDigestFrame-card:hover{
-          .ContentsDigestFrame-cardMetaTitle{
+        .ContentsDigestFrame-card:hover {
+          .ContentsDigestFrame-cardMetaTitle {
             color: $main-url-color;
           }
         }
       }
     }
-    .CreatorSupportContainer-items{
-      .CreatorSupportItem{
+    .CreatorSupportContainer-items {
+      .CreatorSupportItem {
         background: $nico-black;
-        header{
+        header {
           border-bottom: 1px solid $border-background-color;
         }
-        .CreatorSupportItem-ranking{
+        .CreatorSupportItem-ranking {
           color: $main-text-color;
         }
-        footer{
-          .CreatorSupportItem-footerLink{
+        footer {
+          .CreatorSupportItem-footerLink {
             color: $nicoad-gold;
           }
-          .CreatorSupportItem-footerLink:before{
+          .CreatorSupportItem-footerLink:before {
             filter: $invert;
           }
         }
-        
       }
     }
   }
-  .RankingContainer>.ContentsDigestFrame+.ContentsDigestFrame:before,
+  .RankingContainer > .ContentsDigestFrame + .ContentsDigestFrame:before,
   .CreatorSupportContainer:before,
-  .RankingContainer>.ContentsDigestFrame:after{
+  .RankingContainer > .ContentsDigestFrame:after {
     border-color: $border-background-color;
   }
 
   // 掲載情報
-  .PublishedEventArticlesContainer{ //keisai
+  .PublishedEventArticlesContainer {
+    //keisai
     border-color: $border-background-color;
     background: $nico-black;
 
-    .PublishedEventArticlesContainer-title{
+    .PublishedEventArticlesContainer-title {
       color: $main-text-color;
     }
-    .PublishedEventArticlesContainer-articleList{
-      .PublishedEventArticlesContainer-article{
-        .PublishedEventArticlesContainer-articleTitle{
+    .PublishedEventArticlesContainer-articleList {
+      .PublishedEventArticlesContainer-article {
+        .PublishedEventArticlesContainer-articleTitle {
           color: $main-text-color;
         }
-        .PublishedEventArticlesContainer-articleTitle:hover{
+        .PublishedEventArticlesContainer-articleTitle:hover {
           color: $main-url-color;
         }
       }
-      .PublishedEventArticlesContainer-article+.PublishedEventArticlesContainer-article{
+      .PublishedEventArticlesContainer-article
+        + .PublishedEventArticlesContainer-article {
         border-color: $border-background-color;
       }
     }
-    .PublishedEventArticlesContainer-seeMore{
+    .PublishedEventArticlesContainer-seeMore {
       color: $sub-1-text-color;
       border-color: $border-background-color;
       background: $nico-black;
     }
-    .PublishedEventArticlesContainer-seeMore:hover{
+    .PublishedEventArticlesContainer-seeMore:hover {
       color: $main-url-color;
     }
   }
 
   // スポンサー
-  .SponsorsContainer{
+  .SponsorsContainer {
     border-color: $border-background-color;
     background: $nico-black;
 
-
-    .SponsorCard{
+    .SponsorCard {
       background: none;
-      .SponsorCard-link{
+      .SponsorCard-link {
         border-color: $border-background-color;
       }
     }
 
-    .SponsorsBoard-titleText{
+    .SponsorsBoard-titleText {
       color: $main-text-color;
-      background: $nico-black
+      background: $nico-black;
     }
-    .SponsorText{
+    .SponsorText {
       color: $main-text-color;
     }
   }
-
 }
-

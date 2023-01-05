@@ -1,34 +1,33 @@
 @import "../../parts/default";
 
-.niconico-darkmode-setting-true{
-  #Contents.apply{
+.niconico-darkmode-setting-true {
+  #Contents.apply {
     border: none;
 
-    .apply-msg{
+    .apply-msg {
       text-shadow: none;
       color: $sub-1-text-color;
     }
-    .apply-area{
+    .apply-area {
       background: $nico-black;
-      .tutorial{
+      .tutorial {
         background: $nico-black;
         border: $border-background-color 1px solid;
         border-color: $border-background-color;
         color: $main-text-color;
 
-        h3{
+        h3 {
           text-shadow: none;
           color: $sub-1-text-color;
           border-color: $border-background-color;
         }
-        [font="#585858"]{
+        [font="#585858"] {
           color: $sub-1-text-color;
         }
       }
     }
-    .submit-area{
+    .submit-area {
       color: $main-text-color;
     }
   }
-
 }

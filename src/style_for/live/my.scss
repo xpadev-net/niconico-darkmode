@@ -1,89 +1,89 @@
-@import '../parts/_default';
-@import '../parts/_dropdown';
-@import 'parts/_parts';
+@import "../parts/_default";
+@import "../parts/_dropdown";
+@import "parts/_parts";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color;
 
-  .container{
-    #mypage{
-      #mypage_list{
+  .container {
+    #mypage {
+      #mypage_list {
         background-color: $nico-black;
       }
     }
-    #liveList{
+    #liveList {
       color: $main-text-color;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:visited{
+      a:visited {
         color: $sub-1-text-color;
       }
-      a:hover{
+      a:hover {
         text-decoration: underline;
       }
 
-      .liveListInner4{
+      .liveListInner4 {
         border: 1px solid $nico-black;
         border-top: 4px solid $nico-black;
         background-color: $nico-black;
       }
-      .liveListInner4 div.ttl, .liveListInner4 h3.ttl{
+      .liveListInner4 div.ttl,
+      .liveListInner4 h3.ttl {
         background: none;
       }
-      .h3ttl .ttl{
+      .h3ttl .ttl {
         margin-bottom: calc(10px + 1rem);
       }
-      div.tsr_control, div.tsr_popup{
+      div.tsr_control,
+      div.tsr_popup {
         border: none;
       }
-      div.tsr_control{
+      div.tsr_control {
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         background: $border-background-color;
         border-radius: 5px;
-        margin: 0 8px .75rem 0;
+        margin: 0 8px 0.75rem 0;
         padding: 3px 8px 5px;
         color: white;
       }
-      div.column{
+      div.column {
         background: none;
       }
-      div.tsr_popup{
+      div.tsr_popup {
         background-color: $nico-black;
       }
-      
-      
-      div#liveItemsWrap{
-        margin: .75rem auto auto auto;
+
+      div#liveItemsWrap {
+        margin: 0.75rem auto auto auto;
       }
-      .liveItem{
+      .liveItem {
         background: $sub2-background-color;
         border: $sub2-background-color 1px solid;
       }
-      .liveItemImg p,.liveItemImg p a{
+      .liveItemImg p,
+      .liveItemImg p a {
         color: $sub-1-text-color;
       }
-      .liveItemTxt p{
+      .liveItemTxt p {
         color: $sub-1-text-color;
       }
-      .liveItemTxt p.big{
+      .liveItemTxt p.big {
         color: $main-text-color;
       }
-      
-  
-      .btn_toggle{
+
+      .btn_toggle {
         color: $main-url-color;
       }
-      .se{
+      .se {
         background: $sub2-background-color;
       }
-      div.serial table.se th{
-        border-bottom:none;
+      div.serial table.se th {
+        border-bottom: none;
       }
-      
-    
-      .feedback_link a{
+
+      .feedback_link a {
         background: none;
       }
     }

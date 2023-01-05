@@ -1,108 +1,107 @@
 // タイムシフト
 
-@import '../../../parts/_default';
-@import '../../../parts/_dropdown';
+@import "../../../parts/_default";
+@import "../../../parts/_dropdown";
 @import "../../../parts/_button";
 
-.niconico-darkmode-setting-true{
-  [class*="___timeshift-reservations-page___"]{
+.niconico-darkmode-setting-true {
+  [class*="___timeshift-reservations-page___"] {
     background: $main-background-color;
     color: $main-text-color;
 
-    a{
+    a {
       color: $main-text-color;
-      &:hover{
+      &:hover {
         color: $main-url-color;
       }
-      &:visited{
+      &:visited {
         color: $sub-1-text-color;
       }
     }
 
     // メイン
-    [class*="___header___"]{
-      [class*="___counter___"]{
-        .score{
+    [class*="___header___"] {
+      [class*="___counter___"] {
+        .score {
           color: $main-text-color;
         }
       }
 
-      [class*="___list-controller___"]{
-        [class*="___toggle-button___"]{
+      [class*="___list-controller___"] {
+        [class*="___toggle-button___"] {
           background-color: $nico-black;
           color: $sub-1-text-color;
           border-color: $border-background-color;
 
-          svg path{
+          svg path {
             fill: $sub-1-text-color;
           }
-          span{
+          span {
             color: $sub-1-text-color;
           }
 
-          &:hover{
+          &:hover {
             background-color: $hover-background-color;
 
-            svg path{
+            svg path {
               fill: $sub-1-text-color;
             }
-            span{
+            span {
               color: $sub-1-text-color;
             }
           }
 
-          &::after{
+          &::after {
             filter: $invert;
           }
         }
 
-        [class*="___list-box___"]{
+        [class*="___list-box___"] {
           background-color: $nico-black;
 
-          li{
-            &:hover{
+          li {
+            &:hover {
               background-color: $hover-background-color;
             }
           }
         }
-        [class*="___target___"]{
+        [class*="___target___"] {
           background-color: $nico-black;
-          [class*="___item___"]{
-            [class*="___label___"]{
+          [class*="___item___"] {
+            [class*="___label___"] {
               color: $sub-1-text-color;
             }
-            [class*="___radio-group___"]{
-              [class*="___label___"]{
+            [class*="___radio-group___"] {
+              [class*="___label___"] {
                 color: $main-text-color;
-                &::before{
+                &::before {
                   border-color: $border-background-color;
                 }
-                &::after{
+                &::after {
                   background: none;
                 }
 
-                &:hover{
+                &:hover {
                   color: $main-url-color;
                 }
               }
-              [class*="___target___"]:checked ~ [class*="___label___"]{
-                &::after{
+              [class*="___target___"]:checked ~ [class*="___label___"] {
+                &::after {
                   background-color: $main-url-color;
                 }
               }
             }
           }
         }
-      } 
+      }
     }
 
-    [class*="___program-card-list___"]{
-      [class*="item"]{
+    [class*="___program-card-list___"] {
+      [class*="item"] {
         border-color: $border-background-color;
 
-        [class*="___program-card___"]{
-
-          [class*="___program-preview___"]{
+        [class*="___program-card___"] {
+          [class*="___program-preview___"] {
             background-image: url(chrome-extension://__MSG_@@extension_id__/images/assets/nicolive_bg.svg);
           }
         }
@@ -110,36 +109,35 @@
     }
 
     // ケバブ
-    [class*="___menu-popup-control___"]{
-      [class*="___toggle-button___"]{
+    [class*="___menu-popup-control___"] {
+      [class*="___toggle-button___"] {
         filter: $invert;
       }
-      [class*="___target___"][class*="___program-menu___"]{
+      [class*="___target___"][class*="___program-menu___"] {
         background: $sub2-background-color;
-        [class*="___delete-reservation-button___"]{
+        [class*="___delete-reservation-button___"] {
           color: $main-text-color;
 
-          &:hover{
+          &:hover {
             background-color: $hover-background-color;
           }
         }
       }
     }
 
-
     // インフォ
-    [class*="___info-anchor___"]{
+    [class*="___info-anchor___"] {
       background-color: $nico-black;
       border-color: $border-background-color;
 
-      [class*="___info-anchor-content___"]{
+      [class*="___info-anchor-content___"] {
         color: $main-text-color;
-        &::after{
+        &::after {
           border-color: transparent transparent transparent $main-text-color;
         }
-        &:hover{
+        &:hover {
           color: $main-url-color;
-          &::after{
+          &::after {
             border-color: transparent transparent transparent $main-url-color;
           }
         }
@@ -147,14 +145,13 @@
     }
 
     // empty
-    [data-code="Empty"]{
-      svg path{
+    [data-code="Empty"] {
+      svg path {
         fill: $sub-1-text-color;
       }
-      [class*="___message___"]{
+      [class*="___message___"] {
         color: $sub-1-text-color;
       }
     }
-
   }
 }

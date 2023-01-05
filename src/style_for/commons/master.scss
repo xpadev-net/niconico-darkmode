@@ -36,114 +36,117 @@
 @import "tree/_istallia_extensions.scss"; //イスターリャの拡張機能関連
 
 //以下共通
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background: $main-background-color;
 
-  .c-globalHeader{
-    h1 a svg g path{
+  .c-globalHeader {
+    h1 a svg g path {
       fill: $main-text-color;
     }
   }
-  .c-globalMenuArea{
-    li a{
+  .c-globalMenuArea {
+    li a {
       color: $main-text-color;
-      span svg{
-        path:not([fill="none"]){
+      span svg {
+        path:not([fill="none"]) {
           fill: $main-text-color;
         }
       }
     }
-    li[data-is-active=true]{
+    li[data-is-active="true"] {
       border-bottom-color: $main-url-color;
-      a{
+      a {
         color: $main-url-color;
-        span svg{
-          path:not([fill="none"]){
+        span svg {
+          path:not([fill="none"]) {
             fill: $main-url-color;
           }
         }
       }
     }
-    li:hover{
-      a{
+    li:hover {
+      a {
         color: $main-url-color;
-        span svg{
-          path:not([fill="none"]){
+        span svg {
+          path:not([fill="none"]) {
             fill: $main-url-color;
           }
         }
       }
     }
-    li[data-is-active=true]:hover{
+    li[data-is-active="true"]:hover {
       border-bottom-color: $main-url-color;
     }
   }
 
-  .c-adsBillboard{ //広告バナー
+  .c-adsBillboard {
+    //広告バナー
     background: none;
   }
 
-  .c-SearchMenu{ //検索バー
-    .SearchMenuInner{
-      .searchForm{
-        .searchFormSelecter{
+  .c-SearchMenu {
+    //検索バー
+    .SearchMenuInner {
+      .searchForm {
+        .searchFormSelecter {
           border-color: $border-background-color;
           background-color: $sub2-background-color;
           color: $main-text-color;
         }
-        .searchFormInput{
+        .searchFormInput {
           border-color: $border-background-color;
           background-color: $sub2-background-color;
           color: $main-text-color;
         }
-        .searchFormButtonIcon{
+        .searchFormButtonIcon {
           border-color: $border-background-color;
           background-color: $sub2-background-color;
-          svg{
+          svg {
             fill: $border-background-color;
           }
         }
       }
-      .worksList{
-        .worksListInner{
+      .worksList {
+        .worksListInner {
           color: $main-text-color;
           border-color: $border-background-color;
-          .worksLinkArea{
-            .worksIcon svg path{
+          .worksLinkArea {
+            .worksIcon svg path {
               fill: $main-text-color;
             }
-            .worksLink{
+            .worksLink {
               background: $nico-black;
-              li a{
+              li a {
                 color: $main-text-color;
               }
             }
           }
         }
       }
-      .myPageLink{
-        .myPageLinkInner{
+      .myPageLink {
+        .myPageLinkInner {
           border-color: $border-background-color;
-          span a{
+          span a {
             color: $main-text-color;
           }
         }
       }
-      .myPageLink:hover{
+      .myPageLink:hover {
         opacity: 1;
-        .myPageLinkInner{
-          span a{
-            opacity: .6;
+        .myPageLinkInner {
+          span a {
+            opacity: 0.6;
           }
         }
       }
     }
   }
 
-  .c-pageTop{ //サイト上部へ戻る
-    .pageTopArea span{
+  .c-pageTop {
+    //サイト上部へ戻る
+    .pageTopArea span {
       color: $sub-2-text-color;
-      .icon svg path{
+      .icon svg path {
         fill: $sub-2-text-color;
       }
     }
@@ -151,89 +154,87 @@
 
   .p-topPage, //サービス概要
   .p-contentsTreePage,
-  .p-cppPage{
-    .mainInfo{ 
+  .p-cppPage {
+    .mainInfo {
       border: none;
       background: $nico-black;
-  
-      .mainInfoCaption span{
+
+      .mainInfoCaption span {
         color: $main-text-color;
       }
-      .mainInfoTxt{
+      .mainInfoTxt {
         color: $sub-1-text-color;
       }
-      .mainVisualTable{
-        .mainVisualTableAnchor{
+      .mainVisualTable {
+        .mainVisualTableAnchor {
           color: $main-text-color;
-          svg{
+          svg {
             fill: $main-text-color;
           }
-          a{
+          a {
             color: $main-text-color;
-            &:hover{
+            &:hover {
               color: $main-url-color;
             }
           }
         }
-        .mainVisualTableText{
+        .mainVisualTableText {
           color: $sub-1-text-color;
-          .mainVisualTableTextAnchor{
+          .mainVisualTableTextAnchor {
             color: $sub-1-text-color;
-            &:hover{
+            &:hover {
               color: $main-url-color;
             }
           }
         }
       }
 
-      .mainVisualArea{
-        .mainInfoCaption{
+      .mainVisualArea {
+        .mainInfoCaption {
           border-color: $border-background-color;
 
-          .sub, .serviceName{
+          .sub,
+          .serviceName {
             color: $main-text-color;
           }
         }
       }
-      .mainVisualLead{
+      .mainVisualLead {
         color: $main-text-color;
       }
-      .mainVisualList{
-        li{
+      .mainVisualList {
+        li {
           color: $sub-1-text-color;
         }
       }
-      .mainVisualDescription1{
+      .mainVisualDescription1 {
         border-color: $border-background-color;
-        h2{
+        h2 {
           color: $nico-cresyo;
         }
       }
-      .mainVisualDescription2{
+      .mainVisualDescription2 {
         border-color: $border-background-color;
-        h2{
+        h2 {
           color: $nico-point;
         }
       }
-      
+
       .treeAnchor,
-      .cppAnchor{
+      .cppAnchor {
         .treeAnchorIcon,
-        .cppAnchorIcon{
-          svg{
+        .cppAnchorIcon {
+          svg {
             color: $main-text-color;
           }
         }
-        a{
+        a {
           color: $main-text-color;
-          &:hover{
+          &:hover {
             color: $main-url-color;
           }
         }
       }
-
-
     }
   }
-
 }

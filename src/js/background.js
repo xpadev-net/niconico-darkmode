@@ -5,105 +5,104 @@ const MANIFEST_DATA = chrome.runtime.getManifest();
 const EX_VERSION = MANIFEST_DATA.version + "";
 
 // 初期化・設定同期
-chrome.runtime.onInstalled.addListener(function() {
-  console.log("first script")
+chrome.runtime.onInstalled.addListener(function () {
+  console.log("first script");
   chrome.storage.local.get(["version"], function (items) {
     //バージョンが違ったらセット
     if (items.version != EX_VERSION) {
       chrome.storage.local.set({
-        "version": EX_VERSION
+        version: EX_VERSION,
       });
       chrome.storage.local.get(["setting"], function (items) {
         if (items.setting == undefined) {
           chrome.storage.local.set({
-            "setting": "true"
-          })
+            setting: "true",
+          });
         }
       });
       chrome.storage.local.get(["social_top"], function (items) {
         if (items.social_top == undefined) {
           chrome.storage.local.set({
-            "social_top": "true"
-          })
+            social_top: "true",
+          });
         }
       });
       chrome.storage.local.get(["set_osdarkmode"], function (items) {
         if (items.set_osdarkmode == undefined) {
           chrome.storage.local.set({
-            "set_osdarkmode": "false"
-          })
+            set_osdarkmode: "false",
+          });
         }
       });
-    };
+    }
   });
 });
 
 // 設定変更リクエストの受け取り　ページ → 拡張機能
-chrome.runtime.onMessage.addListener(
-  function (request, sender, sendResponse) {
-    console.log(request.request_change_settings);
-    change_settings(request.request_change_settings);
-    sendResponse({ farewell: "niconico Darkmode 設定変更を受け付けました" });
-    return true;
-  }
-);
-
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  console.log(request.request_change_settings);
+  change_settings(request.request_change_settings);
+  sendResponse({ farewell: "niconico Darkmode 設定変更を受け付けました" });
+  return true;
+});
 
 // 設定変更　拡張機能 → ストレージ
 function change_settings(request_setting_param) {
   switch (request_setting_param) {
     case "req_nicodark_to_true":
       chrome.storage.local.set({
-        "setting": "true"
+        setting: "true",
       });
       send_change_settings("nicodark_to_true");
       break;
 
     case "req_nicodark_to_false":
       chrome.storage.local.set({
-        "setting": "false"
+        setting: "false",
       });
       send_change_settings("nicodark_to_false");
       break;
 
     case "req_nicodark_top_to_true":
       chrome.storage.local.set({
-        "social_top": "true"
+        social_top: "true",
       });
       send_change_settings("nicodark_top_to_true");
       break;
 
     case "req_nicodark_top_to_false":
       chrome.storage.local.set({
-        "social_top": "false"
+        social_top: "false",
       });
       send_change_settings("nicodark_top_to_false");
       break;
 
     case "req_nicodark_osset_to_true":
       chrome.storage.local.set({
-        "set_osdarkmode": "true"
+        set_osdarkmode: "true",
       });
       send_change_settings("nicodark_osset_to_true");
       break;
 
     case "req_nicodark_osset_to_false":
       chrome.storage.local.set({
-        "set_osdarkmode": "false"
+        set_osdarkmode: "false",
       });
       send_change_settings("nicodark_osset_to_false");
       break;
-  
 
     default:
       break;
   }
 }
 
-
 // 設定反映 拡張機能 →　ページ
 function send_change_settings(send_setting_param) {
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, {change_settings: send_setting_param}, function(){});
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    chrome.tabs.sendMessage(
+      tabs[0].id,
+      { change_settings: send_setting_param },
+      function () {}
+    );
   });
 }

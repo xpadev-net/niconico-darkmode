@@ -1,67 +1,68 @@
 /*総合マイページ内ユーザーレベル*/
 
-@import '../../../parts/_default';
+@import "../../../parts/_default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background: $main-background-color;
 
-  #top{
+  #top {
     background: $nico-black;
-    .hd-Wrapper{
-      background:$sub2-background-color;
-      .hd-Title{
+    .hd-Wrapper {
+      background: $sub2-background-color;
+      .hd-Title {
         color: $main-text-color;
       }
     }
-    .mc-Wrapper{
-      .mc-UserInfo{
-        .mc-UserInfo_Label{
+    .mc-Wrapper {
+      .mc-UserInfo {
+        .mc-UserInfo_Label {
           color: $main-text-color;
         }
-        .mc-UserInfo_StatusBar{
+        .mc-UserInfo_StatusBar {
           background: $hover-background-color;
         }
-        .mc-UserInfo_Exp{
-          color:$sub-1-text-color;
+        .mc-UserInfo_Exp {
+          color: $sub-1-text-color;
         }
       }
-      .mc-Hint{
-        .mc-Hint_Disp{
+      .mc-Hint {
+        .mc-Hint_Disp {
           background: $sub2-background-color;
-          .mc-Hint_Disp-title,.mc-Hint_Disp-conditions li{
+          .mc-Hint_Disp-title,
+          .mc-Hint_Disp-conditions li {
             color: $sub-1-text-color;
           }
         }
-        .mc-Hint_Disp::before{
+        .mc-Hint_Disp::before {
           border-right: 16px solid transparent;
           border-bottom: 16px solid $sub2-background-color;
           border-left: 16px solid transparent;
         }
       }
-      .mc-Privilege{
+      .mc-Privilege {
         border-color: $border-background-color;
-        .mc-Privilege_Title{
+        .mc-Privilege_Title {
           color: $main-text-color;
         }
-        .mc-Privilege_List{
-          .mc-Privilege_Level{
-            .mc-Privilege_Level-label{
+        .mc-Privilege_List {
+          .mc-Privilege_Level {
+            .mc-Privilege_Level-label {
               background: $hover-background-color;
               color: $main-text-color;
             }
           }
-          .mc-Privilege_Disp{
-            .mc-Privilege_Disp-title{
-              .mc-Privilege_Disp-titleImg{
-                img{
+          .mc-Privilege_Disp {
+            .mc-Privilege_Disp-title {
+              .mc-Privilege_Disp-titleImg {
+                img {
                   filter: $invert;
                 }
               }
-              .mc-Privilege_Disp-titleText{
+              .mc-Privilege_Disp-titleText {
                 color: $main-text-color;
               }
             }
-            .mc-Privilege_Disp-text{
+            .mc-Privilege_Disp-text {
               color: $sub-1-text-color;
             }
           }

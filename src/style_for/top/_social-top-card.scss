@@ -1,89 +1,88 @@
-@import '../parts/_default';
+@import "../parts/_default";
 
-.niconico-darkmode-setting-true{
-  .TopPage-stageArea{
-    .AuroraVisionCard{
+.niconico-darkmode-setting-true {
+  .TopPage-stageArea {
+    .AuroraVisionCard {
       background-color: $nico-black;
-      .AuroraVisionCard-meta{
-        .AuroraVisionCard-metaCatch{
+      .AuroraVisionCard-meta {
+        .AuroraVisionCard-metaCatch {
           color: $main-text-color;
         }
       }
-      .AuroraVisionCard-uploader{
+      .AuroraVisionCard-uploader {
         color: $main-text-color;
       }
-      .AuroraVisionCard-uploader[data-is-hover="true"]{
+      .AuroraVisionCard-uploader[data-is-hover="true"] {
         color: $main-url-color;
       }
     }
-    .AuroraVisionCard[data-is-hover="true"]{
-      .AuroraVisionCard-meta{
-        .AuroraVisionCard-metaCatch{
+    .AuroraVisionCard[data-is-hover="true"] {
+      .AuroraVisionCard-meta {
+        .AuroraVisionCard-metaCatch {
           color: $main-url-color;
         }
       }
     }
-    .ContentsPickupContainer{
-      .ContentsPickupCard{
+    .ContentsPickupContainer {
+      .ContentsPickupCard {
         background-color: $nico-black;
-        .ContentsPickupCard-content{
+        .ContentsPickupCard-content {
           color: $main-text-color;
-          .ContentsPickupCard-metaPickupComment{
+          .ContentsPickupCard-metaPickupComment {
             color: $sub-1-text-color;
           }
         }
-        .ContentsPickupCard-content:hover{
+        .ContentsPickupCard-content:hover {
           color: $main-url-color;
         }
-        .ContentsPickupCard-footerUploader{
+        .ContentsPickupCard-footerUploader {
           color: $main-text-color;
         }
-        .ContentsPickupCard-footerUploader:hover{
+        .ContentsPickupCard-footerUploader:hover {
           color: $main-url-color;
         }
       }
     }
   }
-  .TopPage-section{
-    .ContentThumbnail{
+  .TopPage-section {
+    .ContentThumbnail {
       border-radius: 4px;
     }
   }
 }
 
 /* skelton */
-.niconico-darkmode-setting-true{
-  .ContentItemSkeleton-thumbnail{
+.niconico-darkmode-setting-true {
+  .ContentItemSkeleton-thumbnail {
     filter: $invert;
   }
-  .SkeletonLine{
+  .SkeletonLine {
     background-color: $nico-black;
   }
-  .NicoAdCardSkeleton{
+  .NicoAdCardSkeleton {
     filter: $invert;
   }
 }
 
-
 // 超会議
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   // ビジョン：固定カード
-  .LockedContentsPickupContainer{
-    .LockedContentsPickupContainer-card{
+  .LockedContentsPickupContainer {
+    .LockedContentsPickupContainer-card {
       background-color: $nico-black;
-      .ContentsPickupCard-content{
+      .ContentsPickupCard-content {
         color: $main-text-color;
-        .ContentsPickupCard-metaPickupComment{
+        .ContentsPickupCard-metaPickupComment {
           color: $sub-1-text-color;
         }
       }
-      .ContentsPickupCard-content:hover{
+      .ContentsPickupCard-content:hover {
         color: $main-url-color;
       }
-      .ContentsPickupCard-footerUploader{
+      .ContentsPickupCard-footerUploader {
         color: $main-text-color;
       }
-      .ContentsPickupCard-footerUploader:hover{
+      .ContentsPickupCard-footerUploader:hover {
         color: $main-url-color;
       }
     }

@@ -1,218 +1,228 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_button';
-@import '../parts/_textarea';
-@import '../parts/_dropdown';
-@import '../parts/_footer';
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_button";
+@import "../parts/_textarea";
+@import "../parts/_dropdown";
+@import "../parts/_footer";
 
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
   color: $main-text-color !important;
 
-  .WatchAppContainer{
-    .EditorMenuContainer{
+  .WatchAppContainer {
+    .EditorMenuContainer {
       //投稿者メニュー
       background: $sub2-background-color;
-      .EditorMenuContainer-menuBox{
-        .EditorMenuContainer-menuBoxMenu{
+      .EditorMenuContainer-menuBox {
+        .EditorMenuContainer-menuBoxMenu {
           border: none;
           background: none;
           color: $sub-1-text-color;
-          .icon, .garage g{
+          .icon,
+          .garage g {
             fill: $sub-1-text-color;
           }
-          .arrow:after{
+          .arrow:after {
             border-color: $sub-1-text-color transparent transparent;
           }
 
-          .EditorMenuContainer-menuBoxMenuChild{
+          .EditorMenuContainer-menuBoxMenuChild {
             border-color: $border-background-color;
-            .menuItem{
+            .menuItem {
               background: $nico-black;
               border-color: $border-background-color;
               color: $main-text-color;
-              .Link, .RouterLink{
+              .Link,
+              .RouterLink {
                 color: $main-text-color;
               }
             }
-            .menuItem:hover, .Link:hover, .RouterLink:hover{
+            .menuItem:hover,
+            .Link:hover,
+            .RouterLink:hover {
               background: $hover-background-color;
             }
           }
         }
-        .EditorMenuContainer-menuBoxMenu:hover{
+        .EditorMenuContainer-menuBoxMenu:hover {
           background: $hover-background-color;
           color: $main-text-color;
         }
       }
-      .EditorMenuContainer-menuBox>li:first-child{
+      .EditorMenuContainer-menuBox > li:first-child {
         background: none !important;
         color: $main-text-color !important;
       }
-      .EditorMenuContainer-menuBox>li:first-child:hover{
+      .EditorMenuContainer-menuBox > li:first-child:hover {
         background: none;
         color: $main-text-color;
       }
     }
-    .CommunityEditorMenuContainer{
+    .CommunityEditorMenuContainer {
       //コミュニティ動画
       background: $nico-com;
-      a{
+      a {
         color: $main-text-color;
         text-decoration: underline;
       }
     }
 
     //Watch APP Main
-    .WatchAppContainer-main{
+    .WatchAppContainer-main {
       //タイトル
-      .HeaderContainer{
+      .HeaderContainer {
         background-color: $main-background-color;
-        .SeriesBreadcrumbs{
-          a{
+        .SeriesBreadcrumbs {
+          a {
             color: $main-url-color;
           }
         }
-        .VideoTitle{
+        .VideoTitle {
           color: $main-text-color;
         }
-        .VideoDescriptionContainer{
-          .VideoDescriptionExpander{
-            .VideoDescriptionExpander-switch{
+        .VideoDescriptionContainer {
+          .VideoDescriptionExpander {
+            .VideoDescriptionExpander-switch {
               color: $main-url-color;
-              background: linear-gradient(90deg,hsla(0,0%,95.7%,0),$main-background-color 16%);
+              background: linear-gradient(
+                90deg,
+                hsla(0, 0%, 95.7%, 0),
+                $main-background-color 16%
+              );
             }
-            .VideoDescriptionExpander-switchExpand::before{
+            .VideoDescriptionExpander-switchExpand::before {
               border-color: $main-url-color transparent transparent;
             }
-            .VideoDescriptionExpander-switchCollapse::before{
+            .VideoDescriptionExpander-switchCollapse::before {
               border-color: transparent transparent $main-url-color;
             }
           }
-          .VideoDescription.is-expanded{
-            a{
+          .VideoDescription.is-expanded {
+            a {
               color: $main-url-color;
             }
-            .VideoDescription-html{
-              span[style*="color: #262626;"]{
+            .VideoDescription-html {
+              span[style*="color: #262626;"] {
                 color: $main-text-color !important;
               }
-              span[style*="color: #ffffff;"],span[style*="color: white;"]{
+              span[style*="color: #ffffff;"],
+              span[style*="color: white;"] {
                 color: #000000 !important;
               }
-              span[style*="color: #000000;"],span[style*="color: black;"]{
+              span[style*="color: #000000;"],
+              span[style*="color: black;"] {
                 color: #ffffff !important;
               }
             }
-            .VideoDescriptionSeriesContainer{
+            .VideoDescriptionSeriesContainer {
               border-top: 2px solid $border-background-color;
-              .VideoDescriptionSeriesContainer-label{
+              .VideoDescriptionSeriesContainer-label {
                 color: $main-text-color;
               }
             }
           }
         }
-        .VideoOwnerInfo{
-          a{
+        .VideoOwnerInfo {
+          a {
             color: $main-text-color;
           }
-          .VideoOwnerUploadedLink{
+          .VideoOwnerUploadedLink {
             border: 1px solid $sub2-background-color;
             background: $sub2-background-color;
           }
 
-					.NC-CreatorSupportAccepting{
-						.NC-CreatorSupportAccepting-content{
-							background-color: $sub2-background-color;
-						}
-						.NC-CreatorSupportAccepting-arrow{
-							background-color: $sub2-background-color;
-						}
-					}
+          .NC-CreatorSupportAccepting {
+            .NC-CreatorSupportAccepting-content {
+              background-color: $sub2-background-color;
+            }
+            .NC-CreatorSupportAccepting-arrow {
+              background-color: $sub2-background-color;
+            }
+          }
         }
-        .VideoMetaContainer{
+        .VideoMetaContainer {
           .VideoUploadDateMeta-title,
           .VideoViewCountMeta-title,
           .CommentCountMeta-title,
           .MylistCountMeta-title,
           .VideoGenreMeta-title,
-          .GenreRankMeta-genreName{
+          .GenreRankMeta-genreName {
             color: $sub-2-text-color;
           }
           .VideoUploadDateMeta-dateTimeLabel,
           .VideoViewCountMeta-counter,
           .CommentCountMeta-counter,
           .MylistCountMeta-counter,
-          .GenreRankMeta-yesterdayRank{
+          .GenreRankMeta-yesterdayRank {
             color: $sub-1-text-color;
           }
           .VideoGenreMeta-genreName a,
-          .GenreRankMeta-highestPast{
+          .GenreRankMeta-highestPast {
             color: $main-url-color;
           }
-          .GenreRankMetaOverflowMenuContainer-menu{
+          .GenreRankMetaOverflowMenuContainer-menu {
             border: 1px solid $border-background-color;
-            .GenreRankMetaOverflowMenuContainer-header{
+            .GenreRankMetaOverflowMenuContainer-header {
               background: $main-background-color;
             }
-            .GenreRankMetaOverflowMenuContainer-body{
+            .GenreRankMetaOverflowMenuContainer-body {
               background: $nico-black;
-              .GenreRankMetaOverflowMenuContainer-menuBlock:not(:first-of-type){
+              .GenreRankMetaOverflowMenuContainer-menuBlock:not(:first-of-type) {
                 border-top: 1px solid $border-background-color;
               }
             }
           }
-          .VideoMetaOverflowMenuContainer-menu{
+          .VideoMetaOverflowMenuContainer-menu {
             border: 1px solid $border-background-color;
             background: $nico-black;
-            a{
+            a {
               color: $main-url-color;
             }
-            .VideoMetaOverflowMenuContainer-menuBlock:not(:first-of-type){
+            .VideoMetaOverflowMenuContainer-menuBlock:not(:first-of-type) {
               border-top: 1px solid $border-background-color;
             }
           }
         }
-        .VideoMetaContainer>*,
-        .VideoMetaOverflowMenuContainer{
+        .VideoMetaContainer > *,
+        .VideoMetaOverflowMenuContainer {
           border-left: 1px solid $border-background-color;
           box-shadow: -1px 0 0 0 $border-background-color;
-         }
-        .TagContainer{
-          .TagContainer-TagEditButtonArea{
-            .TagContainer-editButton{
+        }
+        .TagContainer {
+          .TagContainer-TagEditButtonArea {
+            .TagContainer-editButton {
               background-color: $sub2-background-color;
               color: $main-text-color;
             }
-            .TagContainer-editButton:hover{
+            .TagContainer-editButton:hover {
               background-color: $main-url-color !important;
             }
           }
-          .TagContainer-area{
-            .TagItem{
+          .TagContainer-area {
+            .TagItem {
               background-color: $sub2-background-color;
               border: 1px solid $sub2-background-color;
-              a{
+              a {
                 color: $main-text-color;
               }
             }
-            .TagItem.is-editing{
-              .TagItem-name{
+            .TagItem.is-editing {
+              .TagItem-name {
                 color: $main-text-color;
               }
             }
           }
         }
-        .TagContainer.is-editing{
+        .TagContainer.is-editing {
           background-color: $nico-black;
         }
-        .OwnerNicoliveBannerContainer{
-          .OwnerNicoliveBanner{
+        .OwnerNicoliveBannerContainer {
+          .OwnerNicoliveBanner {
             background: $sub2-background-color;
-            .OwnerNicoliveBanner-time span{
+            .OwnerNicoliveBanner-time span {
               color: $sub-1-text-color;
             }
-            .OwnerNicoliveBanner-title{
+            .OwnerNicoliveBanner-title {
               color: $main-text-color;
             }
           }
@@ -220,74 +230,85 @@
       }
 
       //プレイヤー
-      .MainContainer{
-        .PlayerContainer{
-          .ControllerBoxContainer{
-            .ControllerBoxCommentAreaContainer{
+      .MainContainer {
+        .PlayerContainer {
+          .ControllerBoxContainer {
+            .ControllerBoxCommentAreaContainer {
               background: none !important;
               border-right: none !important;
               .CommentPostContainer-commandInput,
-              .CommentPostContainer-commentInput{
+              .CommentPostContainer-commentInput {
                 border: none;
                 background-color: $nico-black !important;
                 border-right: 1px solid $border-background-color;
                 .CommentCommandInput,
-                .CommentInput-textarea{
+                .CommentInput-textarea {
                   color: $main-text-color !important;
                   background: none !important;
                 }
               }
-              .CommentCommandPaletteContainer{
+              .CommentCommandPaletteContainer {
                 background-color: #252525 !important;
-                .CommentCommandPaletteNode[data-type=layout],
-                .CommentCommandPaletteNode[data-type=size]{
-                  background-color: #35393B !important;
+                .CommentCommandPaletteNode[data-type="layout"],
+                .CommentCommandPaletteNode[data-type="size"] {
+                  background-color: #35393b !important;
                   border: 2px solid #666 !important;
                 }
-                .CommentCommandPaletteNode svg{
+                .CommentCommandPaletteNode svg {
                   fill: whitesmoke !important;
                 }
               }
-              .EasyCommentContainer{
+              .EasyCommentContainer {
                 background: none !important;
-                .EasyCommentContainer-nextButtonBox{
-                  background: linear-gradient(90deg,hsla(0,0%,100%,0),rgba(0, 0, 0, 0.94),black) !important;
-                  .EasyCommentContainer-nextButton{
+                .EasyCommentContainer-nextButtonBox {
+                  background: linear-gradient(
+                    90deg,
+                    hsla(0, 0%, 100%, 0),
+                    rgba(0, 0, 0, 0.94),
+                    black
+                  ) !important;
+                  .EasyCommentContainer-nextButton {
                     background: none;
-                    svg{
+                    svg {
                       fill: $main-text-color;
                     }
                   }
                 }
-                .EasyCommentContainer-prevButtonBox{
-                  background: linear-gradient(270deg,hsla(0,0%,100%,0),rgba(0, 0, 0, 0.94),black) !important;
-                  .EasyCommentContainer-prevButton{
+                .EasyCommentContainer-prevButtonBox {
+                  background: linear-gradient(
+                    270deg,
+                    hsla(0, 0%, 100%, 0),
+                    rgba(0, 0, 0, 0.94),
+                    black
+                  ) !important;
+                  .EasyCommentContainer-prevButton {
                     background: none;
-                    svg{
+                    svg {
                       fill: $main-text-color;
                     }
-                  } 
+                  }
                 }
-                .EasyCommentButton{
+                .EasyCommentButton {
                   background: $nico-black !important;
                   color: $main-text-color !important;
                   border: none !important;
                 }
               }
 
-              .CommentPostAttention{ //コメント投稿前確認
+              .CommentPostAttention {
+                //コメント投稿前確認
                 background-color: $nico-black;
                 color: $main-text-color;
 
-                .CommentPostAttention-message{
+                .CommentPostAttention-message {
                   border-color: $border-background-color;
                 }
-                .CommentPostAttention-close{
+                .CommentPostAttention-close {
                   color: $main-url-color;
                 }
               }
             }
-            .CommentShutter{
+            .CommentShutter {
               background-color: rgba(0, 0, 0, 0.6) !important;
               color: $main-text-color;
             }
@@ -295,28 +316,28 @@
         }
 
         //プレイヤー右パネル
-        .MainContainer-playerPanel{
+        .MainContainer-playerPanel {
           background: $player-black;
 
-          .VideoMenuContainer{
+          .VideoMenuContainer {
             border-bottom: 1px solid $nico-black;
-            .VideoMenuContainer-areaLeft{
+            .VideoMenuContainer-areaLeft {
               background: none;
 
               //いいね！
-              .VideoMenuLikeFieldContainer{
-                .LikeActionButton{
+              .VideoMenuLikeFieldContainer {
+                .LikeActionButton {
                   background: none;
                   color: $main-text-color;
 
-                  .LikeIcon.LikeActionButton-icon{
-                    use{
+                  .LikeIcon.LikeActionButton-icon {
+                    use {
                       filter: $invert;
                     }
                   }
-                  &.is-liked{
-                    .LikeIcon.LikeActionButton-icon{
-                      use{
+                  &.is-liked {
+                    .LikeIcon.LikeActionButton-icon {
+                      use {
                         filter: none;
                       }
                     }
@@ -325,145 +346,145 @@
               }
 
               //ギフト
-              .VideoMenuGiftContainer{
-                .GiftButton{
+              .VideoMenuGiftContainer {
+                .GiftButton {
                   background: none;
                   color: $main-text-color;
 
-                  svg > path{
+                  svg > path {
                     fill: $main-text-color;
                   }
                 }
               }
 
               //マイリス・広告
-              .VideoMenuContainer-button{
+              .VideoMenuContainer-button {
                 fill: $main-text-color !important;
               }
-              .VideoMenuContainer-button:hover:not([disabled]){
+              .VideoMenuContainer-button:hover:not([disabled]) {
                 fill: $main-url-color !important;
               }
-              .VideoMenuContainer-uadBalloonWrapper{
-                .UadButtonBalloon{
+              .VideoMenuContainer-uadBalloonWrapper {
+                .UadButtonBalloon {
                   background: $main-background-color;
                   border: 1px solid $border-background-color;
-                  a{
+                  a {
                     color: $main-url-color;
                   }
                 }
-                .UadButtonBalloon:before{
+                .UadButtonBalloon:before {
                   border: none;
                 }
-                .UadButtonBalloon:after{
+                .UadButtonBalloon:after {
                   border-right-color: $border-background-color;
                 }
               }
             }
-            .VideoMenuContainer-areaRight{
+            .VideoMenuContainer-areaRight {
               background: none;
 
               //共有
-              .SharePanelVisibleActionButton{
-                svg{
-                  transition: fill .3s ease .3s;
+              .SharePanelVisibleActionButton {
+                svg {
+                  transition: fill 0.3s ease 0.3s;
                   fill: $main-text-color;
                 }
 
-                &:hover{
+                &:hover {
                   background: none;
-                  svg{
+                  svg {
                     fill: $main-url-color;
                   }
                 }
               }
             }
           }
-          .VideoMenuContainer:after{
+          .VideoMenuContainer:after {
             border-bottom: none;
           }
-          .PlayerPanelContainer{
+          .PlayerPanelContainer {
             background: none;
-            .PlayerPanelContainer-tab{
-              .PlayerPanelContainer-tabItem{
+            .PlayerPanelContainer-tab {
+              .PlayerPanelContainer-tabItem {
                 color: $main-text-color;
-                border-bottom: 3px solid $nico-black
+                border-bottom: 3px solid $nico-black;
               }
-              .PlayerPanelContainer-tabItem.current{
+              .PlayerPanelContainer-tabItem.current {
                 border-bottom: 3px solid $main-url-color;
               }
             }
-            .PlayerPanelContainer-content{
-              .VideoListPanelContainer{
-                a{
+            .PlayerPanelContainer-content {
+              .VideoListPanelContainer {
+                a {
                   color: $main-text-color;
                 }
-                .NextPlayVideoContainer{
+                .NextPlayVideoContainer {
                   border-bottom: 1px solid $nico-black;
                 }
                 .NextPlayVideoContainer-note,
                 .WatchRecommendation-heading,
-                .NextPlayVideoContainer-continuous{
+                .NextPlayVideoContainer-continuous {
                   color: $main-text-color;
                 }
               }
-              .CommentPanelContainer{
+              .CommentPanelContainer {
                 background: none;
-                .CommentPanelMenuContainer{
+                .CommentPanelMenuContainer {
                   border-color: $nico-black;
 
-                  .CommentPanelMenuContainer-pastCommentMenu{
+                  .CommentPanelMenuContainer-pastCommentMenu {
                     background: none;
                   }
                 }
-                
-                .CommentPanelDataGrid{
+
+                .CommentPanelDataGrid {
                   color: $main-text-color;
-                  .CommentPanelDataGrid-Body{
-                    &::-webkit-scrollbar{
+                  .CommentPanelDataGrid-Body {
+                    &::-webkit-scrollbar {
                       background: $player-black;
                     }
-                    &::-webkit-scrollbar-thumb{
+                    &::-webkit-scrollbar-thumb {
                       background: $nico-black;
-                      &:hover{
+                      &:hover {
                         background: $hover-background-color;
                       }
                     }
                   }
 
-                  .CommentPanelDataGrid-HeaderCell{
+                  .CommentPanelDataGrid-HeaderCell {
                     background: none;
                     border-right: 1px solid $nico-black;
                   }
-                  .DataGrid-Table{
-                    .CommentPanelDataGrid-TableCell{
+                  .DataGrid-Table {
+                    .CommentPanelDataGrid-TableCell {
                       border-right: none;
                     }
-                    [data-row-nicoru-rank="1"]{
+                    [data-row-nicoru-rank="1"] {
                       background: $nicoru-grade-1;
                     }
-                    [data-row-nicoru-rank="2"]{
+                    [data-row-nicoru-rank="2"] {
                       background: $nicoru-grade-2;
                     }
-                    [data-row-nicoru-rank="3"]{
+                    [data-row-nicoru-rank="3"] {
                       background: $nicoru-grade-3;
                     }
-                    [data-row-nicoru-rank="4"]{
+                    [data-row-nicoru-rank="4"] {
                       background: $nicoru-grade-4;
                       color: black;
                     }
-                    [data-row-nicoru-rank="5"]{
+                    [data-row-nicoru-rank="5"] {
                       background: $nicoru-grade-5;
                       color: black;
                     }
 
                     //ニコる
-                    .NicoruCell{
-                      .NicoruIcon.is-gray circle{
+                    .NicoruCell {
+                      .NicoruIcon.is-gray circle {
                         fill: $player-black;
                       }
                     }
                   }
-                  .DataGrid-Table :hover{
+                  .DataGrid-Table :hover {
                     background: $sub2-background-color;
                     color: $main-text-color;
                   }
@@ -471,12 +492,12 @@
               }
             }
           }
-          .OwnerEditPanelContainer{
+          .OwnerEditPanelContainer {
             //TODO 移植のみ／SCSS書き直し
-            .OwnerEditPanel{
+            .OwnerEditPanel {
               background: $sub2-background-color !important;
             }
-            .OwnerEditButton{
+            .OwnerEditButton {
               background: $hover-background-color !important;
               border: none !important;
               color: $main-text-color !important;
@@ -484,115 +505,115 @@
             .OwnerEditPanelHeader-left span {
               color: $main-text-color !important;
             }
-            .CommentPanelDataGrid{
+            .CommentPanelDataGrid {
               color: $main-text-color;
-              .CommentPanelDataGrid-HeaderCell{
+              .CommentPanelDataGrid-HeaderCell {
                 background: $nico-black;
                 border-right: 1px solid $sub-3-text-color;
               }
-              .DataGrid-Table{
-                .CommentPanelDataGrid-TableCell{
+              .DataGrid-Table {
+                .CommentPanelDataGrid-TableCell {
                   border-right: 1px solid $sub-3-text-color;
                 }
-                [data-row-nicoru-rank="1"]{
+                [data-row-nicoru-rank="1"] {
                   background: rgb(74, 75, 58);
                 }
                 [data-row-nicoru-rank="2"],
                 [data-row-nicoru-rank="3"],
                 [data-row-nicoru-rank="4"],
-                [data-row-nicoru-rank="5"]{
+                [data-row-nicoru-rank="5"] {
                   color: black;
                 }
               }
-              .DataGrid-Table :hover{
+              .DataGrid-Table :hover {
                 background: $nico-black;
               }
             }
           }
         }
-        .MainContainer-floatingPanel{
-          .NGSettingPanelContainer{
+        .MainContainer-floatingPanel {
+          .NGSettingPanelContainer {
             background: $nico-black;
             color: $main-text-color;
-            .NGSettingPanelContainer-contentTop{
-              .NGSettingPanelContainer-openViewerNGRegisterButton{
+            .NGSettingPanelContainer-contentTop {
+              .NGSettingPanelContainer-openViewerNGRegisterButton {
                 background-color: $sub2-background-color;
               }
-              .NGSettingPanelContainer-openViewerNGRegisterButton:hover{
+              .NGSettingPanelContainer-openViewerNGRegisterButton:hover {
                 background-color: $main-url-color;
               }
               .NGSettingPanelContainer-num,
-              .NGSettingPanelContainer-enableCheckbox{
+              .NGSettingPanelContainer-enableCheckbox {
                 color: $main-url-color;
               }
             }
-            .NGSettingPanelContainer-contentMain{
+            .NGSettingPanelContainer-contentMain {
               background: $nico-black;
-              .ViewerNGListDataGrid-HeaderCell{
+              .ViewerNGListDataGrid-HeaderCell {
                 background: $main-background-color;
                 border-right: 1px solid $border-background-color;
               }
-              .ViewerNGListDataGrid-TableCell{
+              .ViewerNGListDataGrid-TableCell {
                 border-right: 1px solid $border-background-color;
               }
             }
-            .NGSettingPanelContainer-contentModal{
-              .ViewerNGRegister{
+            .NGSettingPanelContainer-contentModal {
+              .ViewerNGRegister {
                 background: $nico-black;
-                .ViewerNGRegister-header{
+                .ViewerNGRegister-header {
                   border-bottom: 1px solid $border-background-color;
                 }
-                .RadioItem-label{
+                .RadioItem-label {
                   color: $main-text-color;
                 }
               }
             }
           }
-          .TwitterPanelContainer{
+          .TwitterPanelContainer {
             background-color: $nico-black;
-            .TwitterAccountPanel{
+            .TwitterAccountPanel {
               background-color: $nico-black;
               color: $main-text-color;
             }
-            .TwitterCaptureSelector{
-              .TwitterCaptureSelector-button{
+            .TwitterCaptureSelector {
+              .TwitterCaptureSelector-button {
                 color: $sub-1-text-color;
                 border: 2px dashed $border-background-color;
               }
-              .TwitterCaptureSelector-button:hover{
+              .TwitterCaptureSelector-button:hover {
                 color: $main-url-color;
                 border: 2px dashed $main-url-color;
               }
             }
           }
-          .SharePanelContainer{
+          .SharePanelContainer {
             background-color: $nico-black;
-            .SharePanelContainer-title{
+            .SharePanelContainer-title {
               color: $sub-1-text-color;
             }
-            .SharePanelContainer-socialButtons{
+            .SharePanelContainer-socialButtons {
               border-color: $border-background-color;
             }
-            .SharePanelContainer-content{
+            .SharePanelContainer-content {
               color: $main-text-color;
-              .SharePanelContainer-linkTimeText{
+              .SharePanelContainer-linkTimeText {
                 border: 1px solid $border-background-color;
                 background-color: $sub2-background-color;
                 color: $main-text-color;
               }
             }
           }
-          .AddVideoListPanelContainer{
-            .AddVideoListPanel-mylist{
+          .AddVideoListPanelContainer {
+            .AddVideoListPanel-mylist {
               background: $nico-black;
-              .AddVideoListPanel-content{
+              .AddVideoListPanel-content {
                 color: $main-text-color;
               }
-              .AddVideoListPanel-itemGroup:not(:first-child){
+              .AddVideoListPanel-itemGroup:not(:first-child) {
                 border-color: $border-background-color;
               }
             }
-            .AddMylistModal{
+            .AddMylistModal {
               background: $nico-black;
             }
           }
@@ -600,62 +621,62 @@
       }
 
       //プレイヤー下
-      .BottomContainer{
+      .BottomContainer {
         background-color: $main-background-color;
-        .Card{
+        .Card {
           background-color: $sub2-background-color;
           .Card-title,
-          .IchibaForWatch_Title_Body{
+          .IchibaForWatch_Title_Body {
             color: $main-text-color;
           }
         }
-        .BottomMainContainer{
-          .ContentTreeContainer{
-            a{
+        .BottomMainContainer {
+          .ContentTreeContainer {
+            a {
               color: $main-text-color;
             }
-            .ContentTree-summary{
-              .Link{
+            .ContentTree-summary {
+              .Link {
                 background: $hover-background-color;
               }
-              .Link:hover{
+              .Link:hover {
                 background: $main-url-color;
               }
-            } 
+            }
           }
-          .UadVideosContainer{
-            a{
+          .UadVideosContainer {
+            a {
               color: $main-text-color;
             }
           }
-          .IchibaContainer{
-            .IchibaForWatch{
+          .IchibaContainer {
+            .IchibaForWatch {
               background: none;
-              .IchibaMainItem{
-                a{
+              .IchibaMainItem {
+                a {
                   color: $main-text-color;
                 }
-                .IchibaMainItem_Thumbnail{
+                .IchibaMainItem_Thumbnail {
                   border: none;
                 }
                 .IchibaMainItem_Info,
-                .IchibaMainItem_Price_Number{
+                .IchibaMainItem_Price_Number {
                   color: $sub-1-text-color;
                 }
               }
-              .IchibaSuggest{
-                .IchibaSuggest_Title{
+              .IchibaSuggest {
+                .IchibaSuggest_Title {
                   color: $main-text-color;
                 }
-                .IchibaSuggest_List{
-                  .IchibaSuggestItem{
+                .IchibaSuggest_List {
+                  .IchibaSuggestItem {
                     background: $hover-background-color;
                     border-color: $hover-background-color;
-                    .IchibaSuggestItem_Name{
+                    .IchibaSuggestItem_Name {
                       color: $main-text-color;
                     }
                     .IchibaSuggestItem_Info,
-                    .IchibaSuggestItem_Price_Number{
+                    .IchibaSuggestItem_Price_Number {
                       color: $sub-1-text-color;
                     }
                   }
@@ -664,62 +685,65 @@
             }
           }
         }
-        .LiveTopicsContainer{
-          .LiveTopicsContainer{
-            a{
+        .LiveTopicsContainer {
+          .LiveTopicsContainer {
+            a {
               color: $main-url-color;
             }
-            .LiveTopicsItem-community{
+            .LiveTopicsItem-community {
               color: $sub-1-text-color;
             }
           }
         }
-        .BottomSideContainer{
-          .WatchRelatedContentsContainer{
-            a{
+        .BottomSideContainer {
+          .WatchRelatedContentsContainer {
+            a {
               color: $main-text-color;
             }
-            a:visited{
+            a:visited {
               color: $sub-1-text-color;
             }
-            a:hover{
+            a:hover {
               color: $main-url-color;
             }
           }
-          .TagRelatedBannerContainer{
-            .TagRelatedBanner-title a{
+          .TagRelatedBannerContainer {
+            .TagRelatedBanner-title a {
               color: $main-url-color;
             }
-            .TagRelatedBanner-description a{
+            .TagRelatedBanner-description a {
               color: $main-url-color;
             }
           }
         }
       }
     }
-    .ContextMenu{
-      .CommentPanelContextMenuContainer{
+    .ContextMenu {
+      .CommentPanelContextMenuContainer {
         border: 1px solid $nico-black;
         background: $main-background-color;
         color: $sub-1-text-color;
       }
-      .ContextMenuItem:hover{
+      .ContextMenuItem:hover {
         background: $nico-black;
       }
     }
   }
 
-  #content.editting.owner.easy_mode{
+  #content.editting.owner.easy_mode {
     //ニコスクリプト簡易設定
     //TODO 移植のみ／SCSS書き直し
-    #videoHeader{
-      #videoHeaderDetail{
-        .videoDetailExpand{
-          .owner,.owner_easy,.comment,.mymemory{
+    #videoHeader {
+      #videoHeaderDetail {
+        .videoDetailExpand {
+          .owner,
+          .owner_easy,
+          .comment,
+          .mymemory {
             color: $main-text-color;
           }
-          h1{
-            a.watch{
+          h1 {
+            a.watch {
               color: $main-url-color !important;
             }
           }
@@ -729,7 +753,7 @@
     #nicos_color,
     #nicos_jump,
     .editOwnerEasySubmit p .submit,
-    .menuInner .submit{
+    .menuInner .submit {
       background: $sub2-background-color !important;
       color: $main-text-color !important;
       border: 1px solid $border-background-color !important;
@@ -737,74 +761,77 @@
   }
 
   //ユーザーフォロー時WebPushダイアログ
-  .Dialog.HeaderContainer-webPushPRDialog{
+  .Dialog.HeaderContainer-webPushPRDialog {
     background-color: $nico-black;
-    box-shadow: 0 2px 8px rgba(255,255,255,.4);
-    .ActionButton.HeaderContainer-webPushPRDialogCloseButton,a{
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+    .ActionButton.HeaderContainer-webPushPRDialogCloseButton,
+    a {
       color: $main-url-color;
     }
   }
   //一般会員時プレミアム導線
-  .Dialog.PremiumRequirer-dialog{
+  .Dialog.PremiumRequirer-dialog {
     background: $nico-black;
-    .PremiumRequirer-dialogMessage:last-of-type{
+    .PremiumRequirer-dialogMessage:last-of-type {
       border-color: $border-background-color;
     }
   }
 
   //削除動画
-  .BaseLayout-header{
+  .BaseLayout-header {
     .HeaderContainer {
-      .NicovideoLogo.LogoContainer-nicovideoLogo{
+      .NicovideoLogo.LogoContainer-nicovideoLogo {
         filter: $invert;
       }
     }
   }
-  .BaseLayout-main{
-    .WatchExceptionPage{
-      .ErrorMessage.WatchExceptionPage-message{ //エラー文
+  .BaseLayout-main {
+    .WatchExceptionPage {
+      .ErrorMessage.WatchExceptionPage-message {
+        //エラー文
         border-color: $nico-black;
         background-color: $nico-black;
         color: $main-text-color;
       }
-      .RecommendVideosContainer{ //おすすめ動画
-        .RecommendVideosContainer-items{
-          .RecommendVideosContainer-item{
-            .NC-VideoCard{
-              .NC-Card-mainHeader{
-                .NC-Card-mainHeaderTitle{
-                  .NC-CardTitle{
+      .RecommendVideosContainer {
+        //おすすめ動画
+        .RecommendVideosContainer-items {
+          .RecommendVideosContainer-item {
+            .NC-VideoCard {
+              .NC-Card-mainHeader {
+                .NC-Card-mainHeaderTitle {
+                  .NC-CardTitle {
                     color: $main-text-color;
                   }
-                  &:visited{
+                  &:visited {
                     color: $sub-1-text-color;
                   }
                 }
               }
-              &:hover{
-                .NC-Card-mainHeader{
-                  .NC-CardTitle{
+              &:hover {
+                .NC-Card-mainHeader {
+                  .NC-CardTitle {
                     color: $main-text-color;
                   }
                 }
               }
             }
 
-            .Card.VideoCard{
-              .Card-main{
-                .Card-mainHeader{
-                  .Link.Card-mainHeaderTitle{
-                    .NC-CardTitle{
+            .Card.VideoCard {
+              .Card-main {
+                .Card-mainHeader {
+                  .Link.Card-mainHeaderTitle {
+                    .NC-CardTitle {
                       color: $main-text-color;
                     }
                   }
-                  .Link.Card-mainHeaderTitle:visited{
-                    .NC-CardTitle{
+                  .Link.Card-mainHeaderTitle:visited {
+                    .NC-CardTitle {
                       color: $sub-2-text-color;
                     }
                   }
-                  .Link.Card-mainHeaderTitle:hover{
-                    .NC-CardTitle{
+                  .Link.Card-mainHeaderTitle:hover {
+                    .NC-CardTitle {
                       color: $main-url-color;
                     }
                   }
@@ -816,49 +843,48 @@
       }
     }
   }
-  .BaseLayout-footer{
-    .Ads728x90WebPcFooter{
+  .BaseLayout-footer {
+    .Ads728x90WebPcFooter {
       background: none;
     }
   }
 
-
-
   // ニコニコ市場
   // nicoExp対応のため、ネスト外へ移動
-  #nicoIchiba{ //プレイヤー下部分
-    .IchibaForWatch{
+  #nicoIchiba {
+    //プレイヤー下部分
+    .IchibaForWatch {
       background: none;
-      .IchibaForWatch_Title{
-        .IchibaForWatch_Title_Body{
+      .IchibaForWatch_Title {
+        .IchibaForWatch_Title_Body {
           color: $main-text-color;
         }
       }
-      .IchibaMainItem{
-        a{
+      .IchibaMainItem {
+        a {
           color: $main-text-color;
         }
-        .IchibaMainItem_Thumbnail{
+        .IchibaMainItem_Thumbnail {
           border: none;
         }
         .IchibaMainItem_Info,
-        .IchibaMainItem_Price_Number{
+        .IchibaMainItem_Price_Number {
           color: $sub-1-text-color;
         }
       }
-      .IchibaSuggest{
-        .IchibaSuggest_Title{
+      .IchibaSuggest {
+        .IchibaSuggest_Title {
           color: $main-text-color;
         }
-        .IchibaSuggest_List{
-          .IchibaSuggestItem{
+        .IchibaSuggest_List {
+          .IchibaSuggestItem {
             background: $hover-background-color;
             border-color: $hover-background-color;
-            .IchibaSuggestItem_Name{
+            .IchibaSuggestItem_Name {
               color: $main-text-color;
             }
             .IchibaSuggestItem_Info,
-            .IchibaSuggestItem_Price_Number{
+            .IchibaSuggestItem_Price_Number {
               color: $sub-1-text-color;
             }
           }
@@ -866,40 +892,41 @@
       }
     }
   }
-  #ichibaDisplayContent{ //モーダル部分
+  #ichibaDisplayContent {
+    //モーダル部分
     //TODO 移植のみ完了／SCSSへ書き直し作業
-    a{
+    a {
       color: $main-text-color;
     }
     .IchibaModal_Container,
     .IchibaModal_Body,
     .IchibaAdded,
     .IchibaTagSearch,
-    .IchibaAdded_Header{
+    .IchibaAdded_Header {
       background-color: $nico-black !important;
     }
     .IchibaModal_Title_Body,
     .IchibaSuggest_Title,
     .IchibaTagSearch_Title,
     .IchibaAdded_Title,
-    .IchibaAdded_Description{
+    .IchibaAdded_Description {
       color: $main-text-color !important;
     }
-    .IchibaModal_Body{
+    .IchibaModal_Body {
       border-top: 1px solid $border-background-color !important;
     }
     .IchibaSearchForm_Category,
     .IchibaSearchForm_Keyword_Input,
-    .IchibaSuggest_Sort{
+    .IchibaSuggest_Sort {
       background-color: $nico-black !important;
       color: $main-text-color !important;
       border: 1px solid $border-background-color !important;
     }
     .noItem,
-    .loading{
+    .loading {
       color: $sub-2-text-color !important;
     }
-    .IchibaTagSearch_Item a{
+    .IchibaTagSearch_Item a {
       background-color: $main-background-color !important;
       border: 0.5px solid $sub-2-text-color !important;
     }

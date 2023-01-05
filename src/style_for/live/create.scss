@@ -1,55 +1,56 @@
-@import '../parts/_default';
-@import '../parts/_textarea';
-@import '../parts/_dropdown';
-@import '../parts/_serchbox';
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_dropdown";
+@import "../parts/_serchbox";
 
-.niconico-darkmode-setting-true{
-  [class*="___local-page___"]{
+.niconico-darkmode-setting-true {
+  [class*="___local-page___"] {
     background-color: $main-background-color;
 
-    [class*="___broadcast-request-section___"]{ // 放送リクエスト
+    [class*="___broadcast-request-section___"] {
+      // 放送リクエスト
       background-color: $nico-black;
       color: $main-text-color;
 
-      [class*="___body-area___"]{
-        [class*="___request-sender-list___"]{
-          [class*="___resource___"]{
+      [class*="___body-area___"] {
+        [class*="___request-sender-list___"] {
+          [class*="___resource___"] {
             border-color: $border-background-color;
           }
         }
 
-        [class*="___button___"]{
+        [class*="___button___"] {
           border-color: $border-background-color;
         }
 
-        [class*="___setting-edit-button___"]{
+        [class*="___setting-edit-button___"] {
           background-color: $button;
           border-color: $button;
-          span{
+          span {
             color: $main-text-color;
           }
         }
       }
 
-      [class*="___broadcast-request-sender-list-panel___"]{
-        [class*="___broadcast-request-sender-list-section___"]{
+      [class*="___broadcast-request-sender-list-panel___"] {
+        [class*="___broadcast-request-sender-list-section___"] {
           background-color: $nico-black;
 
-          [class*="___heading___"]{
+          [class*="___heading___"] {
             color: $main-text-color;
           }
-          [class*="___item___"]{
-            [class*="___body-area___"]{
-              [class*="___name-label___"]{
+          [class*="___item___"] {
+            [class*="___body-area___"] {
+              [class*="___name-label___"] {
                 color: $main-text-color;
               }
               [class*="___request-number___"],
               [class*="___latest-request-time___"],
-              [class*="___note___"]{
+              [class*="___note___"] {
                 color: $sub-1-text-color;
               }
             }
-            [class*="___card___"]:hover{
+            [class*="___card___"]:hover {
               background-color: $hover-background-color;
             }
           }
@@ -57,218 +58,237 @@
       }
     }
 
-    [class*="___page-title___"]{ //pagetitle
+    [class*="___page-title___"] {
+      //pagetitle
       color: $main-text-color;
     }
-    [class*="___user-card___"]{ //user
-      [class*="___konomi-tag-setting-button___"]{
+    [class*="___user-card___"] {
+      //user
+      [class*="___konomi-tag-setting-button___"] {
         border-color: $main-url-color;
       }
-      [class*="___name-label___"]{
+      [class*="___name-label___"] {
         color: $main-text-color;
       }
     }
 
-    [class*="___program-title-field___"]{ //番組タイトル
-      [class*="___caption___"]{
+    [class*="___program-title-field___"] {
+      //番組タイトル
+      [class*="___caption___"] {
         color: $main-text-color;
       }
-      [class*="___length-score___"]{
+      [class*="___length-score___"] {
         color: $sub-1-text-color;
       }
-			input{
-				background: $sub2-background-color;
-				color: $main-text-color;
-				border-color: $border-background-color;
-			}
+      input {
+        background: $sub2-background-color;
+        color: $main-text-color;
+        border-color: $border-background-color;
+      }
     }
 
-    [class*="___detail-setting-expanded-toggle-button___"]{ //詳細設定OPEN
+    [class*="___detail-setting-expanded-toggle-button___"] {
+      //詳細設定OPEN
       color: $main-text-color;
     }
 
-    [class*="___local-section___"]{ //background
+    [class*="___local-section___"] {
+      //background
       background: none;
     }
 
-    [class*="___basic-section___"]{ // 基本設定
-      [class*="___field___"]{
+    [class*="___basic-section___"] {
+      // 基本設定
+      [class*="___field___"] {
         border-color: $border-background-color;
 
-        [class*="___caption___"]{
+        [class*="___caption___"] {
           color: $main-text-color;
 
-          [class*="___current-theme-area___"]{
+          [class*="___current-theme-area___"] {
             color: $sub-1-text-color;
           }
         }
-        [class*="___label___"]{ //
+        [class*="___label___"] {
+          //
           color: $main-text-color;
         }
       }
     }
 
-    [class*="___detail-setting-area___"]{ //詳細設定
-      [class*="___field___"]:not(:last-of-type){ //border
+    [class*="___detail-setting-area___"] {
+      //詳細設定
+      [class*="___field___"]:not(:last-of-type) {
+        //border
         border-color: $border-background-color;
       }
-      [class*="___caption___"]{ //title
+      [class*="___caption___"] {
+        //title
         color: $main-text-color;
       }
-      [class*="___length-score___"]{ // 文字数
+      [class*="___length-score___"] {
+        // 文字数
         color: $sub-1-text-color;
       }
-      .quill{ //説明文エディタ
-        .ql-formats{//書式変更
-          :not(.ql-active):not(:hover):not(.ql-color){
+      .quill {
+        //説明文エディタ
+        .ql-formats {
+          //書式変更
+          :not(.ql-active):not(:hover):not(.ql-color) {
             //ホバー状態、選択状態ではオレンジになってしまう
-            svg{
+            svg {
               filter: $invert;
             }
           }
-          .ql-size{//サイズ変更
+          .ql-size {
+            //サイズ変更
             color: $main-text-color;
-            .ql-picker-options{
+            .ql-picker-options {
               background-color: $main-background-color;
             }
           }
-          .ql-color{
-            .ql-picker-options{
+          .ql-color {
+            .ql-picker-options {
               background-color: $main-background-color;
             }
           }
         }
-        .ql-editor{//入力欄
+        .ql-editor {
+          //入力欄
           color: $main-text-color;
         }
       }
-      [class*="___target___"]+[class*="___label___"],[class*="___label___"]{ //selectlavel
+      [class*="___target___"] + [class*="___label___"],
+      [class*="___label___"] {
+        //selectlavel
         color: $main-text-color;
       }
 
-      [class*="___tag-widget___"]{
+      [class*="___tag-widget___"] {
         background: none;
       }
 
-      [class*="___field-area___"]{
+      [class*="___field-area___"] {
         border-color: $border-background-color;
-        [class*="___caption___"],[class*="___caption___"],[class*="___separator___"]{
+        [class*="___caption___"],
+        [class*="___caption___"],
+        [class*="___separator___"] {
           color: $main-text-color;
         }
       }
-      [class*="___end-time___"]{
+      [class*="___end-time___"] {
         color: $main-text-color;
       }
-      [class*="___register-form___"]{
+      [class*="___register-form___"] {
         border-color: $border-background-color;
       }
-      
     }
-    [class*="___symbol-mark___"]{ //help
+    [class*="___symbol-mark___"] {
+      //help
       fill: $main-text-color;
-      path{
+      path {
         fill: $main-text-color;
       }
     }
-    [class*="___message___"]{
+    [class*="___message___"] {
       color: $main-text-color;
     }
   }
 
-
   //一般会員お知らせ
-  [class*="___functional-restriction-description-section___"]{
+  [class*="___functional-restriction-description-section___"] {
     background: none;
   }
-  [class*="___after-description___"]{
+  [class*="___after-description___"] {
     color: $sub-1-text-color;
   }
 
   //好みタグ
   [class*="___konomi-tag-promotion-panel___"],
-  [class*="___konomi-tag-setting-panel___"]{ //konomitag modal
+  [class*="___konomi-tag-setting-panel___"] {
+    //konomitag modal
     background-color: $main-background-color;
-    [class*="___heading___"]{
+    [class*="___heading___"] {
       color: $main-text-color;
     }
-    [class*="___tag-registration-count-indicator___"]{
+    [class*="___tag-registration-count-indicator___"] {
       color: $sub-1-text-color;
     }
-    [class*="___tag-list___"]{
+    [class*="___tag-list___"] {
       background: none;
     }
-    [class*="___tag___"]{
+    [class*="___tag___"] {
       background-color: $nico-black;
-      [class*="___name-anchor___"]{
+      [class*="___name-anchor___"] {
         color: $main-text-color;
       }
     }
-    [class*="___no-tag-information___"]{
+    [class*="___no-tag-information___"] {
       background: none;
     }
   }
 
   // 放送リクエスト モーダル
-  [class*="___broadcast-request-setting-edit-panel___"]{ 
+  [class*="___broadcast-request-setting-edit-panel___"] {
     background-color: $main-background-color;
 
-    [class*="___label___"]{
+    [class*="___label___"] {
       color: $main-text-color;
     }
 
-    [class*="___note-section___"]{
+    [class*="___note-section___"] {
       background-color: $nico-black;
 
-      [class*="___heading___"]{
+      [class*="___heading___"] {
         color: $sub-1-text-color;
       }
-      [class*="___item___"]{
+      [class*="___item___"] {
         color: $main-text-color;
       }
     }
   }
 
   // チャットボット
-  [class*="___chatbot___"]{
-    [class*="___balloon___"]{
+  [class*="___chatbot___"] {
+    [class*="___balloon___"] {
       background-color: $nico-black;
 
-      [class*="___chat-start-button___"]{
+      [class*="___chat-start-button___"] {
         color: $main-url-color;
       }
 
-      &::after{
+      &::after {
         border-color: $nico-black transparent transparent;
       }
     }
-    [class*="___help-button___"]{
+    [class*="___help-button___"] {
       background-color: $nico-black;
-      svg{
+      svg {
         fill: $main-text-color;
       }
     }
   }
-  [class*="___tutorial-panel___"]{
+  [class*="___tutorial-panel___"] {
     background-color: $nico-black;
     color: $main-text-color;
 
     [class*="___heading___"],
-    [class*="___main-steps___"]>li,
+    [class*="___main-steps___"] > li,
     [class*="___description___"],
-    [class*="___note___"]>li{
+    [class*="___note___"] > li {
       color: $main-text-color;
-      a{
+      a {
         color: $main-url-color;
       }
     }
 
-    a{
+    a {
       color: $main-url-color;
     }
-    .___sub-button___25wLe{
+    .___sub-button___25wLe {
       color: $sub-1-text-color;
 
-      &:hover{
+      &:hover {
         background: $hover-background-color;
       }
     }

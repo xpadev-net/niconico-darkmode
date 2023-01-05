@@ -110,8 +110,8 @@
                   }
                 }
                 .menuPopupControl {
-                  .parentsKebabMenuPc{
-                    &:hover{
+                  .parentsKebabMenuPc {
+                    &:hover {
                       background-color: $hover-background-color;
                     }
                   }
@@ -121,16 +121,16 @@
                       fill: $sub-1-text-color;
                     }
 
-                    &:hover{
+                    &:hover {
                       background-color: $hover-background-color;
                     }
                   }
-                  .parentsPopUpMenu{
+                  .parentsPopUpMenu {
                     background-color: $hover-background-color;
 
-                    a{
+                    a {
                       color: $sub-1-text-color;
-                      svg>path{
+                      svg > path {
                         fill: $sub-1-text-color;
                       }
                     }
@@ -141,150 +141,148 @@
           }
         }
       }
-      .itemCardListAreaRegistrationArea{
+      .itemCardListAreaRegistrationArea {
         background-color: $sub2-background-color;
-        .registrationText{
+        .registrationText {
           color: $main-text-color;
         }
       }
     }
-    .c-childrenContents{
-      .childrenContentsHeadArea{
-        .childrenContentsTitleArea{
+    .c-childrenContents {
+      .childrenContentsHeadArea {
+        .childrenContentsTitleArea {
           color: $main-text-color;
         }
       }
-      .childrenContentsCardList{
-        .childrenItem{
+      .childrenContentsCardList {
+        .childrenItem {
           background-color: $nico-black;
           color: $main-text-color;
 
-          .contentArea{
+          .contentArea {
             background-color: $nico-black;
-            .materialTitle{
+            .materialTitle {
               color: $main-text-color;
             }
-            .childrenCardFootArea{
-              .treeCount{
+            .childrenCardFootArea {
+              .treeCount {
                 color: $sub-1-text-color;
-                .treeIcon svg{
+                .treeIcon svg {
                   fill: $sub-1-text-color;
                 }
               }
             }
           }
-          .menuPopupControl{
-            .kebabMenuIcon{
-              svg{
+          .menuPopupControl {
+            .kebabMenuIcon {
+              svg {
                 fill: $sub-1-text-color;
               }
-              &:hover{
+              &:hover {
                 background-color: $hover-background-color;
               }
             }
-            .childrenPopUpMenu{
+            .childrenPopUpMenu {
               background-color: $sub2-background-color;
-              a{
+              a {
                 color: $main-text-color;
-                svg>path{
+                svg > path {
                   fill: $main-text-color;
                 }
               }
-              &:hover{
+              &:hover {
                 background-color: $hover-background-color;
               }
             }
           }
         }
       }
-      .childrenContentsEmptyList{
+      .childrenContentsEmptyList {
         background-color: $nico-black;
-        .childrenContentsEmptyListText{
+        .childrenContentsEmptyListText {
           color: $main-text-color;
         }
-        
       }
     }
   }
 
   // 20220301 作品ページ
-  .p-treeParentsPage{
+  .p-treeParentsPage {
     background: none;
-    
-    .c-childrenContents{
-      .parentsContentsHeadArea{
-        .parentsContentsTitleArea{
-          .parentsIndexTitleAnchor{
-            svg{
+
+    .c-childrenContents {
+      .parentsContentsHeadArea {
+        .parentsContentsTitleArea {
+          .parentsIndexTitleAnchor {
+            svg {
               color: $main-text-color;
             }
           }
-          .parentsContentsTitleDescription{
+          .parentsContentsTitleDescription {
             color: $main-text-color;
           }
         }
       }
-      .childrenContentsCardList{
-        .childrenItem{
+      .childrenContentsCardList {
+        .childrenItem {
           background-color: $nico-black;
           color: $main-text-color;
 
-          .contentArea{
+          .contentArea {
             background-color: $nico-black;
-            .materialTitle{
+            .materialTitle {
               color: $main-text-color;
             }
-            .childrenCardFootArea{
-              .treeCount{
+            .childrenCardFootArea {
+              .treeCount {
                 color: $sub-1-text-color;
-                .treeIcon svg{
+                .treeIcon svg {
                   fill: $sub-1-text-color;
                 }
               }
             }
           }
-          .menuPopupControl{
-            .kebabMenuIcon{
-              svg{
+          .menuPopupControl {
+            .kebabMenuIcon {
+              svg {
                 fill: $sub-1-text-color;
               }
-              &:hover{
+              &:hover {
                 background-color: $hover-background-color;
               }
             }
-            .childrenPopUpMenu{
+            .childrenPopUpMenu {
               background-color: $sub2-background-color;
-              a{
+              a {
                 color: $main-text-color;
-                svg>path{
+                svg > path {
                   fill: $main-text-color;
                 }
               }
-              &:hover{
+              &:hover {
                 background-color: $hover-background-color;
               }
             }
           }
         }
       }
-      .childrenContentsEmptyList{
+      .childrenContentsEmptyList {
         background-color: $nico-black;
-        .childrenContentsEmptyListText{
+        .childrenContentsEmptyListText {
           color: $main-text-color;
         }
-        
       }
     }
   }
 
   // 20220301 totop
-  .c-treeParentsPageFootArea{
+  .c-treeParentsPageFootArea {
     background: none;
-    .pageTopArea{
-      span{
+    .pageTopArea {
+      span {
         color: $sub-1-text-color;
       }
-      .icon>svg{
+      .icon > svg {
         fill: $sub-1-text-color;
       }
     }

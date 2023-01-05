@@ -1,30 +1,30 @@
-@import '_default';
+@import "_default";
 
-.niconico-darkmode-maintenance{
+.niconico-darkmode-maintenance {
   background-color: $main-background-color;
 
-  div.page{
-    header.header{
-      div.nicolive-logo{
-        svg{
+  div.page {
+    header.header {
+      div.nicolive-logo {
+        svg {
           fill: $main-text-color;
         }
       }
     }
-    main.main{
+    main.main {
       background-color: $nico-black;
-      h1.title{
+      h1.title {
         color: $main-text-color;
       }
-      p.message{
+      p.message {
         color: $sub-1-text-color;
-        a{
+        a {
           color: $main-url-color !important;
         }
       }
     }
-    footer.footer{
-      small.copyright{
+    footer.footer {
+      small.copyright {
         color: $sub-1-text-color;
       }
     }

@@ -1,12 +1,12 @@
-@import '_default';
+@import "_default";
 
-.niconico-darkmode-setting-true{
-  select{
+.niconico-darkmode-setting-true {
+  select {
     background-color: $sub2-background-color;
     color: $main-text-color;
     border-color: $border-background-color;
     box-shadow: none;
-    option{
+    option {
       background-color: $sub2-background-color !important;
       color: $main-text-color !important;
     }
@@ -14,31 +14,31 @@
 
   //hover-menu-item
 
-  .EditorMenuContainer-menuBox-menu-child{
+  .EditorMenuContainer-menuBox-menu-child {
     //video-watch
     border: none !important;
-    .menuItem{
+    .menuItem {
       background: $sub2-background-color;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         background: $hover-background-color;
       }
     }
   }
 
-  .TagRankingCustomEditor-tag{
+  .TagRankingCustomEditor-tag {
     //将棋盤ランキング タグカスタム
-    .TagSuggestionList{
+    .TagSuggestionList {
       background: $sub2-background-color;
       border-color: $border-background-color;
-      .TagSuggestionList-list{
-        .TagSuggestionList-item{
+      .TagSuggestionList-list {
+        .TagSuggestionList-item {
           color: $main-text-color;
           border-color: $border-background-color;
         }
-        .TagSuggestionList-item:hover{
+        .TagSuggestionList-item:hover {
           background: $hover-background-color;
         }
       }
@@ -46,27 +46,27 @@
   }
 
   .OtherMypageLinks,
-  .ThreePointMenu{
+  .ThreePointMenu {
     //social-mypage
 
     background: $sub2-background-color;
     .OtherMypageLinks-link,
     .UserDetailsMenu-item,
     .NicorepoItemMenu-item,
-    .MylistHeaderMenu-item{
+    .MylistHeaderMenu-item {
       color: $main-text-color;
     }
     .OtherMypageLinks-link:hover,
     .UserDetailsMenu-item:hover,
     .NicorepoItemMenu-item:hover,
-    .MylistHeaderMenu-item:hover{
+    .MylistHeaderMenu-item:hover {
       background-color: $hover-background-color;
     }
   }
 
-
   //マイリストメニュー／プルダウン
-  .Selectbox,.ThreePointMenu{
+  .Selectbox,
+  .ThreePointMenu {
     background: $sub2-background-color;
     .SortSelectbox-item,
     .MylistSelectbox-item,
@@ -76,7 +76,7 @@
     .NicoruHistoryActiveItem-deleteButton,
     .MylistsSortSelectbox-item,
     .VideoContainer-headerMenuSortSelectboxItem,
-    .TagrepoContainer-headerActionMenuItem{
+    .TagrepoContainer-headerActionMenuItem {
       color: $main-text-color;
     }
     .SortSelectbox-item:hover,
@@ -87,38 +87,37 @@
     .NicoruHistoryActiveItem-deleteButton:hover,
     .MylistsSortSelectbox-item:hover,
     .VideoContainer-headerMenuSortSelectboxItem:hover,
-    .TagrepoContainer-headerActionMenuItem:hover{
+    .TagrepoContainer-headerActionMenuItem:hover {
       background-color: $hover-background-color;
     }
   }
 
   //動画ランキング
   .ThreePointMenu.RankingVideoMenu,
-  .Card-action .ThreePointMenu{
+  .Card-action .ThreePointMenu {
     background: none;
-    .ThreePointMenu-button:hover{
+    .ThreePointMenu-button:hover {
       background: $hover-background-color;
     }
-    .ThreePointMenu-menu{
+    .ThreePointMenu-menu {
       background: $sub2-background-color;
-      .RankingVideoMenu-item{
+      .RankingVideoMenu-item {
         color: $main-text-color;
       }
-      .RankingVideoMenu-item:hover{
+      .RankingVideoMenu-item:hover {
         background-color: $hover-background-color;
       }
     }
   }
-  .WheelStopper{
-    .ThreePointMenu-menu{
+  .WheelStopper {
+    .ThreePointMenu-menu {
       background: $sub2-background-color;
-      *{
+      * {
         color: $main-text-color;
       }
-      *:hover{
+      *:hover {
         background-color: $hover-background-color;
       }
     }
   }
-
 }

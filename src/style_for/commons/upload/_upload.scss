@@ -1,13 +1,14 @@
 @import "../../parts/default";
 @import "../../parts/textarea";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   .p-uploadPage,
   .p-uploadMetadataPage,
   .p-uploadTagPage,
   .p-uploadLicensePage,
   .p-uploadConfirmPage,
-  .p-uploadCompletePage{ //投稿ページ
+  .p-uploadCompletePage {
+    //投稿ページ
     background-color: $main-background-color;
 
     .uploadContentsInner,
@@ -15,115 +16,122 @@
     .uploadTagContentsInner,
     .uploadLicenseContentsInner,
     .uploadConfirmContentsInner,
-    .uploadCompleteContentsInner{
+    .uploadCompleteContentsInner {
       background-color: $nico-black;
       border-color: $border-background-color;
 
-      .c-uploadTitle h2{
+      .c-uploadTitle h2 {
         color: $sub-1-text-color;
       }
-      .c-uploadWarning{ //黄土色注意
+      .c-uploadWarning {
+        //黄土色注意
         background: none;
         border: 2px solid $commons-warning;
         color: $main-text-color;
-        a{
+        a {
           color: $main-url-color;
         }
-        a:hover{
+        a:hover {
           text-decoration: none;
         }
       }
-      .c-uploadAttention{ //blue注意
+      .c-uploadAttention {
+        //blue注意
         background: none;
         border: 2px solid $commons-attention;
         color: $main-text-color;
-        a{
+        a {
           color: $main-url-color;
         }
-        a:hover{
+        a:hover {
           text-decoration: none;
         }
       }
 
       .completeSection > h2,
-      .completeSection .completeMessage>li{
+      .completeSection .completeMessage > li {
         color: $main-text-color;
       }
-      .completeSubmitArea{
-        a{
+      .completeSubmitArea {
+        a {
           background-color: $main-url-color;
           color: $main-text-color;
         }
-        a:hover{
-          opacity: .7;
+        a:hover {
+          opacity: 0.7;
         }
       }
     }
   }
 
-
-
-  form[name="upform"]{ //form
-    .materialRadio,.commentRadioBtn{ //ラジオボタン
+  form[name="upform"] {
+    //form
+    .materialRadio,
+    .commentRadioBtn {
+      //ラジオボタン
       color: $main-text-color;
     }
-    .materialUploadInput{ //FileUpload
-      label[for="materialUpload"]{
+    .materialUploadInput {
+      //FileUpload
+      label[for="materialUpload"] {
         background-color: $main-url-color;
         color: $main-text-color;
       }
       label[for="materialUpload"]::after,
-      .uploadFileName{
+      .uploadFileName {
         color: $main-text-color;
       }
     }
     .materialAttentionListArea,
-    .materialOathListArea{ //登録の際の注意・宣誓
+    .materialOathListArea {
+      //登録の際の注意・宣誓
       border-color: $border-background-color;
-      .materialAttentionList,.materialOathList{
+      .materialAttentionList,
+      .materialOathList {
         color: $main-text-color;
-        a{
+        a {
           color: $main-url-color;
           text-decoration: underline;
         }
-        a:hover{
+        a:hover {
           text-decoration: none;
         }
       }
-      .materialAttentionExtra{
+      .materialAttentionExtra {
         background-color: $sub2-background-color;
         color: $main-text-color;
       }
     }
-    .materialUploadCheckboxSection{ //checkbox
+    .materialUploadCheckboxSection {
+      //checkbox
       color: $main-text-color;
     }
 
     /* tag select */
-    .licenseTag{
+    .licenseTag {
       background-color: $sub2-background-color;
       color: $main-text-color;
     }
-    .categorySelect{
+    .categorySelect {
       color: $main-text-color;
     }
 
     /* license select */
     .licensePurposeSection ul,
-    .licenseRangeSection ul{
+    .licenseRangeSection ul {
       color: $main-text-color;
     }
 
     /* confirm page */
-    .confirmSection{
+    .confirmSection {
       border-color: $border-background-color;
-      dl{
+      dl {
         border-color: $border-background-color;
         background-color: $sub2-background-color;
-        dt{
+        dt {
           color: $sub-1-text-color;
         }
-        dd{
+        dd {
           background-color: $nico-black;
           border-color: $border-background-color;
           color: $main-text-color;

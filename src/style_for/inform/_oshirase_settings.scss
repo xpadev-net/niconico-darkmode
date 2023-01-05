@@ -1,31 +1,31 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
-  #root{
-    header.sc-iRbamj{
+.niconico-darkmode-setting-true {
+  #root {
+    header.sc-iRbamj {
       border-color: $border-background-color;
-      .head{
+      .head {
         color: $main-text-color;
       }
-      .text{
+      .text {
         color: $sub-1-text-color;
-        a{
+        a {
           color: $main-url-color;
         }
-        a:hover{
+        a:hover {
           text-decoration: none;
         }
       }
     }
-    .sc-Rmtcm{
-      .sc-gipzik.setting-item{
+    .sc-Rmtcm {
+      .sc-gipzik.setting-item {
         border-color: $border-background-color;
         background: $nico-black;
-        .text{
-          .main{
+        .text {
+          .main {
             color: $main-text-color;
           }
-          .sub{
+          .sub {
             color: $sub-1-text-color;
           }
         }

@@ -1,83 +1,82 @@
 @import "../../parts/default";
 
-.niconico-darkmode-setting-true{
-
-  #Contents.collabo{
-    #Column01{
-      .apply-msg{
+.niconico-darkmode-setting-true {
+  #Contents.collabo {
+    #Column01 {
+      .apply-msg {
         text-shadow: none;
       }
-      .apply-area{
+      .apply-area {
         background: $nico-black;
-        .item-area{
-          ul{
-            li.yosoku{
+        .item-area {
+          ul {
+            li.yosoku {
               background: none;
               border-radius: 40px;
             }
           }
         }
-        #collabo.tutorial{
+        #collabo.tutorial {
           background: $sub2-background-color;
           border-color: $border-background-color;
           color: $main-text-color;
-          h3{
+          h3 {
             color: $sub-1-text-color;
             text-shadow: none;
           }
-          .collabo-table{
+          .collabo-table {
             border-color: $border-background-color;
             background: $sub2-background-color;
             color: $sub-1-text-color;
-            th{
+            th {
               border-color: $border-background-color;
               background: $nico-black;
             }
-            th.sub{
+            th.sub {
               border-color: $border-background-color;
               background: $nico-black;
             }
-            td{
+            td {
               border-color: $border-background-color;
             }
-            .total{
+            .total {
               background: $nico-black;
             }
-            .message{
+            .message {
               background: none;
             }
           }
-          .secret_word dt{
+          .secret_word dt {
             color: $sub-1-text-color;
           }
-          .secret_word_desc p{
+          .secret_word_desc p {
             color: $sub-1-text-color;
           }
 
-          .collabo_num{
+          .collabo_num {
             border-color: $border-background-color;
           }
         }
-        .tutorial.message{
+        .tutorial.message {
           border-color: $border-background-color;
           background: $sub2-background-color;
           box-shadow: none;
           color: $sub-1-text-color;
-          a{
+          a {
             color: $main-text-color;
           }
-          a:hover{
+          a:hover {
             color: $nico-tree;
           }
         }
-        .btn-area{
-          a.btn-02{
+        .btn-area {
+          a.btn-02 {
             background: $nico-black;
             border-color: $border-background-color;
             color: $main-text-color;
             text-shadow: none;
           }
-          a:hover{
+          a:hover {
             background: $hover-background-color;
           }
         }

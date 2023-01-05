@@ -1,39 +1,39 @@
-@import '../parts/_default';
+@import "../parts/_default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color;
   color: $main-text-color;
 
-  #header{
-    #logo{
+  #header {
+    #logo {
       filter: $invert;
     }
   }
 
-  .contents{
-    .list-nav{
+  .contents {
+    .list-nav {
       background-color: $nico-black;
-      ul li a{
+      ul li a {
         color: $sub-1-text-color;
 
-        .arrow::after{
+        .arrow::after {
           border-color: $sub-1-text-color;
         }
 
-        &:hover{
+        &:hover {
           background-color: $hover-background-color;
         }
       }
     }
 
-    .section{
-      .list li{
+    .section {
+      .list li {
         background-color: $nico-black;
 
-        .title a{
+        .title a {
           color: $main-text-color;
         }
-        .sentence a{
+        .sentence a {
           color: $sub-1-text-color;
         }
       }

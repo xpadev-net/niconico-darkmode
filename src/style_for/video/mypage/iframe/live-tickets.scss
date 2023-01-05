@@ -1,43 +1,43 @@
 /*総合マイページ内生放送チケット購入履歴*/
 
-@import '../../../parts/_default';
-@import '../../../parts/_dropdown';
+@import "../../../parts/_default";
+@import "../../../parts/_dropdown";
 
-.niconico-darkmode-setting-true{
-  [class*="___my-page___"]{
+.niconico-darkmode-setting-true {
+  [class*="___my-page___"] {
     background: $main-background-color;
 
-    [class*="___header___"]{
-      .number{
+    [class*="___header___"] {
+      .number {
         color: $sub-1-text-color;
       }
-      [class*="___local-anchor___"]{
+      [class*="___local-anchor___"] {
         color: $sub-1-text-color;
       }
     }
 
-    [class*="___content-purchase-history-sheet___"]{
+    [class*="___content-purchase-history-sheet___"] {
       background: none;
       border: none;
       color: $main-text-color;
 
-      [class*="___heading___"]{
-        &>a{
+      [class*="___heading___"] {
+        & > a {
           color: $main-text-color;
         }
       }
 
-      [class*="___target___"]{
+      [class*="___target___"] {
         background: $nico-black;
         border-color: $border-background-color;
 
-        [class*="___program-title___"]{
+        [class*="___program-title___"] {
           color: $main-text-color;
         }
-        [class*="___program-description___"]{
+        [class*="___program-description___"] {
           color: $sub-1-text-color;
         }
-        [class*="___status-bar___"]{
+        [class*="___status-bar___"] {
           color: $sub-1-text-color;
         }
       }

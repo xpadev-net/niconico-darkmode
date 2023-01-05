@@ -6,21 +6,20 @@
   このファイルにimport形式で読み込むようにしてください。
 */
 
-@use '../parts/_default' as *; //全配色
-@import './parts/garage_header'; //ガレージヘッダー
-@import './parts/garage_footer'; //ガレージフッター
+@use "../parts/_default" as *; //全配色
+@import "./parts/garage_header"; //ガレージヘッダー
+@import "./parts/garage_footer"; //ガレージフッター
 
-@import '_videos'; //投稿動画一覧
-@import '_upload'; //動画ファイル選択
-@import '_edit'; //動画情報入力・編集
+@import "_videos"; //投稿動画一覧
+@import "_upload"; //動画ファイル選択
+@import "_edit"; //動画情報入力・編集
 
-@import '_series'; //シリーズ
-@import '_analytics'; //アナリティクス
+@import "_series"; //シリーズ
+@import "_analytics"; //アナリティクス
 
-@import '_nopost'; //動画未投稿
+@import "_nopost"; //動画未投稿
 
-@import '_error'; //メンテ
-
+@import "_error"; //メンテ
 
 /* ======================
 　以下、ガレージ共通パーツ
@@ -30,24 +29,25 @@
 
 ====================== */
 
-.niconico-darkmode-setting-true{
-
-  .MuiInputBase-root{ //input関連
+.niconico-darkmode-setting-true {
+  .MuiInputBase-root {
+    //input関連
     color: $main-text-color;
     background: $nico-black;
     border-color: 1px solid $border-background-color;
   }
 
-  .MuiIconButton-root{ //アイコンボタン
+  .MuiIconButton-root {
+    //アイコンボタン
     color: $sub-1-text-color;
 
-    svg{
+    svg {
       fill: $sub-1-text-color !important;
     }
   }
 
-  .MuiFormControlLabel-label{ //ラベル
+  .MuiFormControlLabel-label {
+    //ラベル
     color: $sub-1-text-color;
   }
-
 }

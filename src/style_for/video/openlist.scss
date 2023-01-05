@@ -1,35 +1,35 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_page-next';
-@import '../parts/_dropdown';
-@import '../parts/_button';
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_page-next";
+@import "../parts/_dropdown";
+@import "../parts/_button";
 
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
   color: $main-text-color;
 
-  #PAGECONTAINER{
-    #PAGEHEADER{
-      #head_logo{
-        #nicodou{
+  #PAGECONTAINER {
+    #PAGEHEADER {
+      #head_logo {
+        #nicodou {
           filter: $invert;
         }
       }
     }
-    #PAGEBODY{
-      .mb8p4{
-        h1{
-          a{
+    #PAGEBODY {
+      .mb8p4 {
+        h1 {
+          a {
             color: $main-url-color;
           }
         }
       }
-      table.font12{
+      table.font12 {
         color: $sub-1-text-color;
-        a{
+        a {
           color: $main-text-color;
         }
-        a:hover{
+        a:hover {
           color: $main-url-color;
         }
       }

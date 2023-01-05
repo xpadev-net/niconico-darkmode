@@ -1,24 +1,22 @@
-@import '../parts/_default';
-@import 'parts/_parts';
+@import "../parts/_default";
+@import "parts/_parts";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color;
 
-  .container{
+  .container {
     color: $main-text-color;
-    h3{
-      a{
+    h3 {
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
       }
-    } 
+    }
 
-    .Bltxt{
+    .Bltxt {
       color: $sub-1-text-color;
     }
   }
-
-
 }

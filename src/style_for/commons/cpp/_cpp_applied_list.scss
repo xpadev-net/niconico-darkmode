@@ -1,116 +1,118 @@
 @import "../../parts/default";
 
-.niconico-darkmode-setting-true{
-  #Contents.cp-contents{
-    #Column02.work[data-commons-kind="cpp-my-forecast"]{
-      h3.midashi01{
+.niconico-darkmode-setting-true {
+  #Contents.cp-contents {
+    #Column02.work[data-commons-kind="cpp-my-forecast"] {
+      h3.midashi01 {
         background: $sub2-background-color;
       }
-      form[name="list"]{
-        .select_sort{
+      form[name="list"] {
+        .select_sort {
           color: $sub-1-text-color;
-          .category{
-            li{
+          .category {
+            li {
               border-color: $border-background-color;
-              a,span{
+              a,
+              span {
                 text-shadow: none;
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 background-color: $main-background-color;
                 box-shadow: none;
                 color: $main-url-color;
               }
             }
-            li .active{
+            li .active {
               background: $main-url-color;
               box-shadow: none;
             }
           }
         }
-        .work-num{
+        .work-num {
           border-color: $border-background-color;
-          p{
+          p {
             color: $sub-1-text-color;
-            strong{
+            strong {
               color: $main-text-color;
             }
           }
         }
       }
-      #WorkList{
-        .list-item{
+      #WorkList {
+        .list-item {
           background-color: $nico-black;
           box-shadow: none;
-          .item1{
-            .dsc{
-              h4{
-                a{
+          .item1 {
+            .dsc {
+              h4 {
+                a {
                   color: $main-text-color;
                 }
-                a:hover{
+                a:hover {
                   color: $nico-tree;
                 }
               }
-              p.status_douga, p.status_game{
+              p.status_douga,
+              p.status_game {
                 filter: $invert;
               }
             }
           }
-          table{
+          table {
             background: $sub2-background-color;
             border-color: $border-background-color;
             color: $sub-1-text-color;
-            th{
+            th {
               background-color: $nico-black;
               border-color: $border-background-color;
             }
-            td{
+            td {
               border-color: $border-background-color;
             }
           }
         }
-        .error-area{
+        .error-area {
           background-color: $nico-black;
-          .error-msg{
+          .error-msg {
             color: $main-text-color;
             text-shadow: none;
           }
-          .txt{
+          .txt {
             color: $sub-1-text-color;
           }
-          .btn-area{
-            a.btn-02{
+          .btn-area {
+            a.btn-02 {
               background: $sub2-background-color;
               color: $main-text-color;
               text-shadow: none;
               border-color: $border-background-color;
             }
-            a:hover{
+            a:hover {
               background: $hover-background-color;
             }
           }
         }
       }
-      .pager{
-        ul{
+      .pager {
+        ul {
           background: $nico-black;
           border-color: $border-background-color;
           color: $main-text-color;
-          li{
+          li {
             border-color: $border-background-color;
-            a{
+            a {
               color: $main-text-color;
             }
-            a:hover{
+            a:hover {
               background-color: $hover-background-color;
             }
           }
-          li.active span{
+          li.active span {
             color: $main-text-color;
             background-color: $nico-tree;
           }
-          li.disable span{
+          li.disable span {
             color: $hover-background-color;
           }
         }

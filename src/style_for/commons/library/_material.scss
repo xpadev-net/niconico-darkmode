@@ -1,330 +1,330 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
-  .p-materialPage{
+.niconico-darkmode-setting-true {
+  .p-materialPage {
     background: none;
 
-    .materialContentsArea{
-			// メイン
-      .materialLeft{
+    .materialContentsArea {
+      // メイン
+      .materialLeft {
         .materialPreviewArea {
-					background-color: $nico-black;
-					border-color: $border-background-color;
-          .materialHeadTitleArea{
-            .materialHeadTitle{
+          background-color: $nico-black;
+          border-color: $border-background-color;
+          .materialHeadTitleArea {
+            .materialHeadTitle {
               color: $main-text-color;
             }
           }
-          .materialHeadRegistrationDate{
+          .materialHeadRegistrationDate {
             color: $sub-1-text-color;
           }
-          .materialHeadMetaArea{
-            .materialHeadMeta{
+          .materialHeadMetaArea {
+            .materialHeadMeta {
               color: $sub-2-text-color;
-              span{
+              span {
                 color: $sub-1-text-color;
               }
             }
           }
-          .materialHeadDescription{
+          .materialHeadDescription {
             margin-top: 15px;
             margin-bottom: 15px;
             color: $main-text-color;
-            a{
+            a {
               color: $main-text-color;
               text-decoration: underline;
             }
-            a:hover{
+            a:hover {
               text-decoration: none;
             }
           }
-          .materialHeadTagArea{
-            .materialHeadTagForm{
-              input.submit{
+          .materialHeadTagArea {
+            .materialHeadTagForm {
+              input.submit {
                 border-color: $border-background-color;
                 background: $nico-black;
                 color: $main-text-color;
               }
-              input.submit:hover{
+              input.submit:hover {
                 background-color: $hover-background-color;
               }
-              #tag_add_form{
-                #tag_text_add{
+              #tag_add_form {
+                #tag_text_add {
                   background-color: $nico-black;
                   color: $main-text-color;
                 }
               }
-              #tag_edit_list{
+              #tag_edit_list {
                 color: $main-text-color;
               }
             }
-            .materialHeadTag{
-              a{
+            .materialHeadTag {
+              a {
                 color: $main-text-color;
                 background-color: $sub2-background-color;
                 border-color: $border-background-color;
-								margin-left: .25rem;
+                margin-left: 0.25rem;
               }
             }
-            .materialHeadTagEditAnchor{
+            .materialHeadTagEditAnchor {
               color: $sub-1-text-color;
             }
           }
-          .materialPreviewSection{
-            .materialPreviewThumbArea{
+          .materialPreviewSection {
+            .materialPreviewThumbArea {
               border-color: $nico-black;
               background-color: $nico-black;
             }
-            .materialPreviewDownload{
-              .materialPreviewMetaData{
+            .materialPreviewDownload {
+              .materialPreviewMetaData {
                 border-color: $border-background-color;
-                ul{
+                ul {
                   border-color: $border-background-color;
-                  li{
+                  li {
                     color: $main-text-color;
                   }
-                  li:first-child{
+                  li:first-child {
                     background-color: $border-background-color;
                     border-color: $border-background-color;
                   }
-                } 
+                }
               }
             }
           }
         }
-        .materialDerivationSection{
-          .materialDerivationArea{
+        .materialDerivationSection {
+          .materialDerivationArea {
             background-color: $nico-black;
             border-color: $border-background-color;
-            .commonsParents{
-              .materialDerivationBodyParents{
-                .materialDerivationTitle{
+            .commonsParents {
+              .materialDerivationBodyParents {
+                .materialDerivationTitle {
                   color: $main-text-color;
                 }
-                .materialDerivationDescription{
-                  color: $sub-1-text-color
+                .materialDerivationDescription {
+                  color: $sub-1-text-color;
                 }
-                .materialDerivationTotalCount{
+                .materialDerivationTotalCount {
                   color: $sub-1-text-color;
                 }
               }
             }
-            .materialDerivationChildren{
+            .materialDerivationChildren {
               border-color: $border-background-color;
-              .materialDerivationBodyChildren{
-                .materialDerivationTitle{
+              .materialDerivationBodyChildren {
+                .materialDerivationTitle {
                   color: $main-text-color;
                 }
-                .materialDerivationDescription{
+                .materialDerivationDescription {
                   color: $sub-1-text-color;
                 }
-                .materialDerivationItems{
-                  .materialDerivationThum{
+                .materialDerivationItems {
+                  .materialDerivationThum {
                     background: $sub2-background-color;
                   }
-                  .materialDerivationThum:hover{
-                    opacity: .6;
+                  .materialDerivationThum:hover {
+                    opacity: 0.6;
                   }
-                  .materialDerivationTreeIconArea{
-                    .materialDerivationTreeBtnAnchor{
+                  .materialDerivationTreeIconArea {
+                    .materialDerivationTreeBtnAnchor {
                       border-color: $border-background-color;
                       background-color: $sub2-background-color;
-                      .materialTreeIcon svg path{
+                      .materialTreeIcon svg path {
                         fill: $nico-tree;
                       }
-                      .materialTreeText{
+                      .materialTreeText {
                         color: $nico-tree;
                       }
                     }
-                    .materialDerivationTreeBtnAnchor:hover{
-                      opacity: .6;
+                    .materialDerivationTreeBtnAnchor:hover {
+                      opacity: 0.6;
                     }
                   }
                 }
-                .materialDerivationTotalCount{
+                .materialDerivationTotalCount {
                   color: $sub-1-text-color;
                 }
               }
             }
           }
-          .materialDerivationTreeAnchor{
+          .materialDerivationTreeAnchor {
             border-color: $nico-tree;
             background-color: $nico-black;
-            a{
+            a {
               color: $nico-tree;
             }
           }
-          .materialDerivationTreeAnchor:hover{
-            opacity: .6;
+          .materialDerivationTreeAnchor:hover {
+            opacity: 0.6;
           }
         }
-        .materialHistoryLicense{
-					border-color: $border-background-color;
+        .materialHistoryLicense {
+          border-color: $border-background-color;
           background-color: $nico-black;
-          .materialHistoryLicenseTitle{
+          .materialHistoryLicenseTitle {
             color: $main-text-color;
           }
-          .materialHistoryTermsDate{
+          .materialHistoryTermsDate {
             color: $sub-1-text-color;
           }
-          .materialHistoryTerms{
+          .materialHistoryTerms {
             color: $main-text-color;
-            .permissionRangeAllLabel span,.commercialUseAvailableLabel span{
+            .permissionRangeAllLabel span,
+            .commercialUseAvailableLabel span {
               color: $main-text-color !important;
               border-color: $border-background-color !important;
             }
           }
-          .materialHistoryItemText{
+          .materialHistoryItemText {
             color: $main-text-color;
-            a{
+            a {
               color: $main-url-color;
             }
           }
         }
-        .materialCommentSection{
-          .materialCommentBody{
+        .materialCommentSection {
+          .materialCommentBody {
             background-color: $nico-black;
-						border-color: $border-background-color;
-            .materialCommentTitle{
+            border-color: $border-background-color;
+            .materialCommentTitle {
               color: $main-text-color;
             }
-            .materialCommentForm{
+            .materialCommentForm {
               border-color: $border-background-color;
               color: $main-text-color;
               background-color: $sub2-background-color;
             }
-            .postCommentArea>label{
+            .postCommentArea > label {
               background-color: $main-url-color;
               color: $main-text-color;
             }
-						.materialCommentTable{
-							tr{
-								border-color: $border-background-color;
-							}
-							td{
-								.materialCommentUserName{
-									color: $main-text-color;
-								}
-								.comment_text{
-									color: $main-text-color;
-								}
-							}
-						}
-            .materialCommentCommandArea{
-              .materialCommentInfoArea{
+            .materialCommentTable {
+              tr {
                 border-color: $border-background-color;
-                .materialCommentInfo{
+              }
+              td {
+                .materialCommentUserName {
+                  color: $main-text-color;
+                }
+                .comment_text {
+                  color: $main-text-color;
+                }
+              }
+            }
+            .materialCommentCommandArea {
+              .materialCommentInfoArea {
+                border-color: $border-background-color;
+                .materialCommentInfo {
                   color: $sub-1-text-color;
                 }
               }
-							.materialCommentBlockArea{
-								a{
-									color: $main-text-color;
-									&:hover{
-										text-decoration: none;
-									}
-								}
+              .materialCommentBlockArea {
+                a {
+                  color: $main-text-color;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
               }
             }
           }
         }
-        .materialReport{
+        .materialReport {
           background-color: $nico-black;
-					border-color: $border-background-color;
-					.materialTitleReport{
-						color: $main-text-color;
-					}
-          p{
+          border-color: $border-background-color;
+          .materialTitleReport {
             color: $main-text-color;
-            a{
+          }
+          p {
+            color: $main-text-color;
+            a {
               color: $main-text-color;
             }
-            a:hover{
+            a:hover {
               color: $main-url-color;
             }
           }
-          .materialReportSelect{
+          .materialReportSelect {
             border-color: $border-background-color;
             background-color: $sub2-background-color;
             color: $main-text-color;
           }
-          .materialReportBtnArea>label{
+          .materialReportBtnArea > label {
             color: $main-text-color;
             background-color: $main-url-color;
           }
         }
       }
-			// サイドバー
-      .materialRight{
+      // サイドバー
+      .materialRight {
         background: none;
-        .materialProfileArea{
+        .materialProfileArea {
           background-color: $nico-black;
-					border-color: $border-background-color;
-          .materialUserTitle{
+          border-color: $border-background-color;
+          .materialUserTitle {
             color: $main-text-color;
             border-color: $border-background-color;
           }
-          .mBody{
+          .mBody {
             background: none;
-            .mUserProfile{
-              a{
+            .mUserProfile {
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $main-url-color;
               }
-              .materialProfileWorkNum{
-                h3{
+              .materialProfileWorkNum {
+                h3 {
                   color: $main-text-color;
                 }
-                span{
+                span {
                   color: $sub-1-text-color;
                 }
               }
-              
             }
-            .mUserSeparator{
+            .mUserSeparator {
               color: $main-text-color;
             }
-            .userAnchorArea{
-              a{
+            .userAnchorArea {
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $main-url-color;
               }
             }
           }
         }
-        .materialInfoArea{
+        .materialInfoArea {
           background-color: $nico-black;
-					border-color: $border-background-color;
-          .materialInfoTitle{
+          border-color: $border-background-color;
+          .materialInfoTitle {
             color: $main-text-color;
-            border-color: $border-background-color
+            border-color: $border-background-color;
           }
-          .mBody{
+          .mBody {
             background: none;
-            .mInfoType{
-              p{
+            .mInfoType {
+              p {
                 color: $main-text-color;
               }
             }
-            table{
+            table {
               border-color: $border-background-color;
-              td{
+              td {
                 border-color: $border-background-color;
                 color: $main-text-color;
               }
-              .minfoCaption{
+              .minfoCaption {
                 background-color: $border-background-color;
               }
             }
-            .m_info_menu{
-              a{
+            .m_info_menu {
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $main-url-color;
               }
             }

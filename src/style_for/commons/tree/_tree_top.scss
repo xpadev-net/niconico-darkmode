@@ -1,136 +1,151 @@
 @import "../../parts/default";
 @import "../../parts/dropdown";
 
-.niconico-darkmode-setting-true{
-
-  #Contents{
-    #ContentsLeft{
-      #MyArrival{
-        h2{
-          background: linear-gradient(to right, transparent, transparent 5%, $nico-black 7.5%),url(https://commons.nicovideo.jp/images/tree/index/my_tree_header.png) no-repeat 0 0;
+.niconico-darkmode-setting-true {
+  #Contents {
+    #ContentsLeft {
+      #MyArrival {
+        h2 {
+          background: linear-gradient(
+              to right,
+              transparent,
+              transparent 5%,
+              $nico-black 7.5%
+            ),
+            url(https://commons.nicovideo.jp/images/tree/index/my_tree_header.png)
+              no-repeat 0 0;
           color: $main-text-color;
-  
-          .nglist{
-            a{
+
+          .nglist {
+            a {
               color: $nico-tree;
             }
-            a:hover{
-              opacity: .7;
+            a:hover {
+              opacity: 0.7;
             }
-          } 
+          }
         }
-        ul.category{
-          li.active{
+        ul.category {
+          li.active {
             background-color: $nico-tree;
-            a{
+            a {
               color: $main-text-color;
             }
           }
         }
-        div.select_sort{
-          .tree_num{
+        div.select_sort {
+          .tree_num {
             color: $sub-2-text-color;
-            strong{
+            strong {
               color: $sub-1-text-color;
             }
           }
-          .select_sort_label{
+          .select_sort_label {
             color: $sub-1-text-color;
           }
         }
-        #MyArrivalMain{
-          li.item4{
-            a{
+        #MyArrivalMain {
+          li.item4 {
+            a {
               border-color: $border-background-color;
               box-shadow: 1px 1px 3px $border-background-color;
               background: $nico-black;
               color: $sub-1-text-color;
               img[src="https://commons.nicovideo.jp/images/ico/logo_nico_b.gif"],
-              img[src="https://commons.nicovideo.jp/images/ico/logo_game_b.png"]{
+              img[src="https://commons.nicovideo.jp/images/ico/logo_game_b.png"]
+              {
                 filter: $invert;
               }
             }
-            a:hover{
+            a:hover {
               background: $hover-background-color;
             }
           }
-          .pager{
-            ul{
+          .pager {
+            ul {
               background: $nico-black;
               border-color: $border-background-color;
               color: $main-text-color;
-              li{
+              li {
                 border-color: $border-background-color;
-                a{
+                a {
                   color: $main-text-color;
                 }
-                a:hover{
+                a:hover {
                   background-color: $hover-background-color;
                 }
               }
-              li.active span{
+              li.active span {
                 color: $main-text-color;
                 background-color: $nico-tree;
               }
-              li.disable span{
+              li.disable span {
                 color: $hover-background-color;
               }
             }
           }
         }
       }
-      #MyWorksLink{
+      #MyWorksLink {
         background: $nico-black;
-        dt{
+        dt {
           text-shadow: none;
           color: $sub-1-text-color;
         }
-        dd{
-          a{
+        dd {
+          a {
             border-color: $border-background-color;
             color: $main-text-color;
           }
-          a:hover{
+          a:hover {
             color: $nico-tree;
           }
         }
       }
-      #newArrival{
-        h3{
-          background: linear-gradient(to right, transparent, transparent 5%, $nico-black 7.5%),url(https://commons.nicovideo.jp/images/tree/index/my_tree_header.png) no-repeat 0 0;
+      #newArrival {
+        h3 {
+          background: linear-gradient(
+              to right,
+              transparent,
+              transparent 5%,
+              $nico-black 7.5%
+            ),
+            url(https://commons.nicovideo.jp/images/tree/index/my_tree_header.png)
+              no-repeat 0 0;
           color: $main-text-color;
         }
-        #newArrivalMain{
+        #newArrivalMain {
           border: none;
           background-color: $sub2-background-color;
-          li.item4{
-            a{
+          li.item4 {
+            a {
               border-color: $border-background-color;
               box-shadow: 1px 1px 3px $border-background-color;
               background: $nico-black;
               color: $sub-1-text-color;
               img[src="https://commons.nicovideo.jp/images/ico/logo_nico_b.gif"],
-              img[src="https://commons.nicovideo.jp/images/ico/logo_game_b.png"]{
+              img[src="https://commons.nicovideo.jp/images/ico/logo_game_b.png"]
+              {
                 filter: $invert;
               }
             }
-            a:hover{
+            a:hover {
               background: $hover-background-color;
             }
           }
         }
       }
-  
-      .error-area{
+
+      .error-area {
         background-color: $nico-black;
         color: $main-text-color;
       }
     }
-    #ContentsRight{
-      #HelpLinks{
+    #ContentsRight {
+      #HelpLinks {
         border: none;
         background: none;
-        *{
+        * {
           border-radius: 4px;
         }
       }

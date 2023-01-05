@@ -1,112 +1,111 @@
 @import "../../parts/default";
 
-.niconico-darkmode-setting-true{
-  
-  div{
-    #CpHeader{
+.niconico-darkmode-setting-true {
+  div {
+    #CpHeader {
       color: $main-text-color;
-      #ToukouHelp{
-        a{
+      #ToukouHelp {
+        a {
           color: $sub-1-text-color;
         }
-        a:hover{
+        a:hover {
           color: $nico-tree;
         }
       }
-      #CpsBox{
+      #CpsBox {
         background: $sub2-background-color;
         border-radius: 20px;
-        dt{
+        dt {
           color: $sub-1-text-color;
         }
       }
     }
-    #Contents.cp-contents{
+    #Contents.cp-contents {
       background: none;
-      #Left{
-        #CpMenu{
+      #Left {
+        #CpMenu {
           background: none;
-          li{
+          li {
             background: $nico-black;
             width: auto;
           }
-          li:hover{
+          li:hover {
             background: $hover-background-color;
           }
-          li.active{
+          li.active {
             background: $main-url-color;
           }
         }
-        .tipbox{
+        .tipbox {
           background: $nico-black;
           color: $sub-1-text-color;
           box-shadow: none;
         }
       }
-      #Column02{
-        #TopMainBox{
+      #Column02 {
+        #TopMainBox {
           background: $nico-black;
-          h3{
+          h3 {
             color: $main-text-color;
           }
-          p{
+          p {
             color: $sub-1-text-color;
           }
-          .left-link{
-            li{
-              a{
+          .left-link {
+            li {
+              a {
                 color: $main-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $nico-tree;
               }
             }
           }
         }
-        #TopScoreBox{
+        #TopScoreBox {
           margin-top: 10px;
-          h3.midashi01{
+          h3.midashi01 {
             background: $sub2-background-color;
             margin: 0;
           }
-          .yosoku{
+          .yosoku {
             background: $nico-black;
-            dl{
-              dt{
+            dl {
+              dt {
                 text-shadow: none;
                 color: $sub-1-text-color;
               }
-              dd{
+              dd {
                 background: $sub2-background-color;
                 border-radius: 40px;
-                p{
+                p {
                   color: $sub-1-text-color;
                 }
-                p.cps{
+                p.cps {
                   color: $nico-cresyo;
                 }
               }
             }
           }
-          [data-commons-kind="cpp-my-forecast"]{
-            .highscore-item{
-              h4{
+          [data-commons-kind="cpp-my-forecast"] {
+            .highscore-item {
+              h4 {
                 color: $sub-1-text-color;
                 border-color: $border-background-color;
                 padding-left: 40px;
               }
-              ul li{
+              ul li {
                 border-color: $border-background-color;
-                .item1{
-                  .dsc{
-                    a{
+                .item1 {
+                  .dsc {
+                    a {
                       color: $main-text-color;
                     }
-                    a:hover{
+                    a:hover {
                       color: $nico-tree;
                     }
                   }
-                  .yosoku2{
+                  .yosoku2 {
                     background: $sub2-background-color;
                     color: $sub-1-text-color;
                     box-shadow: none;
@@ -114,50 +113,49 @@
                 }
               }
             }
-            .right-link{
-              a{
+            .right-link {
+              a {
                 color: $sub-1-text-color;
               }
-              a:hover{
+              a:hover {
                 color: $nico-tree;
               }
             }
           }
         }
-        #TopMessageBox{
-          h3.midashi01{
+        #TopMessageBox {
+          h3.midashi01 {
             background: $sub2-background-color;
           }
-          dl{
-            dt{
+          dl {
+            dt {
               color: $sub-1-text-color;
               background: $sub2-background-color;
             }
-            dd{
+            dd {
               border-color: $border-background-color;
               color: $main-text-color;
-              a{
+              a {
                 color: $main-text-color;
-                &:hover{
+                &:hover {
                   color: $nico-tree;
                 }
-                &:visited{
+                &:visited {
                   color: $sub-1-text-color;
                 }
               }
             }
           }
         }
-        .right-link{
-          a{
+        .right-link {
+          a {
             color: $sub-1-text-color;
           }
-          a:hover{
+          a:hover {
             color: $nico-tree;
           }
         }
       }
     }
   }
-
 }

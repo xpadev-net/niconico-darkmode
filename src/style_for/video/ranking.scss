@@ -1,57 +1,57 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_video-card';
-@import '../parts/_button';
-@import '../parts/_page-next';
-@import '../parts/_textarea';
-@import '../parts/_dropdown';
-@import '../parts/_footer';
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_video-card";
+@import "../parts/_button";
+@import "../parts/_page-next";
+@import "../parts/_textarea";
+@import "../parts/_dropdown";
+@import "../parts/_footer";
 
 //将棋盤ランキング
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
   color: $main-text-color !important;
 
-  .BaseLayout-header{
-    .NicovideoLogo{
+  .BaseLayout-header {
+    .NicovideoLogo {
       filter: $invert;
     }
   }
-  
-  .BaseLayout-main{
-    .RankingGenreListContainer{
+
+  .BaseLayout-main {
+    .RankingGenreListContainer {
       background: none;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
       }
-      .RankingGenreListContainer-item{
+      .RankingGenreListContainer-item {
         background-color: $nico-black !important;
         border: none !important;
       }
-      .is-current{
+      .is-current {
         background-color: $main-url-color !important;
         color: $main-text-color !important;
       }
-      .is-current a:hover{
+      .is-current a:hover {
         color: $main-text-color !important;
       }
-      .RankingGenreListContainer-categoryHelp{
+      .RankingGenreListContainer-categoryHelp {
         color: $main-url-color;
       }
-      .CategoryHelpModal{
-        .Modal-content{
+      .CategoryHelpModal {
+        .Modal-content {
           background: $nico-black;
-          .CategoryHelpModal-image{
+          .CategoryHelpModal-image {
             opacity: 0.8;
           }
-          .CategoryHelpModal-infoLink{
-            a{
+          .CategoryHelpModal-infoLink {
+            a {
               color: $main-url-color;
             }
-            a:hover{
+            a:hover {
               text-decoration: underline;
             }
           }
@@ -60,89 +60,89 @@
     }
   }
 
-  .MatrixRanking-app{
-    .RankingHeaderContainer{
-      .LaneHeader{
-        .CustomButton{
+  .MatrixRanking-app {
+    .RankingHeaderContainer {
+      .LaneHeader {
+        .CustomButton {
           background: $nico-black;
-          .RankingIcon_customBlack{
+          .RankingIcon_customBlack {
             filter: $invert;
           }
-          span{
+          span {
             color: $main-text-color;
           }
         }
-        .RankingSettingSummary{
-          .RankingSettingSummary-content{
+        .RankingSettingSummary {
+          .RankingSettingSummary-content {
             background: $nico-black;
-            .RankingSettingSummary-main>h1,
-            .RankingSettingItem-content{
+            .RankingSettingSummary-main > h1,
+            .RankingSettingItem-content {
               color: $main-text-color;
             }
           }
           .RankingSettingSummary-content::before,
-          .RankingSettingSummary-content::after{
+          .RankingSettingSummary-content::after {
             background: $nico-black;
           }
         }
       }
-      .RankingHeaderContainer-header_fixed{
+      .RankingHeaderContainer-header_fixed {
         background: $nico-black;
-        box-shadow: 0 4px 10px rgba(0,0,0,.5);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       }
     }
 
-    .RankingMainContainer{
-      .MatrixRankingBannerAd{
+    .RankingMainContainer {
+      .MatrixRankingBannerAd {
         background: none;
-        .MatrixRankingBannerAd-caption{
+        .MatrixRankingBannerAd-caption {
           background: none;
         }
-        .Ads{
+        .Ads {
           background: none;
         }
       }
     }
 
-    .RankingCustomDialogContainer{
-      .RankingCustomDialogContainer-dialog{
+    .RankingCustomDialogContainer {
+      .RankingCustomDialogContainer-dialog {
         background: $nico-black;
-        .CustomRankingDialog{
-          .CustomRankingDialog-content{
-            .CustomRankingTop-description{
+        .CustomRankingDialog {
+          .CustomRankingDialog-content {
+            .CustomRankingTop-description {
               color: $main-text-color;
             }
-            .CustomRankingTop-selector{
-              .CustomRankingTop-itemLabel{
+            .CustomRankingTop-selector {
+              .CustomRankingTop-itemLabel {
                 border-color: $border-background-color;
                 color: $main-text-color;
               }
-              .CustomRankingTop-itemLabel:hover{
+              .CustomRankingTop-itemLabel:hover {
                 border-color: $main-url-color;
               }
             }
-            .CustomRankingFieldset{
+            .CustomRankingFieldset {
               border-color: $border-background-color;
-              .CustomRankingFieldset-legend{
+              .CustomRankingFieldset-legend {
                 background: $border-background-color;
                 color: $main-text-color;
               }
             }
-            .CustomGenreSelector{
-              .CustomGenreSelector-label{
+            .CustomGenreSelector {
+              .CustomGenreSelector-label {
                 border-color: #555555;
               }
-              .CustomGenreSelector-check:checked+.CustomGenreSelector-label{
+              .CustomGenreSelector-check:checked + .CustomGenreSelector-label {
                 border-color: $main-url-color;
                 background: $main-url-color;
                 color: $main-text-color;
               }
             }
-            .GenreRankingCustomEditor-genreSelect{
-              h1{
+            .GenreRankingCustomEditor-genreSelect {
+              h1 {
                 color: $main-text-color;
               }
-              aside{
+              aside {
                 color: $sub-1-text-color;
               }
             }
@@ -152,74 +152,75 @@
     }
   }
 
-  .MatrixRanking-postDescription{
+  .MatrixRanking-postDescription {
     color: $sub-1-text-color;
   }
-  .MatrixRanking-pastLink{
+  .MatrixRanking-pastLink {
     color: $main-url-color;
-    a{
+    a {
       color: $main-url-color;
     }
   }
 
-  .BaseLayout-footer{
+  .BaseLayout-footer {
     background: $nico-black;
-    .Ads728x90WebPcFooter{
+    .Ads728x90WebPcFooter {
       background: none;
     }
   }
 
-  .ShareModal-modal{
+  .ShareModal-modal {
     background: $nico-black;
-    .ShareModal-modalTitle{
+    .ShareModal-modalTitle {
       background: none;
       color: $main-text-color;
     }
-    .CopyForm-copy:hover{
+    .CopyForm-copy:hover {
       background-color: $hover-background-color;
     }
   }
-  .NC-ThreePointMenu-menu{
+  .NC-ThreePointMenu-menu {
     background: $nico-black;
-    .NC-Link,button{
+    .NC-Link,
+    button {
       background: none;
       color: $main-text-color;
     }
-    .NC-Link:hover,button:hover{
+    .NC-Link:hover,
+    button:hover {
       background-color: $hover-background-color;
     }
   }
-
 }
 
 //ジャンルランキング
-.niconico-darkmode-setting-true.SpecifiedRanking-body{
-  .BaseLayout-main{
-    .BaseRankingLayout-content{
-      .SpecifiedRanking-main{
-        .RankingHeader{
+.niconico-darkmode-setting-true.SpecifiedRanking-body {
+  .BaseLayout-main {
+    .BaseRankingLayout-content {
+      .SpecifiedRanking-main {
+        .RankingHeader {
           background: $nico-black;
-          header{
+          header {
             border-color: $border-background-color;
-            .RankingHeader-prefix{
+            .RankingHeader-prefix {
               color: $sub-1-text-color;
             }
           }
-          div{
-            .RankingTermSelector{
-              .RankingTermSelector-label{
+          div {
+            .RankingTermSelector {
+              .RankingTermSelector-label {
                 color: $main-text-color;
               }
-              .RankingTermSelector-dropdown{
+              .RankingTermSelector-dropdown {
                 border-color: $border-background-color;
-                .Dropdown-button{
+                .Dropdown-button {
                   color: $main-text-color;
                 }
-                .Dropdown-list{
-                  .DropdownItem{
+                .Dropdown-list {
+                  .DropdownItem {
                     color: $sub-1-text-color;
                   }
-                  .DropdownItem[data-is-selected]{
+                  .DropdownItem[data-is-selected] {
                     color: $main-text-color;
                   }
                 }
@@ -228,147 +229,156 @@
           }
         }
         .RepresentedTagsContainer,
-        .HotTopicsContainer{
-          .RankingFilterTag{
+        .HotTopicsContainer {
+          .RankingFilterTag {
             color: $sub-1-text-color;
           }
-          .RankingFilterTag:hover{
+          .RankingFilterTag:hover {
             color: $main-url-color;
           }
-          .RankingFilterTag.RankingFilterTag_active{
+          .RankingFilterTag.RankingFilterTag_active {
             color: $main-text-color;
           }
         }
 
         //videolist
         /*fix 20210601*/
-        .RankingVideoListContainer{
-          .MediaObject, .NC-MediaObject{
+        .RankingVideoListContainer {
+          .MediaObject,
+          .NC-MediaObject {
             background: $nico-black;
-            padding: .5rem;
+            padding: 0.5rem;
             border-color: $border-background-color;
 
-            .MediaObject-main, .NC-MediaObject-main{
-              .MediaObject-contents, .NC-MediaObject-contents{
-                .MediaObject-body, .NC-MediaObject-body{
-                  .MediaObjectTitle, .NC-MediaObjectTitle{
+            .MediaObject-main,
+            .NC-MediaObject-main {
+              .MediaObject-contents,
+              .NC-MediaObject-contents {
+                .MediaObject-body,
+                .NC-MediaObject-body {
+                  .MediaObjectTitle,
+                  .NC-MediaObjectTitle {
                     color: $main-text-color;
                   }
-                  .VideoMediaObject-description, .NC-VideoMediaObject-description{
+                  .VideoMediaObject-description,
+                  .NC-VideoMediaObject-description {
                     color: $sub-1-text-color;
                   }
                 }
               }
-              .MediaObject-contents:visited, .NC-MediaObject-contents:visited{
-                .MediaObject-body, .NC-MediaObject-body{
-                  .MediaObjectTitle, .NC-MediaObjectTitle{
+              .MediaObject-contents:visited,
+              .NC-MediaObject-contents:visited {
+                .MediaObject-body,
+                .NC-MediaObject-body {
+                  .MediaObjectTitle,
+                  .NC-MediaObjectTitle {
                     color: $sub-1-text-color;
                   }
                 }
               }
-              .MediaObject-contents:hover, .NC-MediaObject-contents:hover{
-                .MediaObject-body, .NC-MediaObject-body{
-                  .MediaObjectTitle, .NC-MediaObjectTitle{
+              .MediaObject-contents:hover,
+              .NC-MediaObject-contents:hover {
+                .MediaObject-body,
+                .NC-MediaObject-body {
+                  .MediaObjectTitle,
+                  .NC-MediaObjectTitle {
                     color: $main-url-color;
                   }
                 }
               }
-              .NC-ThreePointMenu-button:hover{
+              .NC-ThreePointMenu-button:hover {
                 filter: $invert;
               }
             }
           }
-          .MediaObject.RankingMainNicoad[data-nicoad-grade=gold]{
+          .MediaObject.RankingMainNicoad[data-nicoad-grade="gold"] {
             background: $nico-black;
             border: 2.5px solid $nicoad-gold;
           }
-          .MediaObject.RankingMainNicoad[data-nicoad-grade=silver]{
+          .MediaObject.RankingMainNicoad[data-nicoad-grade="silver"] {
             background: $nico-black;
             border: 1.5px solid $nicoad-silver;
           }
-          .MediaObject.RankingMainNicoad[data-nicoad-grade=bronze]{
+          .MediaObject.RankingMainNicoad[data-nicoad-grade="bronze"] {
             background: $nico-black;
             border: 1px solid $nicoad-bronze;
           }
         }
-
-
       }
     }
   }
 
-  .NC-ThreePointMenu-menu{
-    .RankingVideoMenu-item{
+  .NC-ThreePointMenu-menu {
+    .RankingVideoMenu-item {
       color: $main-text-color;
       background: none;
     }
-    .RankingVideoMenu-item:hover{
+    .RankingVideoMenu-item:hover {
       background-color: $hover-background-color;
     }
   }
 
-
-
   //TODO 以下移植のみ／SCSSへの書き換え作業必要
   /*各ジャンル*/
-  .RankingTermSelector-label,.RankingTermSelector .Dropdown-button{
+  .RankingTermSelector-label,
+  .RankingTermSelector .Dropdown-button {
     color: $main-text-color !important;
   }
-  .RankingTermSelector .Dropdown-button:after{
+  .RankingTermSelector .Dropdown-button:after {
     filter: $invert;
   }
-  .Dropdown-list{
+  .Dropdown-list {
     background-color: $nico-black !important;
     box-shadow: none !important;
     border: 1px solid $border-background-color !important;
   }
-  .DropdownItem{
+  .DropdownItem {
     background-color: $nico-black !important;
   }
-  .DropdownItem[data-is-selected]{
+  .DropdownItem[data-is-selected] {
     background: $main-url-color !important;
   }
 
-  .RankingFilterTag{
+  .RankingFilterTag {
     background: $nico-black !important;
     border: none !important;
   }
-  .RankingFilterTag_active{
+  .RankingFilterTag_active {
     background: $main-url-color !important;
   }
 
-  .Paginator-item{
+  .Paginator-item {
     border: none !important;
     background: $nico-black !important;
   }
-  .Paginator-item_current{
+  .Paginator-item_current {
     background: none !important;
   }
-  .SpecifiedRanking-footer{
+  .SpecifiedRanking-footer {
     color: $sub-1-text-color !important;
   }
-  
 
   /*side*/
-  .BaseRankingContentContainer header{
+  .BaseRankingContentContainer header {
     background: $nico-black !important;
   }
-  .BaseRankingContentContainer header h1,.NicoNewsContainer-heading,.BaseRankingContentContainer-main h2{
+  .BaseRankingContentContainer header h1,
+  .NicoNewsContainer-heading,
+  .BaseRankingContentContainer-main h2 {
     color: $main-text-color !important;
   }
-  .AnotherRankingLink-button{
+  .AnotherRankingLink-button {
     background: $nico-black !important;
     border: none !important;
   }
-  .MediaObject-body p{
+  .MediaObject-body p {
     color: $sub-1-text-color !important;
   }
-  .BaseRankingContentContainer.TrendTagContainer .TrendTagContainer-link{
+  .BaseRankingContentContainer.TrendTagContainer .TrendTagContainer-link {
     background: $nico-black !important;
     border: none !important;
   }
-  .BaseRankingContentContainer.TrendTagContainer .TrendTagContainer-row{
+  .BaseRankingContentContainer.TrendTagContainer .TrendTagContainer-row {
     border-bottom: none !important;
   }
-
 }

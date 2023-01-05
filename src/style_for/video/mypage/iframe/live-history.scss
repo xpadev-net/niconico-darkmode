@@ -1,56 +1,57 @@
 /*総合マイページ内生放送履歴*/
 
-@import '../../../parts/_default';
-@import '../../../parts/_dropdown';
+@import "../../../parts/_default";
+@import "../../../parts/_dropdown";
 
-.niconico-darkmode-setting-true{
-  #root{
-    [class*="___watch-histories-page___"]{
+.niconico-darkmode-setting-true {
+  #root {
+    [class*="___watch-histories-page___"] {
       background: $main-background-color;
-      [class*="___contents-area___"]{
-        #watchHistoryProgramListSection{
-          header[class*="___header___"]{
-            [class*="___heading___"]{
-              .viewed_number_per_max{ //残り件数
+      [class*="___contents-area___"] {
+        #watchHistoryProgramListSection {
+          header[class*="___header___"] {
+            [class*="___heading___"] {
+              .viewed_number_per_max {
+                //残り件数
                 color: $sub-1-text-color;
               }
             }
-            [class*="___watch-histories-delete-all-button___"]{
+            [class*="___watch-histories-delete-all-button___"] {
               color: $main-text-color;
               background: $sub2-background-color;
               border-radius: 4px;
               border-color: $border-background-color;
             }
-            [class*="___watch-histories-delete-all-button___"]:hover{
+            [class*="___watch-histories-delete-all-button___"]:hover {
               background: red;
+            }
           }
-          }
-          ul[class*="___program-card-list___"]{
-            li[class*="___item___"]{
-              [class*="___program-card___"]{
-                [class*="___content-area___"]{
-                  [class*="___program-title___"]{
+          ul[class*="___program-card-list___"] {
+            li[class*="___item___"] {
+              [class*="___program-card___"] {
+                [class*="___content-area___"] {
+                  [class*="___program-title___"] {
                     color: $main-text-color;
                   }
                 }
               }
             }
-            [class*="___item___"]:not(:first-child){
+            [class*="___item___"]:not(:first-child) {
               border-color: $border-background-color;
             }
           }
         }
       }
-      [class*="___menu-popup-control___"]{
-        [class*="___toggle-button___"]{
+      [class*="___menu-popup-control___"] {
+        [class*="___toggle-button___"] {
           filter: $invert;
         }
-        [class*="___target___"][class*="___program-menu___"]{
+        [class*="___target___"][class*="___program-menu___"] {
           background: $sub2-background-color;
-          [class*="___delete-watch-history-button___"]{
+          [class*="___delete-watch-history-button___"] {
             color: $main-text-color;
           }
-          [class*="___delete-watch-history-button___"]:hover{
+          [class*="___delete-watch-history-button___"]:hover {
             background-color: $hover-background-color;
           }
         }

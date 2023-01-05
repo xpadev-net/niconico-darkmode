@@ -1,74 +1,74 @@
-@import '_default';
+@import "_default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   .TopPage,
-	.UserPage{
-    .SearchContainer{
-      .CrossSearch{
-        .CrossSearch-rowSelector{
+  .UserPage {
+    .SearchContainer {
+      .CrossSearch {
+        .CrossSearch-rowSelector {
           border-color: $sub2-background-color;
           background: $sub2-background-color;
-          .CrossSearch-rowService{
+          .CrossSearch-rowService {
             color: $main-text-color;
           }
           .CrossSearch-rowService.active,
-          .CrossSearch-rowService:hover{
+          .CrossSearch-rowService:hover {
             background: $hover-background-color;
           }
         }
-        .CrossSearch-pullDownSelector{
-          .CrossSearch-pullDownButton{
+        .CrossSearch-pullDownSelector {
+          .CrossSearch-pullDownButton {
             border: none;
             background-color: $sub2-background-color;
-
           }
           .CrossSearch-pullDownButton.active,
-          .CrossSearch-pullDownButton:hover{
+          .CrossSearch-pullDownButton:hover {
             background-color: $hover-background-color;
           }
-          .CrossSearch-pullDownList{
+          .CrossSearch-pullDownList {
             background-color: $sub2-background-color;
             border-color: $border-background-color;
-            .CrossSearch-pullDownService{
+            .CrossSearch-pullDownService {
               color: $main-text-color;
             }
           }
         }
-        .CrossSearch-form{
+        .CrossSearch-form {
           background: $sub2-background-color;
           box-shadow: inset 0 0 0 1px $sub2-background-color;
           border: none;
-          .suggestBox{
+          .suggestBox {
             border-color: $border-background-color;
             background-color: $sub2-background-color;
-            .suggestBoxInner{
+            .suggestBoxInner {
               border-color: $border-background-color;
               background-color: $sub2-background-color;
-              .favTagEditBox{
-                p{
+              .favTagEditBox {
+                p {
                   color: $sub-1-text-color;
                 }
               }
-              ul{
-                li{
+              ul {
+                li {
                   color: inherit;
-                  a{
+                  a {
                     color: $main-text-color;
                   }
-                  a:hover{
+                  a:hover {
                     background: none !important;
                     color: $main-text-color !important;
                   }
                 }
-                li:hover,li.active{
-                  a{
+                li:hover,
+                li.active {
+                  a {
                     color: $main-text-color !important;
                     background: none !important;
                   }
                   background-color: $hover-background-color !important;
                 }
               }
-              .favTagItem.active+.suggestItem{
+              .favTagItem.active + .suggestItem {
                 border-color: $border-background-color;
               }
             }
@@ -77,27 +77,27 @@
       }
     }
   }
-  .BaseLayout-header{
-    .HeaderContainer-searchBox{
-      .SearchBox-option{
+  .BaseLayout-header {
+    .HeaderContainer-searchBox {
+      .SearchBox-option {
         background-color: $nico-black !important;
       }
-      .SearchBox-form{
+      .SearchBox-form {
         background-color: $nico-black !important;
         box-shadow: none !important;
       }
-      .SearchBox-query{
+      .SearchBox-query {
         color: $main-text-color !important;
       }
-      .suggestBox{
+      .suggestBox {
         background-color: $main-background-color !important;
-        .suggestBoxInner{
+        .suggestBoxInner {
           border: 1px solid $border-background-color;
           background-color: $main-background-color !important;
-          a{
+          a {
             color: $main-text-color !important;
           }
-          li:hover{
+          li:hover {
             background-color: $hover-background-color !important;
             color: $main-text-color !important;
           }
@@ -105,71 +105,71 @@
       }
     }
   }
-  .WatchAppContainer{
+  .WatchAppContainer {
     //動画watchページ
     //TODO 移植のみ／SCSSへ書き直し
-    .HeaderContainer-searchBox{
-      .SearchBox{
+    .HeaderContainer-searchBox {
+      .SearchBox {
         border: none;
         background: $nico-black;
-        .TagEditForm-input{
+        .TagEditForm-input {
           box-shadow: none;
         }
-        .TagSuggestionInput-input{
+        .TagSuggestionInput-input {
           background-color: $nico-black;
           color: $main-text-color;
           box-shadow: none;
         }
-        .TagSuggestionList{
+        .TagSuggestionList {
           border: none;
           box-shadow: none;
         }
         .TagSuggestionList-item,
         .TagSuggestionList-favoriteTag,
-        .SearchBox-optionMenu{
+        .SearchBox-optionMenu {
           background-color: $nico-black;
           color: $main-text-color;
           border-top: 1px dotted $nico-black;
         }
-        .TagSuggestionList-item.is-active, 
+        .TagSuggestionList-item.is-active,
         .TagSuggestionList-item:hover,
-        .SearchBox-optionMenuItem:hover{
+        .SearchBox-optionMenuItem:hover {
           background-color: $sub2-background-color;
         }
       }
     }
   }
 
-  #head_search{
+  #head_search {
     //zero-design
-    #search_tab{
-      a.head_ssw_0{
+    #search_tab {
+      a.head_ssw_0 {
         background-color: $nico-black;
         color: $sub-1-text-color;
       }
-    } 
-    #search_input{
+    }
+    #search_input {
       background: $nico-black;
       border: $border-background-color solid 1px;
-      #bar_search{
+      #bar_search {
         background-color: $nico-black;
         color: $main-text-color;
       }
-      .suggestBox{
-        background-color: $nico-black; 
-        .suggestBoxInner{
+      .suggestBox {
+        background-color: $nico-black;
+        .suggestBoxInner {
           border: 1px solid $border-background-color;
           background-color: $nico-black;
-          .favTagEditBox p{
+          .favTagEditBox p {
             color: $main-text-color;
           }
           border-color: $border-background-color;
-          li a{
+          li a {
             color: $main-text-color;
           }
-          li.active{
+          li.active {
             background-color: $hover-background-color !important;
-            a{
+            a {
               background: none !important;
               color: $main-text-color !important;
             }
@@ -177,56 +177,55 @@
         }
       }
     }
-
-
   }
 
-  .header{ //zero ヘッダー
-    .siteHeader{
-      .videoSearch{
-        .videoSearchOption{
-          .tab{
+  .header {
+    //zero ヘッダー
+    .siteHeader {
+      .videoSearch {
+        .videoSearchOption {
+          .tab {
             background-color: $nico-black;
-            a{
+            a {
               color: $main-text-color;
             }
           }
-          .active{
+          .active {
             background-color: $hover-background-color;
           }
         }
-        .videoSearchInput{
+        .videoSearchInput {
           border-color: $hover-background-color;
           background: $hover-background-color;
-          form{
+          form {
             background: $hover-background-color;
-            .inputText{
-              input{
+            .inputText {
+              input {
                 background: $hover-background-color;
                 color: $main-text-color;
               }
-              .clear-button-tag{
-                .clear-button-inner-tag{
+              .clear-button-tag {
+                .clear-button-inner-tag {
                   color: $main-text-color;
                   background: $sub-2-text-color;
                 }
               }
-              .suggestBox{
-                background-color: $nico-black; 
-                .suggestBoxInner{
+              .suggestBox {
+                background-color: $nico-black;
+                .suggestBoxInner {
                   border: 1px solid $border-background-color;
                   background-color: $nico-black;
-                  .favTagEditBox p{
+                  .favTagEditBox p {
                     color: $main-text-color;
                   }
-                  .favTagItem{
+                  .favTagItem {
                     border-color: $border-background-color;
-                    li a{
+                    li a {
                       color: $main-text-color;
                     }
-                    li.active{
+                    li.active {
                       background-color: $hover-background-color !important;
-                      a{
+                      a {
                         background: none !important;
                         color: $main-text-color !important;
                       }
@@ -257,13 +256,14 @@
   // }
 
   /*live create tag*/
-  ul.___suggest___1GWLd,ul.___suggest___29TND{
+  ul.___suggest___1GWLd,
+  ul.___suggest___29TND {
     background-color: $nico-black;
-    li{
+    li {
       color: $main-text-color;
       border-color: $border-background-color;
     }
-    li:hover{
+    li:hover {
       background-color: $hover-background-color;
     }
   }

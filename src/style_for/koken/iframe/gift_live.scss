@@ -1,38 +1,38 @@
-@import '../../parts/_default';
+@import "../../parts/_default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
   color: $sub-1-text-color !important;
 
   // ヘッダー
-  .page-top-fixed-container{
+  .page-top-fixed-container {
     background-color: $main-background-color;
-    header.wrapper{
+    header.wrapper {
       background: none !important;
       border-color: $border-background-color !important;
-  
-      h1.page-title{
+
+      h1.page-title {
         color: $main-text-color;
       }
     }
-    section.wrapper{
+    section.wrapper {
       background: none;
     }
   }
 
   // タブ
-  .main-content{
-    .wrapper{
+  .main-content {
+    .wrapper {
       // タブ
-      .default-top-fixed-container{
-        .wrapper{
+      .default-top-fixed-container {
+        .wrapper {
           background: none;
-          ul{
-            li{
-              button[aria-selected="true"]{
+          ul {
+            li {
+              button[aria-selected="true"] {
                 background-color: $main-url-color;
               }
-              button[aria-selected="false"]{
+              button[aria-selected="false"] {
                 background-color: $nico-black;
                 color: $main-text-color;
               }
@@ -44,59 +44,59 @@
   }
 
   // 放送者用販売オンオフ
-  .available-switch{
-    .wrapper{
+  .available-switch {
+    .wrapper {
       background-color: $sub2-background-color;
     }
   }
 
   // インフォ
-  .conductor-banner{
-    .anchor{
+  .conductor-banner {
+    .anchor {
       border-color: $border-background-color;
-      .text{
+      .text {
         color: $main-text-color;
       }
-      .blank-icon{
+      .blank-icon {
         fill: $sub-1-text-color;
       }
     }
   }
 
   // オーディションイベント
-  .event-info{
+  .event-info {
     border-color: $border-background-color;
-    .nage-event-info{
-      .name{
+    .nage-event-info {
+      .name {
         color: $main-text-color;
-        svg{
+        svg {
           fill: $main-text-color;
         }
       }
-      .status{
+      .status {
         color: $main-text-color;
       }
     }
   }
 
   // ギフト選択
-  .item-group{
-    &:not(:first-child){
+  .item-group {
+    &:not(:first-child) {
       border-color: $border-background-color !important;
     }
 
-    .item-group-name{
+    .item-group-name {
       color: $main-text-color;
     }
-    .item-group-text{
+    .item-group-text {
       color: $sub-1-text-color;
     }
-    .items{
-      .item{
-        .item-button{
+    .items {
+      .item {
+        .item-button {
           background-color: $sub2-background-color;
           border-color: $sub2-background-color;
-          .point{
+          .point {
             color: $main-text-color;
           }
         }
@@ -105,88 +105,87 @@
   }
 
   // 投げ確認
-  .child-container{
-    .item-info{
-      .text{
-        .name{
+  .child-container {
+    .item-info {
+      .text {
+        .name {
           color: $main-text-color;
         }
       }
     }
-    .user-ticket{
+    .user-ticket {
       background-color: $sub2-background-color;
-      &::after{
+      &::after {
         border-top-color: $sub2-background-color;
       }
     }
-    .button-wrapper{
-      .charge-button{
+    .button-wrapper {
+      .charge-button {
         border-color: $border-background-color;
       }
-      .purchase-button{
+      .purchase-button {
         color: black;
       }
     }
-
   }
 
   // 投げ履歴
-  .content-history{
-    .total-point{
-      .balloon{
+  .content-history {
+    .total-point {
+      .balloon {
         background-color: $sub2-background-color;
-        &::after{
+        &::after {
           border-top-color: $sub2-background-color;
         }
       }
     }
-    .history-list{
-      .flipping-effect-list{
-        li{
+    .history-list {
+      .flipping-effect-list {
+        li {
           border-color: $border-background-color;
         }
       }
-      .empty{
+      .empty {
         color: $sub2-background-color;
       }
     }
   }
 
   // 投げらんきんぐ
-  .nage-ranking{
+  .nage-ranking {
     // オーディションイベント
-    .event-heading{
+    .event-heading {
       border-color: $border-background-color;
-      .nage-event-info{
-        .name{
+      .nage-event-info {
+        .name {
           color: $main-text-color;
-          svg{
+          svg {
             fill: $main-text-color;
           }
         }
-        .status{
+        .status {
           color: $main-text-color;
         }
       }
     }
 
-    .flipping-effect-list{
-      li{
+    .flipping-effect-list {
+      li {
         border-color: $border-background-color;
       }
     }
-    .empty{
+    .empty {
       color: $sub-1-text-color;
     }
   }
 
   // 投げユーザー詳細
-  .nage-ranker-detail{
-    .wrapper::after{
+  .nage-ranker-detail {
+    .wrapper::after {
       border-bottom-color: $main-background-color;
     }
-    .ranker-info{
-      .text{
+    .ranker-info {
+      .text {
         color: black;
       }
     }

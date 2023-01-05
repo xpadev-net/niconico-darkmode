@@ -1,126 +1,126 @@
 @import "../../parts/default";
 
-.niconico-darkmode-setting-true{
-  #Contents.cp-contents{
-    #Column02.cpsadmin.change{
-
+.niconico-darkmode-setting-true {
+  #Contents.cp-contents {
+    #Column02.cpsadmin.change {
       /* 交換TOP */
-      h4{
+      h4 {
         color: $main-text-color;
       }
-      .exchangeBtnArea{
+      .exchangeBtnArea {
         background: none;
         border: none;
-        .exchangeNicopoBtnArea{
-          .exchangeNicopoLabel{
+        .exchangeNicopoBtnArea {
+          .exchangeNicopoLabel {
             background: $nico-point;
             color: $nico-black;
           }
-          .exchangeNicopoBtn{
+          .exchangeNicopoBtn {
             background: $nico-point;
             color: $nico-black;
-            a{
+            a {
               color: $nico-black;
-              .exchangeNicopoLogo svg path{
+              .exchangeNicopoLogo svg path {
                 fill: $nico-black;
               }
             }
-            .exchangeNicopoArrowIcon > svg{
+            .exchangeNicopoArrowIcon > svg {
               fill: $nico-black;
             }
           }
         }
-        .exchangeRegistrationAnchorArea{
-          a{
+        .exchangeRegistrationAnchorArea {
+          a {
             color: $main-text-color;
           }
-          a:hover{
+          a:hover {
             color: $main-url-color;
           }
-          span svg path{
+          span svg path {
             fill: $main-url-color;
           }
         }
       }
-      .exchangeInfoArea{
+      .exchangeInfoArea {
         background: none;
         color: $main-text-color;
-        a{
+        a {
           color: $main-text-color;
         }
-        a:hover{
+        a:hover {
           color: $main-url-color;
         }
       }
 
       /* スコア設定 */
-      ul.flow{
-        img{
+      ul.flow {
+        img {
           border-radius: 5px;
         }
       }
-      .changedsc ul li{
+      .changedsc ul li {
         color: $sub-1-text-color;
       }
-      .yosoku{
+      .yosoku {
         background: $nico-black;
-        dl{
-          dt,dd{
+        dl {
+          dt,
+          dd {
             text-shadow: none;
             color: $sub-1-text-color;
           }
-          dd input{
+          dd input {
             background: $sub2-background-color;
             border-radius: 20px;
           }
         }
       }
-      .cal-area.change-point{
+      .cal-area.change-point {
         border-color: $nico-black;
         background: $nico-black;
-        .hav-point,.get-point{
-          dt{
+        .hav-point,
+        .get-point {
+          dt {
             color: $sub-1-text-color;
-            img[src="/images/common/icon/ic_cps_mono.png"]{
+            img[src="/images/common/icon/ic_cps_mono.png"] {
               display: none;
             }
           }
-          dd{
+          dd {
             box-shadow: none;
             background: $sub2-background-color;
           }
         }
       }
-      .attention{
+      .attention {
         color: $sub-1-text-color;
-        a{
+        a {
           color: $main-text-color;
         }
-        a:hover{
+        a:hover {
           color: $main-url-color;
         }
       }
 
       /* スコア確認 */
-      .list-cps{
+      .list-cps {
         background: $nico-black;
         box-shadow: none;
-        table{
+        table {
           background: $sub2-background-color;
           color: $sub-1-text-color;
           border-color: $border-background-color;
-          th{
+          th {
             background: $nico-black;
             border-color: $border-background-color;
           }
-          td{
+          td {
             border-color: $border-background-color;
           }
         }
       }
 
       /* 受付完了 */
-
     }
   }
 }

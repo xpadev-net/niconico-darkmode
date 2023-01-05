@@ -1,112 +1,113 @@
-@use '../../parts/_default' as *;
-@import '../../parts/_dropdown';
+@use "../../parts/_default" as *;
+@import "../../parts/_dropdown";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   //共通 プレミアム入会バナー
-  .PremiumBanner{
+  .PremiumBanner {
     background-color: $sub2-background-color;
     border-color: $nico-premium;
-    .PremiumBanner-message{
+    .PremiumBanner-message {
       color: $main-text-color;
     }
 
-    &:hover{
+    &:hover {
       background-color: $hover-background-color;
-      .PremiumBanner-message{
+      .PremiumBanner-message {
         color: $main-text-color;
       }
     }
   }
 
   //ニコレポ
-  .NicorepoItem-item{
+  .NicorepoItem-item {
     background-color: $sub2-background-color;
     border: none;
     color: $main-text-color;
-    a{
+    a {
       color: $main-text-color;
     }
-    .NicorepoItem-activity{
-      .NicorepoItem-activityCreatedAt{
+    .NicorepoItem-activity {
+      .NicorepoItem-activityCreatedAt {
         color: $sub-1-text-color;
       }
       .NicorepoItem-activityDescription[style="color: rgb(208, 2, 27);"],
-      .NicorepoItem-activityCreatedAt_new{
+      .NicorepoItem-activityCreatedAt_new {
         color: $notice-red !important;
       }
     }
   }
-  .NicorepoItem-item:hover{
+  .NicorepoItem-item:hover {
     box-shadow: inset 0px 0px 20px 7.5px #555;
   }
 
   //フォロー：ユーザー
-  .UserItem-content{
+  .UserItem-content {
     background: $sub2-background-color;
     border: none;
-    .UserItem-nickname{
+    .UserItem-nickname {
       color: $main-text-color;
     }
-    .UserItem-description{
+    .UserItem-description {
       color: $sub-1-text-color;
     }
   }
-  .UserItem:hover{
+  .UserItem:hover {
     box-shadow: none;
   }
 
   //フォロー：タグ
-  .FollowingTagContainer-content{
+  .FollowingTagContainer-content {
     background: $sub2-background-color;
     border: none;
-    .FollowingTagContainer-tagNameLink{
+    .FollowingTagContainer-tagNameLink {
       color: $main-text-color;
     }
-    .FollowingTagContainer-tagNameLink:visited{
+    .FollowingTagContainer-tagNameLink:visited {
       color: $sub-1-text-color;
     }
-    .FollowingTagContainer-tagNameLink:hover{
+    .FollowingTagContainer-tagNameLink:hover {
       color: $main-url-color;
     }
-    .FollowingTagContainer-contentBody{
-      .FollowingTagContainer-nicodicSummary{
+    .FollowingTagContainer-contentBody {
+      .FollowingTagContainer-nicodicSummary {
         color: $sub-1-text-color;
       }
-      a{
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
       }
     }
   }
-  .TagrepoContainer{
-    header{
-      h1.TagrepoContainer-headerTagName{
+  .TagrepoContainer {
+    header {
+      h1.TagrepoContainer-headerTagName {
         color: $main-text-color;
       }
-      .TagrepoContainer-headerAction{
-        .TagrepoContainer-headerActionBack{
+      .TagrepoContainer-headerAction {
+        .TagrepoContainer-headerActionBack {
           color: $sub-1-text-color;
         }
-        .TagrepoContainer-headerActionBack:hover{
+        .TagrepoContainer-headerActionBack:hover {
           color: $main-url-color;
         }
-        .ThreePointMenu-button{
+        .ThreePointMenu-button {
           filter: $invert;
         }
       }
     }
-    .TagrepoItem{
+    .TagrepoItem {
       background-color: $nico-black;
       border-color: $border-background-color;
-      .TagrepoItem-headerSender,.TagrepoItem-contentTitle{
+      .TagrepoItem-headerSender,
+      .TagrepoItem-contentTitle {
         color: $main-text-color;
       }
-      .TagrepoItem-contentTitle:visited{
+      .TagrepoItem-contentTitle:visited {
         color: $sub-1-text-color;
       }
-      .TagrepoItem-contentTagsItem{
+      .TagrepoItem-contentTagsItem {
         border-color: $sub2-background-color;
         background: $sub2-background-color;
         color: $sub-1-text-color;
@@ -115,179 +116,178 @@
   }
 
   //フォロー：マイリスト
-  .MylistMediaObject{
-    .MylistMediaObject-linkArea{
+  .MylistMediaObject {
+    .MylistMediaObject-linkArea {
       background: $sub2-background-color;
       border: none;
-      .MylistMediaObject-bodyTitle{
+      .MylistMediaObject-bodyTitle {
         color: $main-text-color;
       }
-      .MylistThumbnails{
+      .MylistThumbnails {
         background: none;
         border: none;
-        .MylistThumbnails-itemCount{
+        .MylistThumbnails-itemCount {
           color: $main-text-color;
         }
       }
-      .MylistThumbnails-thumbnail:nth-of-type(3):before{
-        background: linear-gradient(90deg,hsla(0,0%,98%,0),$nico-black);
+      .MylistThumbnails-thumbnail:nth-of-type(3):before {
+        background: linear-gradient(90deg, hsla(0, 0%, 98%, 0), $nico-black);
       }
     }
-    .MylistMediaObject-linkArea:visited:not(:hover) .MylistMediaObject-bodyTitle{
+    .MylistMediaObject-linkArea:visited:not(:hover)
+      .MylistMediaObject-bodyTitle {
       color: $sub-1-text-color;
     }
-    .MylistMediaObject-linkArea:hover{
+    .MylistMediaObject-linkArea:hover {
       box-shadow: inset 0px 0px 20px 7.5px #555;
     }
   }
-  .MylistMediaObject:hover{
+  .MylistMediaObject:hover {
     box-shadow: none;
   }
 
   //フォロー：チャンネル
-  .ChannelItem-content{
+  .ChannelItem-content {
     background: $sub2-background-color;
     border: none;
-    .ChannelItem-name{
+    .ChannelItem-name {
       color: $main-text-color;
     }
-    .ChannelItem-description{
+    .ChannelItem-description {
       color: $sub-1-text-color;
     }
   }
-  .ChannelItem-link:visited .ChannelItem-name{
+  .ChannelItem-link:visited .ChannelItem-name {
     color: $sub-1-text-color;
   }
-  .ChannelItem:hover{
+  .ChannelItem:hover {
     box-shadow: none;
-    .ChannelItem-content{
+    .ChannelItem-content {
       box-shadow: inset 0px 0px 20px 7.5px #555;
-      .ChannelItem-name{
+      .ChannelItem-name {
         color: $main-text-color;
       }
     }
   }
 
   //フォロー：コミュニティ
-  .CommunityItem-content{
+  .CommunityItem-content {
     background: $sub2-background-color;
     border: none;
-    .CommunityItem-name{
+    .CommunityItem-name {
       color: $main-text-color;
     }
-    .CommunityItem-description{
+    .CommunityItem-description {
       color: $sub-1-text-color;
     }
   }
-  .CommunityItem-link:visited .CommunityItem-name{
+  .CommunityItem-link:visited .CommunityItem-name {
     color: $sub-1-text-color;
   }
-  .CommunityItem:hover{
+  .CommunityItem:hover {
     box-shadow: none;
-    .CommunityItem-content{
+    .CommunityItem-content {
       box-shadow: inset 0px 0px 20px 7.5px #555;
-      .CommunityItem-name{
+      .CommunityItem-name {
         color: $main-text-color;
       }
     }
   }
 
-
   //動画item
-  .VideoMediaObject{
-    .MediaObject-contents{
-      .VideoMediaObject-title{
+  .VideoMediaObject {
+    .MediaObject-contents {
+      .VideoMediaObject-title {
         color: $main-text-color;
       }
     }
-    .MediaObject-contents:visited{
-      .VideoMediaObject-title{
+    .MediaObject-contents:visited {
+      .VideoMediaObject-title {
         color: $sub-1-text-color;
       }
     }
-    .MediaObject-contents:hover{
-      .VideoMediaObject-title{
+    .MediaObject-contents:hover {
+      .VideoMediaObject-title {
         color: $main-url-color;
       }
     }
-    .VideoMediaObject-action{
+    .VideoMediaObject-action {
       filter: $invert;
     }
   }
 
   //あとで見る
-  .WatchLaterList-item+.WatchLaterList-item{  
+  .WatchLaterList-item + .WatchLaterList-item {
     border-color: $border-background-color;
   }
 
   //マイリスト
-  .MylistContainer{
-    .VideoMediaObjectList>*+*{
+  .MylistContainer {
+    .VideoMediaObjectList > * + * {
       border-color: $border-background-color;
     }
   }
-  .MylistItemList-item+.MylistItemList-item:before{
+  .MylistItemList-item + .MylistItemList-item:before {
     background-color: $border-background-color;
   }
 
-
-
   //履歴：動画
-  .VideoWatchHistoryContainer-item+.VideoWatchHistoryContainer-item:before{
+  .VideoWatchHistoryContainer-item + .VideoWatchHistoryContainer-item:before {
     background-color: $border-background-color;
   }
 
   //履歴：いいね！
-  .LikeHistoryContainer{
-    .NC-VideoMediaObject{
-      .LikeItemAfter{
-        header{
-          .LikeItemAfter-owner{
-            .LikeItemAfter-ownerName{
+  .LikeHistoryContainer {
+    .NC-VideoMediaObject {
+      .LikeItemAfter {
+        header {
+          .LikeItemAfter-owner {
+            .LikeItemAfter-ownerName {
               color: $main-text-color;
             }
           }
-          .LikeItemAfter-owner:hover{
-            .LikeItemAfter-ownerName{
+          .LikeItemAfter-owner:hover {
+            .LikeItemAfter-ownerName {
               color: $main-url-color;
             }
           }
         }
-        .LikeItemAfter-thanksMessage{
+        .LikeItemAfter-thanksMessage {
           background: $sub2-background-color;
           border-color: $sub2-background-color;
           color: $main-text-color;
-          h1{
+          h1 {
             color: $sub-1-text-color;
           }
         }
-        .LikeItemAfter-thanksMessage:after, .LikeItemAfter-thanksMessage:before{
+        .LikeItemAfter-thanksMessage:after,
+        .LikeItemAfter-thanksMessage:before {
           border-bottom-color: $sub2-background-color;
         }
       }
     }
-    .VideoMediaObjectList>*+*{
+    .VideoMediaObjectList > * + * {
       border-color: $border-background-color;
     }
   }
 
   //履歴：ニコられた
-  .NicoruHistoryPassiveItem{
+  .NicoruHistoryPassiveItem {
     background-color: $sub2-background-color;
     box-shadow: none;
-    .NicoruHistoryPassiveItem-subject{
+    .NicoruHistoryPassiveItem-subject {
       border-color: $border-background-color;
       .NicoruHistoryPassiveItem-subjectComment,
-      .NicoruHistoryPassiveItem-subjectNicoruCountInner{
+      .NicoruHistoryPassiveItem-subjectNicoruCountInner {
         color: $main-text-color;
       }
     }
-    .NicoruHistoryPassiveItem-video{
+    .NicoruHistoryPassiveItem-video {
       background: none;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
         text-decoration: underline;
       }
@@ -295,30 +295,30 @@
   }
 
   //履歴：ニコった
-  .NicoruHistoryActiveItem{
+  .NicoruHistoryActiveItem {
     background-color: $sub2-background-color;
     box-shadow: none;
-    .NicoruHistoryActiveItem-subject{
+    .NicoruHistoryActiveItem-subject {
       border-color: $border-background-color;
-      .ThreePointMenu-button{
+      .ThreePointMenu-button {
         filter: $invert;
       }
       .NicoruHistoryActiveItem-subjectComment,
-      .NicoruHistoryActiveItem-subjectNicoruCountInner{
+      .NicoruHistoryActiveItem-subjectNicoruCountInner {
         color: $main-text-color;
       }
     }
-    .NicoruHistoryActiveItem-count{
-      .NicoruHistoryActiveItem-countInner{
+    .NicoruHistoryActiveItem-count {
+      .NicoruHistoryActiveItem-countInner {
         color: $main-text-color;
       }
     }
-    .NicoruHistoryActiveItem-video{
+    .NicoruHistoryActiveItem-video {
       background: none;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
         text-decoration: underline;
       }
@@ -326,85 +326,86 @@
   }
 
   //スタンプ
-  .StampCard{
+  .StampCard {
     background: $sub2-background-color;
-    .StampCard-title{
+    .StampCard-title {
       color: $main-text-color;
     }
-    .StampCard-rank{
+    .StampCard-rank {
       background: none;
-      .StampCard-star{
+      .StampCard-star {
         fill: $nico-point;
       }
-      .StampCard-star_placeholder{
+      .StampCard-star_placeholder {
         fill: $nico-black;
       }
     }
   }
 
   //公開ユザペ
-    //動画
-    .UserPage{
-      .VideoPage{
-        .VideoContainer{
-          .VideoMediaObjectList>*+*{
-            border-color: $border-background-color;
-          }
+  //動画
+  .UserPage {
+    .VideoPage {
+      .VideoContainer {
+        .VideoMediaObjectList > * + * {
+          border-color: $border-background-color;
         }
       }
     }
-    .VideoContainer-item{
-      .VideoMediaObject-item{
-        .VideoMediaObject-action{
+  }
+  .VideoContainer-item {
+    .VideoMediaObject-item {
+      .VideoMediaObject-action {
+        filter: $invert;
+      }
+    }
+  }
+  //シリーズ
+  .SeriesContainer-item {
+    .SeriesMediaObject-body {
+      .SeriesMediaObject-bodyTitle {
+        color: $main-text-color !important;
+      }
+      .SeriesMediaObject-bodyTitle:visited {
+        color: $sub-1-text-color !important;
+      }
+      .SeriesMediaObject-bodyTitle:hover {
+        color: $main-url-color !important;
+      }
+      .SeriesMediaObject-bodyCount {
+        color: $sub-2-text-color !important;
+      }
+    }
+  }
+
+  //モーダル
+  //マイリスト作成
+  .MylistCreateModalContainer-watchHistories {
+    .MylistCreateModalContainer-watchHistoryItem {
+      .VideoMediaObject-item {
+        .VideoMediaObject-linkArea {
+          .VideoMediaObject-bodyTitle {
+            color: $main-text-color;
+          }
+        }
+        .VideoMediaObject-linkArea:visited {
+          .VideoMediaObject-bodyTitle {
+            color: $sub-1-text-color;
+          }
+        }
+        .VideoMediaObject-linkArea:hover {
+          .VideoMediaObject-bodyTitle {
+            color: $main-url-color;
+          }
+        }
+        .VideoMediaObject-action {
           filter: $invert;
         }
       }
     }
-    //シリーズ
-    .SeriesContainer-item{
-      .SeriesMediaObject-body{
-        .SeriesMediaObject-bodyTitle{
-          color: $main-text-color !important;
-        }
-        .SeriesMediaObject-bodyTitle:visited{
-          color: $sub-1-text-color !important;
-        }
-        .SeriesMediaObject-bodyTitle:hover{
-          color: $main-url-color !important;
-        }
-        .SeriesMediaObject-bodyCount{
-          color: $sub-2-text-color !important;
-        }
-      }
-    }
-
-  //モーダル
-    //マイリスト作成
-    .MylistCreateModalContainer-watchHistories{
-      .MylistCreateModalContainer-watchHistoryItem{
-        .VideoMediaObject-item{
-          .VideoMediaObject-linkArea{
-            .VideoMediaObject-bodyTitle{
-              color: $main-text-color;
-            }
-          }
-          .VideoMediaObject-linkArea:visited{
-            .VideoMediaObject-bodyTitle{
-              color: $sub-1-text-color;
-            }
-          }
-          .VideoMediaObject-linkArea:hover{
-            .VideoMediaObject-bodyTitle{
-              color: $main-url-color;
-            }
-          }
-          .VideoMediaObject-action{
-            filter: $invert;
-          }
-        }
-      }
-    }
-    .MylistCreateModalContainer-watchHistoryItem+.MylistCreateModalContainer-watchHistoryItem:before{
-      background-color: $border-background-color;
-    }
+  }
+  .MylistCreateModalContainer-watchHistoryItem
+    + .MylistCreateModalContainer-watchHistoryItem:before {
+    background-color: $border-background-color;
+  }
 }

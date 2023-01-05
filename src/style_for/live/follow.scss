@@ -1,29 +1,29 @@
-@import '../parts/_default';
-@import '../parts/_dropdown';
-@import 'parts/_parts';
-@import 'parts/_card';
+@import "../parts/_default";
+@import "../parts/_dropdown";
+@import "parts/_parts";
+@import "parts/_card";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color;
 
-  [class*="___followed-programs-page___"]{
+  [class*="___followed-programs-page___"] {
     background-color: $main-background-color;
 
-    [class*="___program-menu-section___"]{
-      [class*="___heading___"]{
+    [class*="___program-menu-section___"] {
+      [class*="___heading___"] {
         color: $main-text-color;
       }
-      [class*="___anchor-list-field___"]{
-        [class*="___list___"]{
-          [class*="___control___"]{
-            [class*="___counter-anchor___"]{
+      [class*="___anchor-list-field___"] {
+        [class*="___list___"] {
+          [class*="___control___"] {
+            [class*="___counter-anchor___"] {
               color: $main-text-color;
               background-color: $nico-black;
             }
-            [class*="___counter-anchor___"]:hover{
+            [class*="___counter-anchor___"]:hover {
               background-color: $hover-background-color;
             }
-            [class*="___counter-anchor___"][aria-selected="true"]{
+            [class*="___counter-anchor___"][aria-selected="true"] {
               color: $main-text-color;
               background-color: $main-url-color;
             }
@@ -32,31 +32,31 @@
       }
     }
 
-    [class*="___premium-anchor___"]{
+    [class*="___premium-anchor___"] {
       background-color: $nico-black;
       border-color: $nico-premium;
       color: $main-text-color;
     }
 
-    [class*="___contents-area___"]{
-      [class*="___section___"]{
-        [class*="___header___"]{
-          [class*="___heading___"]{
+    [class*="___contents-area___"] {
+      [class*="___section___"] {
+        [class*="___header___"] {
+          [class*="___heading___"] {
             color: $main-text-color;
           }
-          [class*="___sort-field___"]{
-            [class*="___caption___"]{
+          [class*="___sort-field___"] {
+            [class*="___caption___"] {
               color: $sub-1-text-color;
             }
           }
         }
-        [class*="___more-anchor___"]{
+        [class*="___more-anchor___"] {
           color: $main-url-color;
         }
-        [class*="___more-anchor___"]::before{
+        [class*="___more-anchor___"]::before {
           background-color: $main-url-color;
         }
-        [class*="___more-anchor___"]:hover{
+        [class*="___more-anchor___"]:hover {
           text-decoration: underline;
         }
       }

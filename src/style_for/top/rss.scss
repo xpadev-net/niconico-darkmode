@@ -1,29 +1,30 @@
-@import '../parts/_default';
-@import '../parts/_footer';
+@import "../parts/_default";
+@import "../parts/_footer";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
   color: $main-text-color;
-  a{
+  a {
     color: $main-text-color !important;
   }
-  a:hover{
+  a:hover {
     color: $main-url-color !important;
   }
 
-  .NiconicoLogo{
+  .NiconicoLogo {
     filter: $invert;
   }
-  .RssListPage-caption{
+  .RssListPage-caption {
     background: none !important;
-    h2{
+    h2 {
       color: $main-text-color !important;
     }
   }
-  .RssListPage-message,.RssListPage-itemUpdateAt{
+  .RssListPage-message,
+  .RssListPage-itemUpdateAt {
     color: $sub-1-text-color !important;
   }
-  .RssListPage-item{
+  .RssListPage-item {
     border-bottom: 1px solid $border-background-color !important;
   }
 }

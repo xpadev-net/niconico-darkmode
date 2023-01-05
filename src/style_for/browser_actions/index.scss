@@ -1,41 +1,41 @@
-@import '../parts/_default';
+@import "../parts/_default";
 
-body{
+body {
   background: $nico-black;
   width: 250px;
   margin: 0 auto;
   padding: 0;
 }
 
-.nicodark-setting-menupanel{
+.nicodark-setting-menupanel {
   display: block;
   letter-spacing: normal;
 
-  .nicodark-logo{
+  .nicodark-logo {
     width: 100%;
   }
-  .nicodark-setting-version-telop{
-    color:white;
+  .nicodark-setting-version-telop {
+    color: white;
     font-weight: bold;
     text-align: center !important;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 1em;
     margin-top: 0;
-    a{
+    a {
       margin: auto auto auto 10px;
       color: $main-url-color;
       text-decoration: underline;
     }
-    a:hover{
+    a:hover {
       text-decoration: none;
     }
   }
-  .nicodark-setting-menu{
+  .nicodark-setting-menu {
     padding: 0px 16px 8px 16px;
     position: relative;
 
-    .nicodark-label01{
+    .nicodark-label01 {
       display: flex;
       -webkit-box-align: center;
       align-items: center;
@@ -44,14 +44,14 @@ body{
       cursor: pointer;
       background-color: $nico-black;
 
-      .nicodark-span01{
+      .nicodark-span01 {
         font-family: sans-serif;
         font-size: 13px;
         font-weight: bold;
         flex: 1 1 0%;
         color: $main-text-color;
       }
-      .nicodark-label02{
+      .nicodark-label02 {
         position: relative;
         display: inline-block;
         background-color: rgb(204, 204, 204);
@@ -61,10 +61,10 @@ body{
         transition: background-color 0.2s ease 0s;
         cursor: pointer;
 
-        .nicodark-cb{
+        .nicodark-cb {
           display: none;
         }
-        .nicodark-span02{
+        .nicodark-span02 {
           display: inline-block;
           position: absolute;
           top: 2px;
@@ -76,44 +76,43 @@ body{
           transition: left 0.2s ease 0s;
         }
       }
-      .nicodark-label02[aria-checked="true"]{
+      .nicodark-label02[aria-checked="true"] {
         background-color: $main-url-color;
 
-        .nicodark-span02{
+        .nicodark-span02 {
           left: 18px;
         }
       }
     }
-    
 
-    .beta_setteings_area{
+    .beta_setteings_area {
       border: 1px solid $nico-premium;
       border-radius: 5px;
       margin: 5px 0;
       padding: 0 0 5px 0;
       overflow: hidden;
 
-      details{
+      details {
         padding: 0 15px;
         color: $main-text-color;
         cursor: pointer;
       }
 
-      p{
+      p {
         color: $main-text-color;
         font-size: 10px;
-        margin: .1rem .5rem;
+        margin: 0.1rem 0.5rem;
         line-height: 1.2;
 
-        &+p{
-          margin: .25rem .5rem;
+        & + p {
+          margin: 0.25rem 0.5rem;
         }
       }
 
-      &::before{
+      &::before {
         content: "拡張設定 (BETA)";
         top: 0;
-        padding: .1rem .5rem;
+        padding: 0.1rem 0.5rem;
         text-align: center;
         font-size: 12px;
         background-color: $nico-premium;
@@ -123,7 +122,7 @@ body{
     }
   }
 
-  .onelineinfo{
+  .onelineinfo {
     line-height: 1;
     font-size: 12px;
     text-align: center;
@@ -131,12 +130,12 @@ body{
     margin-top: 0;
   }
 
-	.endsupport{
-		display: block;
-		margin: .25rem;
-		border: $commons-warning 2px solid;
-		&:hover{
-			filter: brightness(1.25);
-		}
-	}
+  .endsupport {
+    display: block;
+    margin: 0.25rem;
+    border: $commons-warning 2px solid;
+    &:hover {
+      filter: brightness(1.25);
+    }
+  }
 }

@@ -1,39 +1,38 @@
-@import '../parts/_default';
+@import "../parts/_default";
 
-.niconico-darkmode-setting-true{
-
-  div.content-wrap.error-page{
-    p.error-description{
+.niconico-darkmode-setting-true {
+  div.content-wrap.error-page {
+    p.error-description {
       color: $sub-1-text-color;
-      a{
+      a {
         color: $main-url-color;
       }
     }
-    .link-box{
-      a.txt-arrow{
+    .link-box {
+      a.txt-arrow {
         color: $main-url-color;
       }
     }
   }
 
-  .footer-wrap{
+  .footer-wrap {
     border-color: $nico-black;
     background: $nico-black;
-    .footer ul li{
-      a{
+    .footer ul li {
+      a {
         color: $main-text-color;
       }
-      a:hover{
+      a:hover {
         color: $main-url-color;
       }
     }
-    .center{
-      p.address{
+    .center {
+      p.address {
         color: $main-text-color;
       }
     }
   }
-  .footer-wrap::before{
+  .footer-wrap::before {
     border-color: $nico-black;
   }
 }

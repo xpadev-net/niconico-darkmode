@@ -1,17 +1,16 @@
-@import '../parts/_default';
-@import '../parts/_textarea';
+@import "../parts/_default";
+@import "../parts/_textarea";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
 
-  .FeedbackPage{
-    .feedbackBody{
+  .FeedbackPage {
+    .feedbackBody {
       color: $main-text-color;
-      .confirmationDetails{
+      .confirmationDetails {
         background: $nico-black;
         border-color: $border-background-color;
       }
     }
   }
-
 }

@@ -1,101 +1,105 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background: $main-background-color;
 
-  #root{
-    .kkBxiB{ //右リスト
-      .notice{
-        ul.glaTQM{ //list
+  #root {
+    .kkBxiB {
+      //右リスト
+      .notice {
+        ul.glaTQM {
+          //list
           border: none;
 
-          li{
-            .inner{
+          li {
+            .inner {
               border-color: transparent transparent $border-background-color;
               background: $nico-black;
               color: $main-text-color;
-              .sc-jKJlTe{
+              .sc-jKJlTe {
                 background: $sub2-background-color;
                 font-weight: normal !important;
                 color: $sub-1-text-color !important;
-                .thumb::before{
+                .thumb::before {
                   background: none;
                 }
               }
             }
           }
 
-          li.bHRGgA{ //運営メッセージ
-            .inner{
-              .text{
+          li.bHRGgA {
+            //運営メッセージ
+            .inner {
+              .text {
                 color: $main-text-color;
               }
             }
-            
           }
 
-          li.erMPnp{ //既読
-            .inner{
-              .text{
+          li.erMPnp {
+            //既読
+            .inner {
+              .text {
                 color: $sub-1-text-color;
               }
             }
           }
-          li.eALpHe{ //未読
-            .inner{
-              .text{
+          li.eALpHe {
+            //未読
+            .inner {
+              .text {
                 color: $main-text-color;
                 font-weight: bold;
               }
-              .date{
+              .date {
                 color: $sub-1-text-color;
               }
             }
           }
-          li:hover{
-            .inner{
+          li:hover {
+            .inner {
               background-color: $hover-background-color;
             }
           }
-
-          
         }
-        .kYHXcA{
-          p.text{
+        .kYHXcA {
+          p.text {
             color: $main-text-color;
           }
         }
       }
     }
 
-    section.sc-fjdhpX{ //めっせーじ
+    section.sc-fjdhpX {
+      //めっせーじ
       background: $nico-black;
       color: $main-text-color;
 
-      .sc-jTzLTM{ //header
+      .sc-jTzLTM {
+        //header
         border-color: $border-background-color;
-        .icon{
+        .icon {
           border: 1px solid $border-background-color;
         }
-        .subject{
-          .date{
+        .subject {
+          .date {
             color: $sub-1-text-color;
           }
         }
       }
-      p.text{
+      p.text {
         color: $main-text-color;
-        a{
+        a {
           color: $main-url-color;
         }
-        a:hover{
+        a:hover {
           text-decoration: none;
         }
       }
-      .sc-gqjmRU{ //footer
+      .sc-gqjmRU {
+        //footer
         border-color: $border-background-color;
       }
-
     }
   }
 }

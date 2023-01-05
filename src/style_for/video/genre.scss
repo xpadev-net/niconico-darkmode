@@ -1,59 +1,67 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_video-card';
-@import '../parts/_footer';
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_video-card";
+@import "../parts/_footer";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   background-color: $main-background-color !important;
-  .BaseLayout-block{
+  .BaseLayout-block {
     /*genretop*/
-    .GenreTopPageHeader{
+    .GenreTopPageHeader {
       background-color: $nico-black !important;
-      .GenreTopPageHeader-prefix{
+      .GenreTopPageHeader-prefix {
         color: $sub-1-text-color !important;
       }
-      h1{
+      h1 {
         color: $main-text-color !important;
       }
     }
-    .RepresentedTagsContainer{
-      .RepresentedTag{
+    .RepresentedTagsContainer {
+      .RepresentedTag {
         color: $main-text-color;
         background: $sub-background-color !important;
         border: 1px solid $sub-background-color;
       }
-      .RepresentedTag:hover{
+      .RepresentedTag:hover {
         color: $main-url-color;
       }
-      .RepresentedTag_active{
+      .RepresentedTag_active {
         background: $main-url-color !important;
         color: $main-text-color !important;
       }
     }
-    .TrendyTagAreaContainer{
-      .TrendyTagsContainer-expands{
-        background-image: linear-gradient(180deg,hsla(210,3.7,10.58,.4),$main-background-color 18px);
-        .TrendyTagsContainer-expand{
+    .TrendyTagAreaContainer {
+      .TrendyTagsContainer-expands {
+        background-image: linear-gradient(
+          180deg,
+          hsla(210, 3.7, 10.58, 0.4),
+          $main-background-color 18px
+        );
+        .TrendyTagsContainer-expand {
           color: $main-text-color;
         }
       }
     }
-    .TrendyTagsWithVideosContainer{
-      .TrendyTagsWithVideosContainer-more{
+    .TrendyTagsWithVideosContainer {
+      .TrendyTagsWithVideosContainer-more {
         color: $main-text-color;
-        background: linear-gradient(90deg,hsla(0,0%,96.1%,0),$main-background-color 20px);
+        background: linear-gradient(
+          90deg,
+          hsla(0, 0%, 96.1%, 0),
+          $main-background-color 20px
+        );
       }
-      .TrendyTagsWithVideosContainer-more:hover{
+      .TrendyTagsWithVideosContainer-more:hover {
         color: $main-url-color;
       }
-      .TrendyTagsWithVideosContainer-createArticleLink{
+      .TrendyTagsWithVideosContainer-createArticleLink {
         color: $main-text-color;
       }
-      .TrendyTagsWithVideosContainer-createArticleLink:hover{
+      .TrendyTagsWithVideosContainer-createArticleLink:hover {
         color: $main-url-color;
       }
     }
-    .TrendyTagsWithVideosContainer-area + .TrendyTagsWithVideosContainer-area{
+    .TrendyTagsWithVideosContainer-area + .TrendyTagsWithVideosContainer-area {
       border-top: 2px dotted $border-background-color;
     }
   }

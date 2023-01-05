@@ -1,50 +1,51 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
-  .p-topPage{
+.niconico-darkmode-setting-true {
+  .p-topPage {
     background: none;
 
-    .topContentsArea{
+    .topContentsArea {
       margin: 10px auto;
 
-      .topContentsInner{
-        .contentLeft{
-          .topInfoList{ //お知らせ
-            h3{
+      .topContentsInner {
+        .contentLeft {
+          .topInfoList {
+            //お知らせ
+            h3 {
               filter: invert(90%);
               border: 1px solid $border-background-color;
               border-radius: 5px;
             }
-            .topInfoReadMore{
-              &:hover{
+            .topInfoReadMore {
+              &:hover {
                 opacity: 1;
               }
-              a{
+              a {
                 color: $sub-1-text-color;
-                &:hover{
+                &:hover {
                   color: $main-url-color;
                   opacity: 1;
-                  
-                  .moreReadIcon{
-                    svg{
+
+                  .moreReadIcon {
+                    svg {
                       fill: $main-url-color;
                     }
                   }
                 }
-                .moreReadIcon{
-                  svg{
+                .moreReadIcon {
+                  svg {
                     fill: $sub-1-text-color;
                   }
                 }
               }
             }
-            .infoListInner{
+            .infoListInner {
               border-color: $border-background-color;
-              .topInfoListArea{
-                dd{
-                  a{
+              .topInfoListArea {
+                dd {
+                  a {
                     color: $main-text-color;
-                    &:hover{
+                    &:hover {
                       color: $main-url-color;
                     }
                   }
@@ -52,71 +53,73 @@
               }
             }
           }
-          .newUploads{ //自分が投稿したコモンズ作品
-            h3{
+          .newUploads {
+            //自分が投稿したコモンズ作品
+            h3 {
               filter: invert(90%);
               border: 1px solid $border-background-color;
               border-radius: 5px;
             }
-            .topUploadReadMore{
-              &:hover{
+            .topUploadReadMore {
+              &:hover {
                 opacity: 1;
               }
-              a{
+              a {
                 color: $sub-1-text-color;
-                &:hover{
+                &:hover {
                   color: $main-url-color;
                   opacity: 1;
-                  
-                  .moreReadIcon{
-                    svg{
+
+                  .moreReadIcon {
+                    svg {
                       fill: $main-url-color;
                     }
                   }
                 }
-                .moreReadIcon{
-                  svg{
+                .moreReadIcon {
+                  svg {
                     fill: $sub-1-text-color;
                   }
                 }
               }
             }
-            .newUploadsMain{
+            .newUploadsMain {
               border-color: $border-background-color;
               background-color: $nico-black;
-              table{
-                .newArrivalItem{
-                  .titleArea{
-                    a{
+              table {
+                .newArrivalItem {
+                  .titleArea {
+                    a {
                       color: $main-text-color;
                     }
                   }
-                  .topTreeButton .topTreeButtonAnchor{
+                  .topTreeButton .topTreeButtonAnchor {
                     border-color: $border-background-color;
                     background-color: $sub2-background-color;
-                    .treeIcon svg{
+                    .treeIcon svg {
                       fill: $nico-tree;
                     }
-                    .treeText{
+                    .treeText {
                       color: $nico-tree;
                     }
                   }
                 }
               }
             }
-            .newUploadsMainArea{ //投稿作品がない場合
-              .topErrorArea{
+            .newUploadsMainArea {
+              //投稿作品がない場合
+              .topErrorArea {
                 background-color: $main-background-color;
                 border-color: $border-background-color;
-                .topErrorMsg{
+                .topErrorMsg {
                   color: $main-text-color;
                 }
-                .topAddText{
+                .topAddText {
                   color: $sub-1-text-color;
                 }
-                .text{
+                .text {
                   color: $sub-1-text-color;
-                  &:hover{
+                  &:hover {
                     color: $main-url-color;
                     opacity: 1;
                   }
@@ -125,11 +128,11 @@
             }
           }
         }
-        .contentRight{
-          #HelpLinks{
+        .contentRight {
+          #HelpLinks {
             border: none;
             background: none;
-            *{
+            * {
               border-radius: 4px;
             }
           }

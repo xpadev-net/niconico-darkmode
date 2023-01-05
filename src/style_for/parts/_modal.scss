@@ -1,15 +1,15 @@
-@import '_default';
+@import "_default";
 
-.niconico-darkmode-setting-true{
-  .Modal-content{
+.niconico-darkmode-setting-true {
+  .Modal-content {
     background: $nico-black !important;
-    header{
+    header {
       background: $nico-black !important;
-      h1{
+      h1 {
         color: $main-text-color !important;
       }
     }
-    .Modal-close{
+    .Modal-close {
       filter: $invert;
     }
   }

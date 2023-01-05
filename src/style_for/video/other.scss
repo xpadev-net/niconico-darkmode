@@ -1,17 +1,17 @@
-@import '../parts/_default';
-@import 'parts/_zero_design';
+@import "../parts/_default";
+@import "parts/_zero_design";
 
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
 
-  .video_catalog{
+  .video_catalog {
     color: $main-text-color;
-    ul li{
+    ul li {
       color: $sub-2-text-color;
-      a{
+      a {
         color: $main-text-color;
       }
-      a:visited{
+      a:visited {
         color: $sub-1-text-color;
       }
     }

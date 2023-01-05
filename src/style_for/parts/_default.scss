@@ -1,82 +1,76 @@
 //ニコニコのテーマカラー
 $nico-black: #252525; //ニコニコブラック サービスカラー
-$nico-white: #FAFAFA; //ニコニコホワイト デフォルト(ライト)時の背景色
+$nico-white: #fafafa; //ニコニコホワイト デフォルト(ライト)時の背景色
 $nico-gray: #525252; //ニコニコグレー CSSから見つけたので入れたけどダークモードでは多分使わない
 
 //ニコニコの各パーツ／サービスカラー
-$nico-personal-topics: #30A6CA; //総合TOPのあなたへのおすすめ
+$nico-personal-topics: #30a6ca; //総合TOPのあなたへのおすすめ
 
 $button: #0062eb; // ちょっとくらいボタン色
 $button2: #4990e2; //ちょっとあかるいボタン色
 
 $nico-premium: #d9a300; //ニコニコプレミアム
-$nico-point: #D1A437; //ニコニコポイント
-$nicoru: #FCD842; //ニコる
+$nico-point: #d1a437; //ニコニコポイント
+$nicoru: #fcd842; //ニコる
 
-$nico-illust: #EDA815; //静画 イラスト
-$nico-manga: #88C148; //漫画
+$nico-illust: #eda815; //静画 イラスト
+$nico-manga: #88c148; //漫画
 $nico-ch: #d9a300; //チャンネル
-$nico-game: #046EB8; //アツマール
-$nico-app: #046EB8; //ゲーム（色不詳なのでとりあえずアツマール色を定義）
-$nico-dic: #FFAF19; //大百科
-$nico-com: #258D8D; //コミュニティ
+$nico-game: #046eb8; //アツマール
+$nico-app: #046eb8; //ゲーム（色不詳なのでとりあえずアツマール色を定義）
+$nico-dic: #ffaf19; //大百科
+$nico-com: #258d8d; //コミュニティ
 $nico-news: #ff8000; //ニュース
-$nico-jk: #C3291F; //実況
+$nico-jk: #c3291f; //実況
 
 $nico-koken: #ff6678; //ニコニ貢献
 $nico-ad: #ffe500; //ニコニ広告
 $nico-gift-video: #d2f73d; //動画ギフト
 
-$nico-tree: #EA6802; //コンテンツツリー
-$nico-cresyo: #CC0066; //クリエイター奨励プログラム
+$nico-tree: #ea6802; //コンテンツツリー
+$nico-cresyo: #cc0066; //クリエイター奨励プログラム
 
-$chokaigi: #E60020; //超会議レッド
+$chokaigi: #e60020; //超会議レッド
 
-$nicobox: #D83A35; //Nicobox
+$nicobox: #d83a35; //Nicobox
 $N-yobiko: #000066; //N予備校
 
-
 //ニコニ広告グレード
-$nicoad-gold: #E5A900;
-$nicoad-silver: #CFDBDD;
+$nicoad-gold: #e5a900;
+$nicoad-silver: #cfdbdd;
 $nicoad-bronze: #a36b21;
-
 
 //他サイトのサービスカラー
 $twitter: #55acee;
-$facebook: #3B5998;
+$facebook: #3b5998;
 $line: #1dcd00;
-
 
 //パーツカラー
 //サービス共通背景色　一番後ろのパーツから　$main → $nico-black → $sub2 の順で使用
-$main-background-color: #1A1B1C;
+$main-background-color: #1a1b1c;
 $sub-background-color: #272727;
 $sub2-background-color: #333333;
-
 
 //生放送専用背景色　パーツがほかサービスより多いので柔軟に定義
 $livetop-content-bg1: #121212;
 $livetop-content-bg2: #333333;
 $livetop-content-bg3: #333b43;
 
-
 //コモンズ登録画面の注意カラー
 $commons-warning: #8a6d3b;
 $commons-attention: #3e9fff;
-
 
 //Hover時の背景色／ボーダーカラー
 $hover-background-color: #555555;
 $border-background-color: #555555;
 
 //サービス共通テキストカラー
-$main-text-color: #F5F5F5;
+$main-text-color: #f5f5f5;
 $sub-1-text-color: #c4c4c4;
 $sub-2-text-color: #999999;
 $sub-3-text-color: #666666;
 
-$main-url-color: #0080FF;
+$main-url-color: #0080ff;
 
 //画像素材の反転用
 $invert: invert(100%);
@@ -93,4 +87,4 @@ $player-black: #000;
 $player-border: #333;
 
 //ニコレポお知らせ
-$notice-red: #D73446;
+$notice-red: #d73446;

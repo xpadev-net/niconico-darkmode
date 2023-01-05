@@ -1,78 +1,77 @@
-@import '../parts/_default';
-@import '../parts/_serchbox';
-@import '../parts/_button';
+@import "../parts/_default";
+@import "../parts/_serchbox";
+@import "../parts/_button";
 
-.niconico-darkmode-setting-true{
-  background-color:$main-background-color !important;
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
   color: $main-text-color;
 
-  .BaseLayout-header{
-    .NicovideoLogo{
+  .BaseLayout-header {
+    .NicovideoLogo {
       filter: $invert;
     }
   }
 
-  .BaseLayout-main{
-    .Recommendations-recommend{
-      .BaseLayout-block{
-        .RecommendTagListContainer{
-          .RecommendationsHeading{
-            h1{
+  .BaseLayout-main {
+    .Recommendations-recommend {
+      .BaseLayout-block {
+        .RecommendTagListContainer {
+          .RecommendationsHeading {
+            h1 {
               color: $main-text-color;
             }
-            aside{
+            aside {
               color: $sub-1-text-color;
             }
           }
         }
-        .RecommendVideoListContainer{
-          .RecommendationsHeading{
-            h1{
+        .RecommendVideoListContainer {
+          .RecommendationsHeading {
+            h1 {
               color: $main-text-color;
             }
-            aside{
+            aside {
               color: $sub-1-text-color;
             }
           }
-          .RecommendVideoListContainer-videos{
-            .VideoCard, .NC-Card{
-              .Card-link, .NC-CardTitle{
+          .RecommendVideoListContainer-videos {
+            .VideoCard,
+            .NC-Card {
+              .Card-link,
+              .NC-CardTitle {
                 color: $main-text-color;
 
-                &:visited{
+                &:visited {
                   color: $sub-1-text-color;
                 }
               }
             }
           }
-          .RecommendVideoListContainer-more{
+          .RecommendVideoListContainer-more {
             background: $sub2-background-color;
             color: $main-text-color;
             border-color: $border-background-color;
           }
-          .RecommendVideoListContainer-more:hover{
+          .RecommendVideoListContainer-more:hover {
             background: $main-url-color;
             border-color: $main-url-color;
           }
         }
       }
-
     }
 
-    .TagItem{
-      .TagItem-link{
+    .TagItem {
+      .TagItem-link {
         color: $main-text-color;
         background: $sub2-background-color;
         border: none;
       }
     }
-    
-
   }
 
-  .BaseLayout-footer{
+  .BaseLayout-footer {
     background: $nico-black;
-    .Ads728x90WebPcFooter{
+    .Ads728x90WebPcFooter {
       background: none;
     }
   }

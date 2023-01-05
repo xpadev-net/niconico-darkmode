@@ -1,64 +1,64 @@
-@import '_default';
+@import "_default";
 
-.niconico-darkmode-setting-true{
+.niconico-darkmode-setting-true {
   /*fix 20210601*/
   .VideoCard,
   .VideoItem.VideoCard,
   .VideoItem.NC-VideoCard,
-	.NC-VideoCard,
+  .NC-VideoCard,
   .NicoadVideoItem,
   .NicoadItem.NicoadCard,
-  .NicoadItem.NC-NicoadCard{
+  .NicoadItem.NC-NicoadCard {
     background: $nico-black;
 
     a.NicoadVideoItem-link,
-		a .NC-VideoCard-title,
+    a .NC-VideoCard-title,
     a .Card-title,
     a .NC-CardTitle,
-    a.FollowingVideosContainer-owner .FollowingVideosContainer-ownerName{
+    a.FollowingVideosContainer-owner .FollowingVideosContainer-ownerName {
       color: $main-text-color;
     }
     a.NicoadVideoItem-link:visited,
-		a:visited .NC-VideoCard-title,
+    a:visited .NC-VideoCard-title,
     a:visited .Card-title,
     a:visited .CardTitle,
-    a:visited .NC-CardTitle{
+    a:visited .NC-CardTitle {
       color: $sub-1-text-color;
     }
     a.NicoadVideoItem-link:hover,
-		a:hover .NC-VideoCard-title,
+    a:hover .NC-VideoCard-title,
     a:hover .Card-title,
     a:hover .CardTitle,
     a:hover .NC-CardTitle,
-    a.FollowingVideosContainer-owner:hover .FollowingVideosContainer-ownerName{
+    a.FollowingVideosContainer-owner:hover .FollowingVideosContainer-ownerName {
       color: $main-url-color;
     }
     .Card-secondary,
-    .NC-Card-secondary{
+    .NC-Card-secondary {
       color: $sub-1-text-color;
-      .NC-VideoCard-registeredAt_new{
+      .NC-VideoCard-registeredAt_new {
         color: $notice-red;
         font-weight: bold;
       }
     }
-    .NC-ThreePointMenu-button:hover{
+    .NC-ThreePointMenu-button:hover {
       filter: $invert;
     }
-		.RecommendVideoContainer-footer{
-			color: $main-text-color;
-		}
+    .RecommendVideoContainer-footer {
+      color: $main-text-color;
+    }
   }
-  .TagItem{
-    .TagItem-link{
+  .TagItem {
+    .TagItem-link {
       color: $main-text-color;
       background: $sub-background-color !important;
       border: 1px solid $sub-background-color;
     }
-    .TagItem-link:hover{
+    .TagItem-link:hover {
       color: $main-url-color;
     }
   }
-  .RankingBaseItem{
+  .RankingBaseItem {
     background: $nico-black;
   }
 }

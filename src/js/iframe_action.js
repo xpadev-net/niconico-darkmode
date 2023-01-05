@@ -16,7 +16,7 @@ if (document.readyState == "complete") {
 }
 
 function init_darkmode() {
-  console.log("niconico Darkmode iframe　実行中です"); 
+  console.log("niconico Darkmode iframe　実行中です");
 
   //ダークモード適用
   if (is_darkmode) {
@@ -25,35 +25,38 @@ function init_darkmode() {
 }
 
 // 設定変更を受け取り
-chrome.runtime.onMessage.addListener(
-  function (request, sender, sendResponse) {
-    sendResponse();
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  sendResponse();
 
-    if (request.change_settings == "nicodark_to_true") {
-      is_darkmode = true;
-      if (is_darkmode) {
-        nicodark_change_true();
-      }
-
-    } else if (request.change_settings == "nicodark_to_false") {
-      is_darkmode = false;
-      nicodark_change_false();
-
+  if (request.change_settings == "nicodark_to_true") {
+    is_darkmode = true;
+    if (is_darkmode) {
+      nicodark_change_true();
     }
-
-    return true;
+  } else if (request.change_settings == "nicodark_to_false") {
+    is_darkmode = false;
+    nicodark_change_false();
   }
-);
 
+  return true;
+});
 
 //ダークモード適用処理　定義
 function nicodark_change_true() {
-  while (!document.getElementsByTagName('body')[0].classList.contains('niconico-darkmode-setting-true')) {
-    document.getElementsByTagName('body')[0].classList.add('niconico-darkmode-setting-true');
+  while (
+    !document
+      .getElementsByTagName("body")[0]
+      .classList.contains("niconico-darkmode-setting-true")
+  ) {
+    document
+      .getElementsByTagName("body")[0]
+      .classList.add("niconico-darkmode-setting-true");
   }
 }
 
 //ダークモード解除処理　定義
 function nicodark_change_false() {
-  document.getElementsByClassName('niconico-darkmode-setting-true')[0].classList.remove('niconico-darkmode-setting-true');
+  document
+    .getElementsByClassName("niconico-darkmode-setting-true")[0]
+    .classList.remove("niconico-darkmode-setting-true");
 }

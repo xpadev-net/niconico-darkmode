@@ -1,43 +1,48 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
-  .itemCard,.searchItemCardArea{
-    .materialsItemCard,.searchItemCard{
+.niconico-darkmode-setting-true {
+  .itemCard,
+  .searchItemCardArea {
+    .materialsItemCard,
+    .searchItemCard {
       background-color: $nico-black !important;
-      .contentArea{
-        .programSummary,.materialSummary,.searchSummary{
-          .materialTitle,.searchTitle{
+      .contentArea {
+        .programSummary,
+        .materialSummary,
+        .searchSummary {
+          .materialTitle,
+          .searchTitle {
             color: $main-text-color;
           }
         }
-        .searchDescription{
+        .searchDescription {
           color: $sub-1-text-color;
         }
-        .tagList .tagListInner{
-          .tag{
+        .tagList .tagListInner {
+          .tag {
             color: $sub-1-text-color;
             background-color: $hover-background-color;
           }
         }
-        .menuArea{
+        .menuArea {
           color: $sub-1-text-color;
         }
-        .materialsPickupUserName{
+        .materialsPickupUserName {
           color: $sub-1-text-color;
         }
       }
     }
-    a.materialsPickupTagAnchor{
+    a.materialsPickupTagAnchor {
       background-color: $nico-black;
       border-color: $nico-black;
-      .materialsPickupTagName{
+      .materialsPickupTagName {
         color: $main-text-color;
       }
 
-      &:hover{
+      &:hover {
         background-color: $nico-black;
         border-color: $main-url-color;
-        .materialsPickupTagName{
+        .materialsPickupTagName {
           border-color: $main-url-color;
         }
       }

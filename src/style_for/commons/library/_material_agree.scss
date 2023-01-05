@@ -1,60 +1,59 @@
 @import "../parts/default";
 
-.niconico-darkmode-setting-true{
-
-  .p-agreementPage{
+.niconico-darkmode-setting-true {
+  .p-agreementPage {
     background: none;
-    .agreementContentsArea{
-      .licenseNotice{
+    .agreementContentsArea {
+      .licenseNotice {
         color: $main-text-color;
       }
-      .agreementContents{
-        .agreementContentsInner{
+      .agreementContents {
+        .agreementContentsInner {
           border-color: $border-background-color;
-          .licenseDescriptionArea{
+          .licenseDescriptionArea {
             border-color: $border-background-color;
-            .permissionRangeAllLabel,.commercialUseAvailableLabel{
+            .permissionRangeAllLabel,
+            .commercialUseAvailableLabel {
               border-color: $border-background-color;
               color: $main-text-color;
-              span{
+              span {
                 color: $main-text-color;
                 border-color: $border-background-color;
               }
-              span:first-child{
+              span:first-child {
                 background-color: $border-background-color;
               }
             }
-            .licenseDescription{
+            .licenseDescription {
               color: $main-text-color;
             }
           }
-          .licenseAdditionalDescriptionArea{
+          .licenseAdditionalDescriptionArea {
             border-color: $border-background-color;
             color: $main-text-color;
           }
         }
-        .licenseAdditionalDescriptionArea{
+        .licenseAdditionalDescriptionArea {
           border-color: $border-background-color;
           color: $main-text-color;
         }
       }
-      .license_download{
-        .licenseDescription{
+      .license_download {
+        .licenseDescription {
           color: $main-text-color;
-          a{
+          a {
             color: $main-text-color;
           }
-          a:hover{
+          a:hover {
             color: $main-url-color;
           }
         }
-        
       }
-      .license_back{
-        a{
+      .license_back {
+        a {
           color: $main-text-color;
         }
-        a:hover{
+        a:hover {
           color: $main-url-color;
         }
       }
