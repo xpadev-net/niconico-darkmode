@@ -15,31 +15,44 @@ const banner = `/*!
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const plugins = [
+    typescript(),
+    json(),
+    image(),
+    postcss({
+        extensions: [".css"],
+        modules: true,
+    }),
+    nodeResolve({
+        extensions: [".js"],
+        browser:true
+    }),
+    babel({
+        babelHelpers: "bundled",
+        configFile: path.resolve(__dirname, ".babelrc.js"),
+    }),
+    nodeResolve(),
+];
 
-export default {
-    input: 'src/main.ts',
-    output: {
-        file: 'dist/bundle.js',
-        format: 'umd',
-        name: 'niconico-darkmode',
-        banner
+export default [
+    {
+        input: 'src/main.ts',
+        output: {
+            file: 'dist/bundle.js',
+            format: 'umd',
+            name: 'niconico-darkmode',
+            banner
+        },
+        plugins
     },
-    plugins: [
-        typescript(),
-        json(),
-        image(),
-        postcss({
-            extensions: [".css"],
-            modules: true,
-        }),
-        nodeResolve({
-            extensions: [".js"],
-            browser:true
-        }),
-        babel({
-            babelHelpers: "bundled",
-            configFile: path.resolve(__dirname, ".babelrc.js"),
-        }),
-        nodeResolve(),
-    ]
-}
+    {
+        input: 'src/background.ts',
+        output: {
+            file: 'dist/background.js',
+            format: 'umd',
+            name: 'niconico-darkmode',
+            banner
+        },
+        plugins
+    }
+]
